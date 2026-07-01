@@ -1,3 +1,9 @@
-export default function page() {
-  return <div>page</div>;
+import Hero from "@/components/hero/Hero";
+
+export default function Home() {
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
