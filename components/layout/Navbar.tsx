@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { navigation } from "@/app/data/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/utils/cn";
@@ -19,37 +20,43 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 w-full z-50 transition-all",
-        scrolled
-          ? "bg-white shadow-md"
-          : "bg-transparent text-white"
+        "fixed top-10 left-0 w-full z-40 transition-all duration-300",
+        scrolled ? "bg-white shadow-md" : "bg-transparent text-white"
       )}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="font-black text-xl">
-          YPA Wealth Depot
-        </Link>
+       {/* Logo */}
+<Link href="/" className="flex items-center">
+  <Image
+    src="/social media dp-01.png"
+    alt="YPA Wealth Depot Logo"
+    width={70}
+    height={70}
+    priority
+    className="h-16 w-auto object-contain"
+  />
+</Link>
 
-        {/* Desktop Nav */}
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8 items-center">
           {navigation.map((item) => (
             <Link
               key={item.label}
               href={item.href}
-              className="hover:text-sky-500 transition"
+              className="hover:text-sky-500 transition flex items-center"
             >
               {item.label}
               {item.children && (
-                <ChevronDown className="inline ml-1 w-4 h-4" />
+                <ChevronDown className="ml-1 w-4 h-4" />
               )}
             </Link>
           ))}
         </nav>
 
         {/* CTA */}
-        <div className="hidden md:flex gap-4 items-center">
-          <button className="bg-sky-500 text-white px-5 py-2 rounded-full hover:bg-sky-600">
+        <div className="hidden md:flex">
+          <button className="bg-sky-500 hover:bg-sky-600 text-white px-5 py-2 rounded-full">
             Become a Member
           </button>
         </div>
@@ -58,8 +65,9 @@ export default function Navbar() {
         <button
           className="md:hidden"
           onClick={() => setOpen(!open)}
+          aria-label="Toggle menu"
         >
-          {open ? <X /> : <Menu />}
+          {open ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 

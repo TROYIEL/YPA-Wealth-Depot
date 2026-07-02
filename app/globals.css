@@ -12,3 +12,21 @@ body {
 section {
   padding: 6rem 0;
 }
+
+/* Scrolling announcement */
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 18s linear infinite;
+  will-change: transform;
+}

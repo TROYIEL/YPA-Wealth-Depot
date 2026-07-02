@@ -2,10 +2,10 @@
   "pages": {
     "/products/page": [
       "static/chunks/YPA-Wealth-Depot_app_globals_2a7f699e.css",
-      "static/chunks/60da5_68c269c6._.js",
+      "static/chunks/60da5_6cd41671._.js",
       "static/chunks/YPA-Wealth-Depot_058a829a._.js",
       "static/chunks/YPA-Wealth-Depot_app_layout_tsx_87fa8444._.js",
-      "static/chunks/60da5_next_dist_client_components_builtin_global-error_16e22600.js",
+      "static/chunks/60da5_next_dist_client_components_builtin_global-error_e6d4444a.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_4e3a9300._.js",
       "static/chunks/60da5_next_dist_compiled_react-dom_fb5c519f._.js",
       "static/chunks/60da5_next_dist_compiled_next-devtools_index_e0b42843.js",
