@@ -30,3 +30,18 @@ section {
   animation: scroll 18s linear infinite;
   will-change: transform;
 }
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  display: inline-block;
+  animation: marquee 25s linear infinite;
+}

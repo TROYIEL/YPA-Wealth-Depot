@@ -1,7 +1,7 @@
 var R=require("../chunks/ssr/[turbopack]_runtime.js")("server/app/page.js")
 R.c("server/chunks/ssr/60da5_next_dist_93e1257c._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__7f148858._.js")
-R.c("server/chunks/ssr/YPA-Wealth-Depot_9f6bd7de._.js")
+R.c("server/chunks/ssr/YPA-Wealth-Depot_074c206b._.js")
 R.c("server/chunks/ssr/YPA-Wealth-Depot_app_loading_tsx_ffa3a6a7._.js")
 R.c("server/chunks/ssr/60da5_next_dist_client_components_7154fd06._.js")
 R.c("server/chunks/ssr/60da5_next_dist_client_components_builtin_forbidden_fc81b286.js")

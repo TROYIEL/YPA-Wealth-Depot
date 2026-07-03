@@ -1,175 +1,124 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Button from "@/components/ui/Button";
 
+gsap.registerPlugin(ScrollTrigger);
+
+const slides = [
+  {
+    image: "/4.jpg",
+    tag: "Build. Grow. Prosper.",
+    title: "Your Wealth, Our Priority.",
+    desc:
+      "Secure savings, smart loans, and investment tools designed to grow your financial future.",
+  },
+  {
+    image: "/1.jpg",
+    tag: "Secure Today",
+    title: "Save for a Better Tomorrow",
+    desc: "Reliable savings solutions that protect and grow your money.",
+  },
+  {
+    image: "/2.jpg",
+    tag: "Invest for Growth",
+    title: "Build Wealth That Lasts",
+    desc: "Smart investment options for long-term financial success.",
+  },
+];
+
 export default function Hero() {
+  const [index, setIndex] = useState(0);
+  const bgRef = useRef(null);
+  const textRef = useRef(null);
+
+  const nextSlide = () =>
+    setIndex((prev) => (prev + 1) % slides.length);
+
+  // ===== CINEMATIC TRANSITION =====
+  useEffect(() => {
+    const tl = gsap.timeline();
+
+    tl.fromTo(
+      bgRef.current,
+      { scale: 1.08, opacity: 0 },
+      { scale: 1, opacity: 1, duration: 1.4, ease: "power3.out" }
+    );
+
+    tl.fromTo(
+      textRef.current,
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1.1, ease: "power3.out" },
+      "-=0.8"
+    );
+  }, [index]);
+
+  // ===== SLOWER AUTO SLIDE (PREMIUM FEEL) =====
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 9000); // ⬅️ slower (was 6500)
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-screen w-full overflow-hidden">
 
-      {/* Background */}
-      <Image
-        src="/hero.jpg"
-        alt="Hero"
-        fill
-        priority
-        className="object-cover"
-      />
-
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/55" />
-
-      {/* Left Image Panel */}
-      <div className="absolute left-0 top-0 w-[22%] h-full hidden xl:block">
-
+      {/* Background Image (FULL RESPONSIVE FIX) */}
+      <div ref={bgRef} className="absolute inset-0">
         <Image
-          src="/family.jpg"
-          alt=""
+          src={slides[index].image}
+          alt="hero"
           fill
-          className="object-cover"
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
         />
-
-        <div className="absolute inset-0 bg-black/45" />
-
-        <div className="absolute bottom-24 px-10 text-white">
-
-          <p className="text-sky-400 font-semibold">
-            Secure Today
-          </p>
-
-          <h2 className="text-4xl font-bold mt-3">
-            Save for a Better Tomorrow
-          </h2>
-
-          <div className="w-20 h-[2px] bg-white mt-6 mb-6" />
-
-          <p className="text-white/80 text-lg">
-            Safe, reliable and rewarding savings solutions.
-          </p>
-
-        </div>
-
       </div>
 
-      {/* Right Image Panel */}
-      <div className="absolute right-0 top-0 w-[22%] h-full hidden xl:block">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/60" />
 
-        <Image
-          src="/builder.jpg"
-          alt=""
-          fill
-          className="object-cover"
-        />
+      {/* Content */}
+      <div className="relative z-20 flex items-center justify-center h-full px-6 text-center">
 
-        <div className="absolute inset-0 bg-blue-950/45" />
+        <div ref={textRef} className="max-w-4xl">
 
-        <div className="absolute bottom-24 px-10 text-white">
-
-          <p className="text-sky-400 font-semibold">
-            Invest for Growth
+          <p className="text-sky-400 font-semibold text-xl md:text-2xl tracking-widest uppercase">
+            {slides[index].tag}
           </p>
 
-          <h2 className="text-4xl font-bold mt-3">
-            Build Wealth That Lasts
-          </h2>
-
-          <div className="w-20 h-[2px] bg-white mt-6 mb-6" />
-
-          <p className="text-white/80 text-lg">
-            Grow your future with reliable investment options.
-          </p>
-
-        </div>
-
-      </div>
-
-      {/* Center Hero */}
-
-      <div className="relative z-20 flex items-center justify-center h-full">
-
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: .8 }}
-          className="text-center max-w-4xl px-8"
-        >
-
-          <p className="text-sky-400 font-semibold text-3xl">
-            Build. Grow. Prosper.
-          </p>
-
-          <h1 className="mt-6 text-6xl md:text-8xl font-black leading-none text-white">
-
-            Your Wealth,
-
-            <span className="block text-blue-500">
-              Our Priority.
-            </span>
-
+          <h1 className="mt-6 text-5xl md:text-7xl font-white text-white leading-tight">
+            {slides[index].title}
           </h1>
 
-          <p className="mt-8 text-white/90 text-2xl leading-10 max-w-3xl mx-auto">
-
-            Access secure savings, affordable loans,
-            and smart investment opportunities that
-            empower your future.
-
+          <p className="mt-6 text-white/85 text-lg md:text-2xl max-w-2xl mx-auto">
+            {slides[index].desc}
           </p>
 
-          <div className="flex justify-center gap-6 mt-12">
-
-            <Button>
-              Become a Member
-            </Button>
-
-            <Button variant="outline">
-              Explore Products
-            </Button>
-
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+            <Button>Become a Member</Button>
+            
           </div>
 
-          {/* Dots */}
-
-          <div className="flex justify-center gap-4 mt-16">
-
-            <span className="w-3 h-3 rounded-full bg-white" />
-
-            <span className="w-10 h-3 rounded-full bg-blue-600" />
-
-            <span className="w-3 h-3 rounded-full bg-white" />
-
-          </div>
-
-        </motion.div>
-
+        </div>
       </div>
 
-      {/* Scroll Down */}
-
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white animate-bounce">
-
-        <svg
-          width="40"
-          height="40"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-        >
-          <path d="M10 15l10 10 10-10" />
-        </svg>
-
+      {/* DOTS ONLY (no arrows = cleaner UX) */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3 z-30">
+        {slides.map((_, i) => (
+          <span
+            key={i}
+            className={`h-3 rounded-full transition-all duration-500 ${
+              i === index ? "w-10 bg-blue-600" : "w-3 bg-white/40"
+            }`}
+          />
+        ))}
       </div>
-
-      {/* Navigation Buttons */}
-
-      <button className="hidden xl:flex absolute left-[19%] top-1/2 -translate-y-1/2 z-30 w-16 h-16 rounded-full border border-white items-center justify-center text-white hover:bg-white hover:text-black transition">
-        ❮
-      </button>
-
-      <button className="hidden xl:flex absolute right-[19%] top-1/2 -translate-y-1/2 z-30 w-16 h-16 rounded-full border border-white items-center justify-center text-white hover:bg-white hover:text-black transition">
-        ❯
-      </button>
 
     </section>
   );
