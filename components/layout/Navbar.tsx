@@ -79,17 +79,7 @@ export default function Navbar({ scrolled }: NavbarProps) {
 
         {/* Right Side */}
         <div className="hidden lg:flex items-center gap-4">
-          <Link
-            href="/login"
-            className={cn(
-              "font-medium transition",
-              scrolled
-                ? "text-slate-700 hover:text-sky-600"
-                : "text-white hover:text-sky-300"
-            )}
-          >
-            Login
-          </Link>
+          
 
           <button className="rounded-full bg-gradient-to-r from-sky-500 to-blue-600 px-7 py-3 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
             Become a Member
@@ -101,11 +91,11 @@ export default function Navbar({ scrolled }: NavbarProps) {
           onClick={() => setOpen(!open)}
           className={cn(
             "lg:hidden",
-            scrolled ? "text-slate-700" : "text-white"
+            scrolled ? "text-slate-700" : "text-slate-700"
           )}
           aria-label="Toggle Menu"
         >
-          {open ? <X size={30} /> : <Menu size={30} />}
+          {open ? <X size={30} /> : <Menu size={30}  /> }
         </button>
       </div>
 

@@ -401,50 +401,39 @@ function Navbar({ scrolled }) {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "hidden lg:flex items-center gap-4",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/login",
-                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$utils$2f$cn$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("font-medium transition", scrolled ? "text-slate-700 hover:text-sky-600" : "text-white hover:text-sky-300"),
-                                children: "Login"
-                            }, void 0, false, {
-                                fileName: "[project]/YPA-Wealth-Depot/components/layout/Navbar.tsx",
-                                lineNumber: 82,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                className: "rounded-full bg-gradient-to-r from-sky-500 to-blue-600 px-7 py-3 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl",
-                                children: "Become a Member"
-                            }, void 0, false, {
-                                fileName: "[project]/YPA-Wealth-Depot/components/layout/Navbar.tsx",
-                                lineNumber: 94,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            className: "rounded-full bg-gradient-to-r from-sky-500 to-blue-600 px-7 py-3 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl",
+                            children: "Become a Member"
+                        }, void 0, false, {
+                            fileName: "[project]/YPA-Wealth-Depot/components/layout/Navbar.tsx",
+                            lineNumber: 84,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/components/layout/Navbar.tsx",
                         lineNumber: 81,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>setOpen(!open),
-                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$utils$2f$cn$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("lg:hidden", scrolled ? "text-slate-700" : "text-white"),
+                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$utils$2f$cn$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("lg:hidden", scrolled ? "text-slate-700" : "text-slate-700"),
                         "aria-label": "Toggle Menu",
                         children: open ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
                             size: 30
                         }, void 0, false, {
                             fileName: "[project]/YPA-Wealth-Depot/components/layout/Navbar.tsx",
-                            lineNumber: 108,
+                            lineNumber: 98,
                             columnNumber: 19
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
                             size: 30
                         }, void 0, false, {
                             fileName: "[project]/YPA-Wealth-Depot/components/layout/Navbar.tsx",
-                            lineNumber: 108,
+                            lineNumber: 98,
                             columnNumber: 37
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/components/layout/Navbar.tsx",
-                        lineNumber: 100,
+                        lineNumber: 90,
                         columnNumber: 9
                     }, this)
                 ]
@@ -481,7 +470,7 @@ function Navbar({ scrolled }) {
                                     children: item.label
                                 }, item.label, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/components/layout/Navbar.tsx",
-                                    lineNumber: 124,
+                                    lineNumber: 114,
                                     columnNumber: 17
                                 }, this)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -489,23 +478,23 @@ function Navbar({ scrolled }) {
                                 children: "Become a Member"
                             }, void 0, false, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/layout/Navbar.tsx",
-                                lineNumber: 134,
+                                lineNumber: 124,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/YPA-Wealth-Depot/components/layout/Navbar.tsx",
-                        lineNumber: 122,
+                        lineNumber: 112,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/YPA-Wealth-Depot/components/layout/Navbar.tsx",
-                    lineNumber: 115,
+                    lineNumber: 105,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/YPA-Wealth-Depot/components/layout/Navbar.tsx",
-                lineNumber: 113,
+                lineNumber: 103,
                 columnNumber: 7
             }, this)
         ]
