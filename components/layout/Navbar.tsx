@@ -1,95 +1,133 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { navigation } from "@/app/data/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { navigation } from "@/app/data/navigation";
 import { cn } from "@/utils/cn";
+import { useState } from "react";
 
-export default function Navbar() {
+interface NavbarProps {
+  scrolled: boolean;
+}
+
+export default function Navbar({ scrolled }: NavbarProps) {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   return (
-    <header
+    <motion.header
+      initial={false}
+      animate={{
+        top: scrolled ? 0 : 40,
+      }}
+      transition={{
+        duration: 0.35,
+        ease: [0.22, 1, 0.36, 1],
+      }}
       className={cn(
-        "fixed top-10 left-0 w-full z-40 transition-all duration-300",
-        scrolled ? "bg-white shadow-md" : "bg-transparent text-white"
+        "fixed left-0 w-full z-50 transition-colors duration-500",
+        scrolled
+          ? "bg-white/100 backdrop-blur-2xl shadow-xl border-b border-slate-200"
+          : "bg-transparent"
       )}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div
+        className={cn(
+          "max-w-7xl mx-auto px-8 flex items-center justify-between transition-all duration-300",
+          scrolled ? "h-20" : "h-24"
+        )}
+      >
         {/* Logo */}
-       {/* Logo */}
-<Link href="/" className="flex items-center">
-  <Image
-    src="/social media dp-01.png"
-    alt="YPA Wealth Depot Logo"
-    width={70}
-    height={70}
-    priority
-    className="h-16 w-auto object-contain"
-  />
-</Link>
+        <Link href="/" className="flex items-center shrink-0">
+          <Image
+            src="/social media dp-01.png"
+            alt="YPA Wealth Depot"
+            width={300}
+            height={90}
+            priority
+            className="h-14 w-auto"
+          />
+        </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-8 items-center">
+        <nav className="hidden lg:flex items-center gap-10">
           {navigation.map((item) => (
             <Link
               key={item.label}
               href={item.href}
-              className="hover:text-sky-500 transition flex items-center"
+              className={cn(
+                "group relative flex items-center font-medium transition-colors duration-300",
+                scrolled
+                  ? "text-slate-700 hover:text-sky-600"
+                  : "text-red-600 hover:text-sky-300"
+              )}
             >
               {item.label}
+
               {item.children && (
-                <ChevronDown className="ml-1 w-4 h-4" />
+                <ChevronDown
+                  size={16}
+                  className="ml-1 transition-transform duration-300 group-hover:rotate-180"
+                />
               )}
+
+              <span className="absolute -bottom-2 left-0 h-0.5 w-0 bg-sky-500 transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
         </nav>
 
-        {/* CTA */}
-        <div className="hidden md:flex">
-          <button className="bg-sky-500 hover:bg-sky-600 text-white px-5 py-2 rounded-full">
+        {/* Right Side */}
+        <div className="hidden lg:flex items-center gap-4">
+          
+
+          <button className="rounded-full bg-gradient-to-r from-sky-500 to-blue-600 px-7 py-3 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
             Become a Member
           </button>
         </div>
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden"
           onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
+          className={cn(
+            "lg:hidden",
+            scrolled ? "text-slate-700" : "text-slate-700"
+          )}
+          aria-label="Toggle Menu"
         >
-          {open ? <X size={28} /> : <Menu size={28} />}
+          {open ? <X size={30} /> : <Menu size={30}  /> }
         </button>
       </div>
 
       {/* Mobile Menu */}
-      {open && (
-        <div className="md:hidden bg-white border-t p-6 space-y-4">
-          {navigation.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className="block text-slate-700"
-              onClick={() => setOpen(false)}
-            >
-              {item.label}
-            </Link>
-          ))}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.25 }}
+            className="lg:hidden bg-white shadow-xl border-t"
+          >
+            <div className="px-8 py-6 space-y-5">
+              {navigation.map((item) => (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className="block text-slate-700 font-medium hover:text-sky-600 transition"
+                >
+                  {item.label}
+                </Link>
+              ))}
 
-          <button className="w-full bg-sky-500 text-white py-3 rounded-full">
-            Become a Member
-          </button>
-        </div>
-      )}
-    </header>
+              <button className="w-full rounded-full bg-gradient-to-r from-sky-500 to-blue-600 py-3 text-white font-semibold">
+                Become a Member
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.header>
   );
 }
