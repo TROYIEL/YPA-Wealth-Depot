@@ -40,7 +40,7 @@ export default function TopBar() {
 
           <div className="animate-scroll whitespace-nowrap text-sky-300 font-medium">
 
-            🔔 Welcome to YPA Wealth Depot •
+            Welcome to YPA Wealth Depot •
             Secure Savings •
             Affordable Loans •
             Smart Investments •
