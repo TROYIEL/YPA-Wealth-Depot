@@ -99,7 +99,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/saaczphotographer/Desktop/YPA SACCO/website/YPA-Wealth-Depot",
+    "outputFileTracingRoot": "/home/runner/work/YPA-Wealth-Depot/YPA-Wealth-Depot",
     "experimental": {
       "useSkewCookie": false,
       "cacheLife": {
@@ -289,10 +289,10 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "/Users/saaczphotographer/Desktop/YPA SACCO/website/YPA-Wealth-Depot"
+      "root": "/home/runner/work/YPA-Wealth-Depot/YPA-Wealth-Depot"
     }
   },
-  "appDir": "/Users/saaczphotographer/Desktop/YPA SACCO/website/YPA-Wealth-Depot",
+  "appDir": "/home/runner/work/YPA-Wealth-Depot/YPA-Wealth-Depot",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",

@@ -6,8 +6,6 @@ import {
   ArrowRight,
   Download,
   Users,
-  Briefcase,
-  FileText,
 } from "lucide-react";
 
 export default function InfoCards() {
