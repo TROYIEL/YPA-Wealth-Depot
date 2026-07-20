@@ -1,52 +1,75 @@
 {
   "pages": {
     "/_not-found/page": [
-      "static/chunks/YPA-Wealth-Depot_app_globals_2a7f699e.css",
-      "static/chunks/60da5_next_b973e6f8._.js",
-      "static/chunks/60da5_motion-dom_dist_es_fbe52791._.js",
-      "static/chunks/60da5_framer-motion_dist_es_36c3648b._.js",
-      "static/chunks/60da5_react-icons_fa_index_mjs_2c36d2fc._.js",
-      "static/chunks/60da5_react-icons_fa6_index_mjs_906885cd._.js",
-      "static/chunks/60da5_react-icons_lib_4afd1bd9._.js",
-      "static/chunks/60da5_tailwind-merge_dist_bundle-mjs_mjs_b9b85a9f._.js",
-      "static/chunks/60da5_52780f3f._.js",
-      "static/chunks/YPA-Wealth-Depot_14f1445f._.js",
-      "static/chunks/YPA-Wealth-Depot_app_layout_tsx_87fa8444._.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_4e3a9300._.js",
-      "static/chunks/60da5_next_dist_compiled_react-dom_fb5c519f._.js",
-      "static/chunks/60da5_next_dist_compiled_next-devtools_index_e0b42843.js",
-      "static/chunks/60da5_next_dist_compiled_082e8628._.js",
-      "static/chunks/60da5_next_dist_client_f16f72b8._.js",
-      "static/chunks/60da5_next_dist_3dbd956a._.js",
-      "static/chunks/60da5_@swc_helpers_cjs_e9d1f5ee._.js",
-      "static/chunks/YPA-Wealth-Depot_a0ff3932._.js",
-      "static/chunks/turbopack-YPA-Wealth-Depot_81781e35._.js"
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-98a0bdaa30757bda.js",
+      "static/chunks/main-app-5357eb79b147ce2d.js",
+      "static/chunks/app/_not-found/page-dfe59555c0e55872.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-98a0bdaa30757bda.js",
+      "static/chunks/main-app-5357eb79b147ce2d.js",
+      "static/css/a35df62baac55711.css",
+      "static/chunks/53c13509-23cba20adc42ccf8.js",
+      "static/chunks/8e1d74a4-aa5dcb878a30e60c.js",
+      "static/chunks/71-1580df386d9ea7c9.js",
+      "static/chunks/526-dc489158df934a88.js",
+      "static/chunks/app/layout-c7c61b9a660d4144.js"
+    ],
+    "/loading": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-98a0bdaa30757bda.js",
+      "static/chunks/main-app-5357eb79b147ce2d.js",
+      "static/chunks/app/loading-0312652f74ef3ee0.js"
+    ],
+    "/media-centre/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-98a0bdaa30757bda.js",
+      "static/chunks/main-app-5357eb79b147ce2d.js",
+      "static/chunks/app/media-centre/page-0312652f74ef3ee0.js"
+    ],
+    "/membership/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-98a0bdaa30757bda.js",
+      "static/chunks/main-app-5357eb79b147ce2d.js",
+      "static/chunks/app/membership/page-0312652f74ef3ee0.js"
     ],
     "/page": [
-      "static/chunks/YPA-Wealth-Depot_app_globals_2a7f699e.css",
-      "static/chunks/60da5_next_b973e6f8._.js",
-      "static/chunks/60da5_motion-dom_dist_es_fbe52791._.js",
-      "static/chunks/60da5_framer-motion_dist_es_36c3648b._.js",
-      "static/chunks/60da5_react-icons_fa_index_mjs_2c36d2fc._.js",
-      "static/chunks/60da5_react-icons_fa6_index_mjs_906885cd._.js",
-      "static/chunks/60da5_react-icons_lib_4afd1bd9._.js",
-      "static/chunks/60da5_tailwind-merge_dist_bundle-mjs_mjs_b9b85a9f._.js",
-      "static/chunks/60da5_52780f3f._.js",
-      "static/chunks/YPA-Wealth-Depot_14f1445f._.js",
-      "static/chunks/YPA-Wealth-Depot_app_layout_tsx_87fa8444._.js",
-      "static/chunks/60da5_next_dist_client_components_builtin_global-error_91f3a94e.js",
-      "static/chunks/60da5_441d6fcb._.js",
-      "static/chunks/YPA-Wealth-Depot_components_a9e2070a._.js",
-      "static/chunks/YPA-Wealth-Depot_app_page_tsx_91f3a94e._.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_4e3a9300._.js",
-      "static/chunks/60da5_next_dist_compiled_react-dom_fb5c519f._.js",
-      "static/chunks/60da5_next_dist_compiled_next-devtools_index_e0b42843.js",
-      "static/chunks/60da5_next_dist_compiled_082e8628._.js",
-      "static/chunks/60da5_next_dist_client_f16f72b8._.js",
-      "static/chunks/60da5_next_dist_3dbd956a._.js",
-      "static/chunks/60da5_@swc_helpers_cjs_e9d1f5ee._.js",
-      "static/chunks/YPA-Wealth-Depot_a0ff3932._.js",
-      "static/chunks/turbopack-YPA-Wealth-Depot_81781e35._.js"
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-98a0bdaa30757bda.js",
+      "static/chunks/main-app-5357eb79b147ce2d.js",
+      "static/chunks/c15bf2b0-52e8419f34af26ab.js",
+      "static/chunks/71-1580df386d9ea7c9.js",
+      "static/chunks/491-4a2db04d5676998c.js",
+      "static/chunks/app/page-7a55804b4917c764.js"
+    ],
+    "/products/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-98a0bdaa30757bda.js",
+      "static/chunks/main-app-5357eb79b147ce2d.js",
+      "static/chunks/app/products/page-0312652f74ef3ee0.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-98a0bdaa30757bda.js",
+      "static/chunks/main-app-5357eb79b147ce2d.js",
+      "static/chunks/app/about/page-0312652f74ef3ee0.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-98a0bdaa30757bda.js",
+      "static/chunks/main-app-5357eb79b147ce2d.js",
+      "static/chunks/app/contact/page-0312652f74ef3ee0.js"
     ]
   }
 }
