@@ -1,0 +1,24 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/_app": [
+      "static/chunks/60da5_next_dist_compiled_next-devtools_index_fa1c3654.js",
+      "static/chunks/60da5_next_dist_compiled_c1395888._.js",
+      "static/chunks/60da5_next_dist_shared_lib_33745405._.js",
+      "static/chunks/60da5_next_dist_client_3413d282._.js",
+      "static/chunks/60da5_next_dist_d87cf259._.js",
+      "static/chunks/60da5_next_app_9bcabf50.js",
+      "static/chunks/[next]_entry_page-loader_ts_b9406ce8._.js",
+      "static/chunks/60da5_react-dom_d03f1f49._.js",
+      "static/chunks/60da5_77ac2829._.js",
+      "static/chunks/[root-of-the-server]__ddad4ef6._.js",
+      "static/chunks/YPA-Wealth-Depot_pages__app_2da965e7._.js",
+      "static/chunks/turbopack-YPA-Wealth-Depot_pages__app_6c0ee319._.js"
+    ]
+  },
+  "ampFirstPages": []
+}
