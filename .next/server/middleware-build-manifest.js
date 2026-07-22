@@ -1,1 +1,55 @@
-globalThis.__BUILD_MANIFEST={polyfillFiles:["static/chunks/polyfills-42372ed130431b0a.js"],devFiles:[],ampDevFiles:[],lowPriorityFiles:[],rootMainFiles:["static/chunks/webpack-74c939c87fa0092a.js","static/chunks/4bd1b696-c023c6e3521b1417.js","static/chunks/255-98a0bdaa30757bda.js","static/chunks/main-app-5357eb79b147ce2d.js"],rootMainFilesTree:{},pages:{"/_app":["static/chunks/webpack-74c939c87fa0092a.js","static/chunks/framework-2c534e0e662575a2.js","static/chunks/main-44c6eeaf6eac6b78.js","static/chunks/pages/_app-7d307437aca18ad4.js"],"/_error":["static/chunks/webpack-74c939c87fa0092a.js","static/chunks/framework-2c534e0e662575a2.js","static/chunks/main-44c6eeaf6eac6b78.js","static/chunks/pages/_error-cb2a52f75f2162e2.js"]},ampFirstPages:[]},globalThis.__BUILD_MANIFEST.lowPriorityFiles=["/static/"+process.env.__NEXT_BUILD_ID+"/_buildManifest.js",,"/static/"+process.env.__NEXT_BUILD_ID+"/_ssgManifest.js"];
+globalThis.__BUILD_MANIFEST = {
+  "pages": {
+    "/_app": [
+      "static/chunks/60da5_next_dist_compiled_next-devtools_index_fa1c3654.js",
+      "static/chunks/60da5_next_dist_compiled_c1395888._.js",
+      "static/chunks/60da5_next_dist_shared_lib_33745405._.js",
+      "static/chunks/60da5_next_dist_client_3413d282._.js",
+      "static/chunks/60da5_next_dist_d87cf259._.js",
+      "static/chunks/60da5_next_app_9bcabf50.js",
+      "static/chunks/[next]_entry_page-loader_ts_b9406ce8._.js",
+      "static/chunks/60da5_react-dom_d03f1f49._.js",
+      "static/chunks/60da5_77ac2829._.js",
+      "static/chunks/[root-of-the-server]__ddad4ef6._.js",
+      "static/chunks/YPA-Wealth-Depot_pages__app_2da965e7._.js",
+      "static/chunks/turbopack-YPA-Wealth-Depot_pages__app_6c0ee319._.js"
+    ],
+    "/_error": [
+      "static/chunks/60da5_next_dist_compiled_next-devtools_index_fa1c3654.js",
+      "static/chunks/60da5_next_dist_compiled_c1395888._.js",
+      "static/chunks/60da5_next_dist_shared_lib_764111c6._.js",
+      "static/chunks/60da5_next_dist_client_3413d282._.js",
+      "static/chunks/60da5_next_dist_9c34ada4._.js",
+      "static/chunks/60da5_next_error_ea6bba0a.js",
+      "static/chunks/[next]_entry_page-loader_ts_e88a7ede._.js",
+      "static/chunks/60da5_react-dom_d03f1f49._.js",
+      "static/chunks/60da5_77ac2829._.js",
+      "static/chunks/[root-of-the-server]__db1b3c06._.js",
+      "static/chunks/YPA-Wealth-Depot_pages__error_2da965e7._.js",
+      "static/chunks/turbopack-YPA-Wealth-Depot_pages__error_cfb8693d._.js"
+    ]
+  },
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [
+    "static/chunks/60da5_next_dist_build_polyfills_polyfill-nomodule.js"
+  ],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_4e3a9300._.js",
+    "static/chunks/60da5_next_dist_compiled_react-dom_fb5c519f._.js",
+    "static/chunks/60da5_next_dist_compiled_next-devtools_index_e0b42843.js",
+    "static/chunks/60da5_next_dist_compiled_082e8628._.js",
+    "static/chunks/60da5_next_dist_client_f16f72b8._.js",
+    "static/chunks/60da5_next_dist_3dbd956a._.js",
+    "static/chunks/60da5_@swc_helpers_cjs_e9d1f5ee._.js",
+    "static/chunks/YPA-Wealth-Depot_a0ff3932._.js",
+    "static/chunks/turbopack-YPA-Wealth-Depot_81781e35._.js"
+  ],
+  "ampFirstPages": []
+};
+globalThis.__BUILD_MANIFEST.lowPriorityFiles = [
+"/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
+,"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js",
+
+];

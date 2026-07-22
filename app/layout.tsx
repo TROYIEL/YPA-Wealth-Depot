@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ScrollToTopButton from "@/components/layout/ScrollToTopButton";
@@ -12,14 +13,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en">
-      <body>
+      <body className="overflow-x-hidden">
         <Header />
-        <main className="pt-32">{children}</main>
+
+        {/* Remove the global top padding */}
+        <main>{children}</main>
+
         <ScrollToTopButton />
         <Footer />
       </body>

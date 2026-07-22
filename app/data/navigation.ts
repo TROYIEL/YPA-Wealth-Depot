@@ -9,12 +9,20 @@ export const navigation = [
     },
     {
       label: "Products",
-      href: "/products",
+      href: "/",
       children: [
-        { label: "Savings Accounts", href: "/products/savings" },
-        { label: "Loans", href: "/products/loans" },
-        { label: "Investments", href: "/products/investments" },
-        { label: "Fixed Deposits", href: "/products/fixed-deposits" },
+        {
+          label: "Loans",
+          href: "/loan",
+        },
+        {
+          label: "Savings",
+          href: "/products/savings",
+        },
+        {
+          label: "Shares",
+          href: "/products/shares",
+        },
       ],
     },
     {
