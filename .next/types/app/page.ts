@@ -1,4 +1,4 @@
-// File: /home/runner/work/YPA-Wealth-Depot/YPA-Wealth-Depot/app/page.tsx
+// File: /Volumes/backup2/YPA SACCO/website/YPA-Wealth-Depot/app/page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
+import {  Mail,  } from "lucide-react";
 
 
 const leaders = [
@@ -635,8 +635,6 @@ text-white
 "
 
 >
-
-<Linkedin size={20}/>
 
 </a>
 
