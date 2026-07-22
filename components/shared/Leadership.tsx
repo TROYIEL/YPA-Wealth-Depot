@@ -9,12 +9,6 @@ import {
 } from "lucide-react";
 
 
-import {
-  FaLinkedinIn,
-  FaFacebookF,
-  FaTwitter,
-} from "react-icons/fa";
-
 
 type Person = {
   name: string;
