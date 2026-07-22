@@ -558,9 +558,6 @@ text-white
 hover:scale-110
 transition
 ">
-
-<Linkedin size={20}/>
-
 </a>
 
 
