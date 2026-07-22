@@ -3,10 +3,33 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {  Mail,  } from "lucide-react";
+import {
+  Mail,
+  X,
+} from "lucide-react";
 
 
-const leaders = [
+import {
+  FaLinkedinIn,
+  FaFacebookF,
+  FaTwitter,
+} from "react-icons/fa";
+
+
+type Person = {
+  name: string;
+  role: string;
+  image: string;
+  bio: string;
+  experience: string;
+  email: string;
+  linkedin?: string;
+  facebook?: string;
+  twitter?: string;
+};
+
+
+const leaders: Person[] = [
   {
     name: "Obed Ben",
     role: "Managing Director",
@@ -15,65 +38,73 @@ const leaders = [
     Obed Ben is the visionary Managing Director of Youth Platform Africa (YPA).
     He has over 18 years of leadership experience in agribusiness,
     financial inclusion and social enterprise.
-    
-    His leadership has helped build sustainable financial solutions
-    that empower communities and create opportunities.
     `,
     experience:
       "18+ years in leadership, agribusiness and financial management.",
     email: "obed@ypawealthdepot.com",
+    linkedin: "#",
+    facebook: "#",
+    twitter: "#",
   },
-
 
   {
     name: "JB Magezi",
     role: "Executive Director",
     image: "/ED.webp",
-    bio: `
-    JB Magezi provides strategic direction and ensures effective
-    implementation of organizational goals.
-    `,
+    bio:
+      "JB Magezi provides strategic direction and ensures effective implementation of organizational goals.",
     experience:
       "12+ years in management and organizational development.",
     email: "jb@ypawealthdepot.com",
+    linkedin: "#",
+    facebook: "#",
+    twitter: "#",
   },
-
 
   {
     name: "Namatovu Mable",
     role: "General Manager",
     image: "/EGM.webp",
-    bio: `
-    Namatovu oversees operations and ensures excellent service delivery
-    to members.
-    `,
+    bio:
+      "Namatovu oversees operations and ensures excellent service delivery to members.",
     experience:
       "10+ years in financial operations and administration.",
     email: "mable@ypawealthdepot.com",
+    linkedin: "#",
+    facebook: "#",
+    twitter: "#",
   },
 ];
 
 
 
-const staff = [
-
+const staff: Person[] = [
   {
-    name:"Favia ",
-    role:"Operations Manager",
-    image:"/FAVIA.webp",
-    bio:"Sarah manages daily operations and ensures smooth service delivery.",
-    experience:"8+ years in operations management.",
-    email:"sarah@ypawealthdepot.com"
+    name: "Favia",
+    role: "Operations Manager",
+    image: "/FAVIA.webp",
+    bio:
+      "Favia manages daily operations and ensures smooth service delivery.",
+    experience:
+      "8+ years in operations management.",
+    email: "favia@ypawealthdepot.com",
+    linkedin:"#",
+    facebook:"#",
+    twitter:"#",
   },
 
-
   {
-    name:"AHEREZA GERALD",
-    role:"Credit Officer",
-    image:"/AHEREZA.webp",
-    bio:"David helps members access responsible financial solutions.",
-    experience:"6 years in SACCO operations.",
-    email:"david@ypawealthdepot.com"
+    name: "AHEREZA GERALD",
+    role: "Credit Officer",
+    image: "/AHEREZA.webp",
+    bio:
+      "Gerald helps members access responsible financial solutions.",
+    experience:
+      "6 years in SACCO operations.",
+    email:"gerald@ypawealthdepot.com",
+    linkedin:"#",
+    facebook:"#",
+    twitter:"#",
   },
 
 
@@ -81,11 +112,15 @@ const staff = [
     name:"Najuna Troy",
     role:"Customer Relations Officer",
     image:"/troy.webp",
-    bio:"Grace ensures members receive excellent support.",
-    experience:"5 years in customer relations.",
-    email:"grace@ypawealthdepot.com"
-  }
-
+    bio:
+      "Troy ensures members receive excellent support.",
+    experience:
+      "5 years in customer relations.",
+    email:"troy@ypawealthdepot.com",
+    linkedin:"#",
+    facebook:"#",
+    twitter:"#",
+  },
 ];
 
 
@@ -93,19 +128,26 @@ const staff = [
 
 export default function Leadership(){
 
-const [selectedPerson,setSelectedPerson] = useState(null);
+const [selectedPerson,setSelectedPerson] =
+useState<Person | null>(null);
 
 
 
-const Card = ({person,index}) => (
+
+
+const Card = ({
+person,
+index,
+}:{
+person:Person;
+index:number;
+}) => (
 
 <motion.div
 
-key={person.name}
-
 initial={{
 opacity:0,
-y:30
+y:40
 }}
 
 whileInView={{
@@ -114,15 +156,16 @@ y:0
 }}
 
 transition={{
-delay:index * 0.15
+delay:index * .15
 }}
 
 onClick={()=>setSelectedPerson(person)}
 
 className="
-group cursor-pointer
+group
+cursor-pointer
 overflow-hidden
-rounded-2xl
+rounded-3xl
 bg-white
 shadow-xl
 "
@@ -132,8 +175,7 @@ shadow-xl
 
 <div className="
 relative
-h-87.5
-overflow-hidden
+h-[350px]
 ">
 
 
@@ -145,14 +187,10 @@ alt={person.name}
 
 fill
 
-sizes="
-(max-width:768px) 100vw,
-33vw
-"
-
 className="
 object-cover
-transition duration-500
+transition
+duration-500
 group-hover:scale-110
 "
 
@@ -160,22 +198,22 @@ group-hover:scale-110
 
 
 
-<div
-className="
-absolute inset-0
-bg-linear-to-t
+<div className="
+absolute
+inset-0
+bg-gradient-to-t
 from-black/70
-via-transparent
-"
-/>
+to-transparent
+"/>
 
 
-
-<div
-className="
-absolute bottom-5 left-5
+<div className="
+absolute
+bottom-6
+left-6
 text-white
 ">
+
 
 <h3 className="
 text-2xl
@@ -187,10 +225,7 @@ font-bold
 </h3>
 
 
-<p className="
-text-sm
-text-slate-200
-">
+<p className="text-white/80">
 
 {person.role}
 
@@ -210,35 +245,30 @@ text-slate-200
 
 
 
-
 return (
 
-<section className="
-bg-white
-py-20
-">
+<section className="bg-white py-20">
 
-
-{/* HEADER */}
 
 <div className="
 mx-auto
-mb-14
-max-w-3xl
+max-w-6xl
 px-6
-text-center
 ">
+
+
+<div className="text-center mb-14">
 
 
 <span className="
+text-sky-500
+uppercase
+tracking-[.3em]
 text-sm
 font-semibold
-uppercase
-tracking-[0.3em]
-text-sky-500
 ">
 
-Our Leadership
+Leadership
 
 </span>
 
@@ -250,20 +280,9 @@ font-bold
 text-slate-900
 ">
 
-Meet The People Driving Our Vision
+Meet Our Leadership Team
 
 </h2>
-
-
-<p className="
-mt-4
-text-slate-600
-">
-
-Experienced leaders committed to financial growth,
-innovation and serving our members.
-
-</p>
 
 
 </div>
@@ -271,73 +290,37 @@ innovation and serving our members.
 
 
 
-
-{/* LEADERS */}
-
 <div className="
-mx-auto
 grid
-max-w-6xl
 gap-10
-px-6
 md:grid-cols-3
 ">
 
-
 {
-leaders.map((leader,index)=>(
+leaders.map((person,index)=>(
 
 <Card
-key={leader.name}
-person={leader}
+key={person.name}
+person={person}
 index={index}
 />
 
 ))
 }
 
-
 </div>
 
 
 
 
 
-
-
-{/* STAFF */}
-
-<div className="
-mx-auto
+<h2 className="
 mt-24
-max-w-6xl
-px-6
-">
-
-
-<div className="
 mb-12
 text-center
-">
-
-
-<span className="
-text-sm
-font-semibold
-uppercase
-tracking-[0.3em]
-text-sky-500
-">
-
-
-</span>
-
-
-<h2 className="
-mt-4
 text-4xl
 font-bold
-text-sky-400
+text-sky-500
 ">
 
 Staff Members
@@ -345,20 +328,6 @@ Staff Members
 </h2>
 
 
-<p className="
-mt-4
-text-red-600
-">
-
-Dedicated professionals committed to serving our members.
-
-</p>
-
-
-</div>
-
-
-
 
 
 <div className="
@@ -367,31 +336,22 @@ gap-10
 md:grid-cols-3
 ">
 
-
 {
-staff.map((member,index)=>(
+staff.map((person,index)=>(
 
 <Card
-
-key={member.name}
-
-person={member}
-
+key={person.name}
+person={person}
 index={index}
-
 />
 
 ))
 }
 
-
 </div>
 
 
 </div>
-
-
-
 
 
 
@@ -400,15 +360,23 @@ index={index}
 
 {/* MODAL */}
 
-
 <AnimatePresence>
-
 
 {
 selectedPerson && (
 
-
 <motion.div
+
+className="
+fixed
+inset-0
+z-50
+flex
+items-center
+justify-center
+bg-black/70
+p-5
+"
 
 initial={{
 opacity:0
@@ -423,18 +391,6 @@ opacity:0
 }}
 
 onClick={()=>setSelectedPerson(null)}
-
-className="
-fixed
-inset-0
-z-50
-flex
-items-center
-justify-center
-bg-black/70
-px-5
-"
-
 
 >
 
@@ -461,9 +417,7 @@ max-w-4xl
 overflow-hidden
 rounded-3xl
 bg-white
-shadow-2xl
 "
-
 
 >
 
@@ -481,15 +435,11 @@ rounded-full
 bg-white
 p-2
 shadow
-"
-
->
+">
 
 <X/>
 
 </button>
-
-
 
 
 
@@ -504,7 +454,6 @@ relative
 h-[450px]
 ">
 
-
 <Image
 
 src={selectedPerson.image}
@@ -513,31 +462,21 @@ alt={selectedPerson.name}
 
 fill
 
-className="
-object-cover
-"
+className="object-cover"
 
 />
-
 
 </div>
 
 
 
 
-
-
-<div className="
-p-8
-overflow-y-auto
-max-h-[450px]
-">
+<div className="p-8">
 
 
 <h2 className="
 text-3xl
 font-bold
-text-slate-900
 ">
 
 {selectedPerson.name}
@@ -546,9 +485,8 @@ text-slate-900
 
 
 <p className="
-mt-2
-font-semibold
 text-sky-600
+font-semibold
 ">
 
 {selectedPerson.role}
@@ -558,9 +496,9 @@ text-sky-600
 
 
 <p className="
-mt-6
-leading-relaxed
+mt-5
 text-slate-600
+leading-8
 ">
 
 {selectedPerson.bio}
@@ -570,25 +508,21 @@ text-slate-600
 
 
 <div className="
-mt-5
-rounded-xl
+mt-6
 bg-slate-100
+rounded-xl
 p-4
 ">
 
-<p className="font-semibold">
-
+<b>
 Experience
-
-</p>
-
+</b>
 
 <p className="text-sm text-slate-600">
 
 {selectedPerson.experience}
 
 </p>
-
 
 </div>
 
@@ -599,22 +533,20 @@ Experience
 <div className="
 mt-6
 flex
-gap-4
+gap-3
 ">
 
 
 <a
-
 href={`mailto:${selectedPerson.email}`}
-
 className="
 rounded-full
 bg-sky-500
 p-3
 text-white
-"
-
->
+hover:scale-110
+transition
+">
 
 <Mail size={20}/>
 
@@ -622,23 +554,59 @@ text-white
 
 
 
-
 <a
-
-href="#"
-
+href={selectedPerson.linkedin}
 className="
 rounded-full
-bg-slate-900
+bg-blue-700
 p-3
 text-white
-"
+hover:scale-110
+transition
+">
 
->
+<Linkedin size={20}/>
 
 </a>
 
 
+
+
+<a
+href={selectedPerson.facebook}
+className="
+rounded-full
+bg-blue-600
+p-3
+text-white
+hover:scale-110
+transition
+">
+
+<Facebook size={20}/>
+
+</a>
+
+
+
+
+<a
+href={selectedPerson.twitter}
+className="
+rounded-full
+bg-black
+p-3
+text-white
+hover:scale-110
+transition
+">
+
+<Twitter size={20}/>
+
+</a>
+
+
+
 </div>
 
 
@@ -651,23 +619,18 @@ text-white
 </motion.div>
 
 
-
 </motion.div>
-
 
 )
 
 }
 
-
 </AnimatePresence>
-
 
 
 
 </section>
 
 );
-
 
 }
