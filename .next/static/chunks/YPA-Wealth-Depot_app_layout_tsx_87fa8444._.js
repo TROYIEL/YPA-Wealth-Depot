@@ -10,7 +10,7 @@
   "static/chunks/60da5_react-icons_lib_4afd1bd9._.js",
   "static/chunks/60da5_tailwind-merge_dist_bundle-mjs_mjs_b9b85a9f._.js",
   "static/chunks/60da5_52780f3f._.js",
-  "static/chunks/YPA-Wealth-Depot_14f1445f._.js"
+  "static/chunks/YPA-Wealth-Depot_c520795c._.js"
 ],
     source: "dynamic"
 });

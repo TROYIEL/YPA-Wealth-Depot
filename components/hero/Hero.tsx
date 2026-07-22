@@ -66,8 +66,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
-
+    <section className="relative min-h-[calc(100vh-96px)] overflow-hidden">
       {/* Background Image (FULL RESPONSIVE FIX) */}
       <div ref={bgRef} className="absolute inset-0">
         <Image
@@ -75,7 +74,7 @@ export default function Hero() {
           alt="hero"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-center md:object-center"
           sizes="100vw"
         />
       </div>
@@ -84,19 +83,22 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/60" />
 
       {/* Content */}
-      <div className="relative z-20 flex items-center justify-center h-full px-6 text-center">
+      <div className="relative z-20 flex min-h-[calc(100vh-96px)] items-center justify-center px-6 pt-24 text-center">
 
-        <div ref={textRef} className="max-w-4xl">
+      <div 
+  ref={textRef} 
+  className="max-w-5xl pt-10 md:pt-0"
+>
 
           <p className="text-sky-400 font-semibold text-xl md:text-2xl tracking-widest uppercase">
             {slides[index].tag}
           </p>
 
-          <h1 className="mt-6 text-5xl md:text-7xl font-white text-white leading-tight">
+          <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
             {slides[index].title}
           </h1>
 
-          <p className="mt-6 text-white/85 text-lg md:text-2xl max-w-2xl mx-auto">
+          <p className="mt-6 text-white/85 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed">
             {slides[index].desc}
           </p>
 
@@ -123,3 +125,4 @@ export default function Hero() {
     </section>
   );
 }
+

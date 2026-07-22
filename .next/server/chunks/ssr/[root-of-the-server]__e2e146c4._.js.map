@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///Users/saaczphotographer/Desktop/YPA%20SACCO/website/YPA-Wealth-Depot/app/page.tsx"],"sourcesContent":["export default function Home() {\n  return (\n    <div className=\"min-h-screen bg-red-500 flex items-center justify-center\">\n      <h1 className=\"text-6xl font-bold text-white\">\n        Tailwind Works!\n      </h1>\n    </div>\n  );\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,wQAAC;QAAI,WAAU;kBACb,cAAA,wQAAC;YAAG,WAAU;sBAAgC;;;;;;;;;;;AAKpD","debugId":null}}]
-}

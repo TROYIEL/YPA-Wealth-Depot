@@ -6948,7 +6948,7 @@ _getGSAP() && gsap.registerPlugin(ScrollTrigger);
 "use strict";
 
 /**
- * @license lucide-react v1.22.0 - ISC
+ * @license lucide-react v1.25.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
@@ -6993,7 +6993,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$no
 "use strict";
 
 /**
- * @license lucide-react v1.22.0 - ISC
+ * @license lucide-react v1.25.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
@@ -7045,7 +7045,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$no
 "use strict";
 
 /**
- * @license lucide-react v1.22.0 - ISC
+ * @license lucide-react v1.25.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
@@ -11226,7 +11226,7 @@ const __TURBOPACK__default__export__ = format;
 "use strict";
 
 /**
- * @license lucide-react v1.22.0 - ISC
+ * @license lucide-react v1.25.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
@@ -11271,7 +11271,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$no
 "use strict";
 
 /**
- * @license lucide-react v1.22.0 - ISC
+ * @license lucide-react v1.25.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
@@ -11309,7 +11309,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$no
 "use strict";
 
 /**
- * @license lucide-react v1.22.0 - ISC
+ * @license lucide-react v1.25.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
@@ -11414,7 +11414,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$no
 "use strict";
 
 /**
- * @license lucide-react v1.22.0 - ISC
+ * @license lucide-react v1.25.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.

@@ -243,12 +243,12 @@ function InfoCards() {
                                     className: "object-cover group-hover:scale-105 transition duration-700"
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                    lineNumber: 24,
+                                    lineNumber: 22,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                lineNumber: 23,
+                                lineNumber: 21,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -261,7 +261,7 @@ function InfoCards() {
                                                 className: "w-8 h-8"
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                                lineNumber: 34,
+                                                lineNumber: 32,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -269,13 +269,13 @@ function InfoCards() {
                                                 children: "Our Leadership"
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                                lineNumber: 35,
+                                                lineNumber: 33,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                        lineNumber: 33,
+                                        lineNumber: 31,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -283,7 +283,7 @@ function InfoCards() {
                                         children: "Driven by expertise, led by integrity. Meet the team steering YPA Wealth Depot toward sustainable growth and delivering excellence in every service we provide."
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                        lineNumber: 40,
+                                        lineNumber: 38,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -295,25 +295,25 @@ function InfoCards() {
                                                 size: 18
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                                lineNumber: 50,
+                                                lineNumber: 48,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                        lineNumber: 45,
+                                        lineNumber: 43,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                lineNumber: 32,
+                                lineNumber: 30,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                        lineNumber: 21,
+                        lineNumber: 19,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -329,14 +329,14 @@ function InfoCards() {
                                         className: "object-cover group-hover:scale-105 transition duration-700"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                        lineNumber: 63,
+                                        lineNumber: 61,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "absolute inset-0 bg-black/60"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                        lineNumber: 70,
+                                        lineNumber: 68,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -346,7 +346,7 @@ function InfoCards() {
                                                 className: "w-1 h-24 bg-lime-400 absolute -left-5 top-0 rounded-full"
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                                lineNumber: 74,
+                                                lineNumber: 72,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -354,7 +354,7 @@ function InfoCards() {
                                                 children: "Our Mission"
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                                lineNumber: 76,
+                                                lineNumber: 74,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -362,19 +362,19 @@ function InfoCards() {
                                                 children: "To empower members to achieve financial  stability through innovation, client-focused Savings and credit solutions while promoting a culture of financial discipline and investment."
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                                lineNumber: 80,
+                                                lineNumber: 78,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                        lineNumber: 72,
+                                        lineNumber: 70,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                lineNumber: 61,
+                                lineNumber: 59,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -387,14 +387,14 @@ function InfoCards() {
                                         className: "object-cover group-hover:scale-105 transition duration-700"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                        lineNumber: 93,
+                                        lineNumber: 91,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "absolute inset-0 bg-black/60"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                        lineNumber: 100,
+                                        lineNumber: 98,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -405,7 +405,7 @@ function InfoCards() {
                                                 children: "Vision"
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                                lineNumber: 104,
+                                                lineNumber: 102,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -413,25 +413,25 @@ function InfoCards() {
                                                 children: "To create sustainable Wealth and financial freedom for all members."
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                                lineNumber: 108,
+                                                lineNumber: 106,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                        lineNumber: 102,
+                                        lineNumber: 100,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                lineNumber: 91,
+                                lineNumber: 89,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                        lineNumber: 57,
+                        lineNumber: 55,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -442,7 +442,7 @@ function InfoCards() {
                                 children: "Quick Links"
                             }, void 0, false, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                lineNumber: 122,
+                                lineNumber: 120,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -450,7 +450,7 @@ function InfoCards() {
                                 children: "Resources"
                             }, void 0, false, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                lineNumber: 126,
+                                lineNumber: 124,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -470,47 +470,47 @@ function InfoCards() {
                                                 children: item
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                                lineNumber: 145,
+                                                lineNumber: 143,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$download$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Download$3e$__["Download"], {
                                                 size: 18
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                                lineNumber: 146,
+                                                lineNumber: 144,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, item, true, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                        lineNumber: 140,
+                                        lineNumber: 138,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                                lineNumber: 130,
+                                lineNumber: 128,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                        lineNumber: 120,
+                        lineNumber: 118,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-                lineNumber: 18,
+                lineNumber: 16,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-            lineNumber: 16,
+            lineNumber: 14,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/YPA-Wealth-Depot/components/home/InfoCards.tsx",
-        lineNumber: 15,
+        lineNumber: 13,
         columnNumber: 5
     }, this);
 }
