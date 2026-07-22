@@ -9,12 +9,6 @@ import {
 } from "lucide-react";
 
 
-import {
-  FaLinkedinIn,
-  FaFacebookF,
-  FaTwitter,
-} from "react-icons/fa";
-
 
 type Person = {
   name: string;
@@ -564,9 +558,6 @@ text-white
 hover:scale-110
 transition
 ">
-
-<Linkedin size={20}/>
-
 </a>
 
 

@@ -739,10 +739,6 @@
     bottom: calc(var(--spacing) * -2);
   }
 
-  .bottom-5 {
-    bottom: calc(var(--spacing) * 5);
-  }
-
   .bottom-6 {
     bottom: calc(var(--spacing) * 6);
   }
@@ -769,10 +765,6 @@
 
   .left-1\/2 {
     left: 50%;
-  }
-
-  .left-5 {
-    left: calc(var(--spacing) * 5);
   }
 
   .left-6 {
@@ -999,10 +991,6 @@
     height: calc(var(--spacing) * 80);
   }
 
-  .h-87\.5 {
-    height: calc(var(--spacing) * 87.5);
-  }
-
   .h-105 {
     height: calc(var(--spacing) * 105);
   }
@@ -1033,10 +1021,6 @@
 
   .h-screen {
     height: 100vh;
-  }
-
-  .max-h-\[450px\] {
-    max-height: 450px;
   }
 
   .min-h-\[60vh\] {
@@ -1289,10 +1273,6 @@
 
   .overflow-x-hidden {
     overflow-x: hidden;
-  }
-
-  .overflow-y-auto {
-    overflow-y: auto;
   }
 
   .rounded {
@@ -1580,20 +1560,6 @@
   }
 
   .bg-linear-to-r {
-    background-image: linear-gradient(var(--tw-gradient-stops));
-  }
-
-  .bg-linear-to-t {
-    --tw-gradient-position: to top;
-  }
-
-  @supports (background-image: linear-gradient(in lab, red, red)) {
-    .bg-linear-to-t {
-      --tw-gradient-position: to top in oklab;
-    }
-  }
-
-  .bg-linear-to-t {
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
 
