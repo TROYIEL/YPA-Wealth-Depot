@@ -17,8 +17,6 @@ type Person = {
   bio: string;
   experience: string;
   email: string;
-  linkedin?: string;
-  facebook?: string;
   twitter?: string;
 };
 
@@ -36,8 +34,7 @@ const leaders: Person[] = [
     experience:
       "18+ years in leadership, agribusiness and financial management.",
     email: "obed@ypawealthdepot.com",
-    linkedin: "#",
-    facebook: "#",
+    
     twitter: "#",
   },
 
@@ -50,8 +47,7 @@ const leaders: Person[] = [
     experience:
       "12+ years in management and organizational development.",
     email: "jb@ypawealthdepot.com",
-    linkedin: "#",
-    facebook: "#",
+    
     twitter: "#",
   },
 
@@ -64,8 +60,7 @@ const leaders: Person[] = [
     experience:
       "10+ years in financial operations and administration.",
     email: "mable@ypawealthdepot.com",
-    linkedin: "#",
-    facebook: "#",
+    
     twitter: "#",
   },
 ];
@@ -82,8 +77,6 @@ const staff: Person[] = [
     experience:
       "8+ years in operations management.",
     email: "favia@ypawealthdepot.com",
-    linkedin:"#",
-    facebook:"#",
     twitter:"#",
   },
 
@@ -96,8 +89,7 @@ const staff: Person[] = [
     experience:
       "6 years in SACCO operations.",
     email:"gerald@ypawealthdepot.com",
-    linkedin:"#",
-    facebook:"#",
+    
     twitter:"#",
   },
 
@@ -111,8 +103,7 @@ const staff: Person[] = [
     experience:
       "5 years in customer relations.",
     email:"troy@ypawealthdepot.com",
-    linkedin:"#",
-    facebook:"#",
+    
     twitter:"#",
   },
 ];
