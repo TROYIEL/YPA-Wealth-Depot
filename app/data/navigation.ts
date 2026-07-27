@@ -17,11 +17,11 @@ export const navigation = [
         },
         {
           label: "Savings",
-          href: "/products/savings",
+          href: "/savings",
         },
         {
           label: "Shares",
-          href: "/products/shares",
+          href: "/shares",
         },
       ],
     },

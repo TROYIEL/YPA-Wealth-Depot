@@ -126,10 +126,13 @@ export default function Navbar({ scrolled }: NavbarProps) {
 
         {/* Right Side */}
         <div className="hidden lg:flex items-center">
-          <button className="rounded-full bg-sky-500 hover:bg-sky-600 px-7 py-3 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1">
-            LOGIN
-          </button>
-        </div>
+  <Link
+    href="/ComingSoon.tsx"
+    className="rounded-full bg-sky-500 hover:bg-sky-600 px-7 py-3 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1"
+  >
+    LOGIN
+  </Link>
+</div>
 
         {/* Mobile Toggle */}
         <button
@@ -188,9 +191,14 @@ export default function Navbar({ scrolled }: NavbarProps) {
                 </div>
               ))}
 
-              <button className="mt-6 w-full rounded-full bg-sky-500 hover:bg-sky-600 py-3 text-white font-semibold transition">
-                LOGIN
-              </button>
+              <div className="hidden lg:flex items-center">
+  <Link
+    href="/login"
+    className="rounded-full bg-sky-500 hover:bg-sky-600 px-7 py-3 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1"
+  >
+    LOGIN
+  </Link>
+</div>
             </div>
           </motion.div>
         )}
