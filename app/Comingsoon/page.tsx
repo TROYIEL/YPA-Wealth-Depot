@@ -14,13 +14,13 @@ export default function ComingSoon() {
       <Container>
         <div className="relative flex min-h-screen items-center justify-center">
           <div className="max-w-3xl text-center text-white">
-            <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white/10 backdrop-blur-md">
-              <Clock3 size={48} className="text-sky-300" />
+            <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white/10 ">
+             
             </div>
 
             <span className="mt-8 inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2 text-sm font-semibold uppercase tracking-widest backdrop-blur-md">
-              <Sparkles size={16} />
-              New Page Coming Soon
+        
+             
             </span>
 
             <h1 className="mt-8 text-5xl font-black md:text-7xl">
@@ -51,21 +51,21 @@ export default function ComingSoon() {
 
             <div className="mt-16 grid gap-6 md:grid-cols-3">
               <div className="rounded-2xl bg-white/10 p-6 backdrop-blur-md">
-                <h3 className="text-3xl font-bold">🚀</h3>
+                <h3 className="text-3xl font-bold"></h3>
                 <p className="mt-3 text-white/80">
                   New Features
                 </p>
               </div>
 
               <div className="rounded-2xl bg-white/10 p-6 backdrop-blur-md">
-                <h3 className="text-3xl font-bold">💡</h3>
+                <h3 className="text-3xl font-bold"></h3>
                 <p className="mt-3 text-white/80">
                   Better Experience
                 </p>
               </div>
 
               <div className="rounded-2xl bg-white/10 p-6 backdrop-blur-md">
-                <h3 className="text-3xl font-bold">⭐</h3>
+                <h3 className="text-3xl font-bold"></h3>
                 <p className="mt-3 text-white/80">
                   Coming Soon
                 </p>

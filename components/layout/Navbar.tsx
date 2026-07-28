@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
+
 import { navigation } from "@/app/data/navigation";
 import { cn } from "@/utils/cn";
 
@@ -127,7 +128,7 @@ export default function Navbar({ scrolled }: NavbarProps) {
         {/* Right Side */}
         <div className="hidden lg:flex items-center">
   <Link
-    href="/ComingSoon.tsx"
+    href="/Comingsoon"
     className="rounded-full bg-sky-500 hover:bg-sky-600 px-7 py-3 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1"
   >
     LOGIN
@@ -193,7 +194,7 @@ export default function Navbar({ scrolled }: NavbarProps) {
 
               <div className="hidden lg:flex items-center">
   <Link
-    href="/login"
+    href="/ComingSoon.tsx"
     className="rounded-full bg-sky-500 hover:bg-sky-600 px-7 py-3 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1"
   >
     LOGIN
