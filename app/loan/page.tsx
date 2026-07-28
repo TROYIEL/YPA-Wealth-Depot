@@ -2,22 +2,13 @@ import Image from "next/image";
 import Container from "@/components/ui/Container";
 import { Building2, Car, CheckCircle, ShieldCheck } from "lucide-react";
 
-interface PageIntroProps {
-  subtitle: string;
-  title: string;
-  description: string;
-  currentPage: string;
-  backgroundImage?: string;
-}
-
-export default function Loans({
-  subtitle = "",
-  title = "",
-  description = 
-    "",
-  currentPage = "Loans",
-  backgroundImage = "/loans 1.webp",
-}: PageIntroProps) {
+export default function Loans() {
+  const subtitle = "Loan Products";
+  const title = "Loans";
+  const description =
+    "Flexible financing solutions designed to help members achieve their personal and business goals.";
+  const currentPage = "Loans";
+  const backgroundImage = "/loans 1.webp";
   return (
     <>
 
