@@ -1082,22 +1082,6 @@
     height: 280px;
   }
 
-  .h-\[350px\] {
-    height: 350px;
-  }
-
-  .h-\[450px\] {
-    height: 450px;
-  }
-
-  .h-\[520px\] {
-    height: 520px;
-  }
-
-  .h-\[550px\] {
-    height: 550px;
-  }
-
   .h-full {
     height: 100%;
   }
@@ -1112,10 +1096,6 @@
 
   .min-h-\[60vh\] {
     min-height: 60vh;
-  }
-
-  .min-h-\[500px\] {
-    min-height: 500px;
   }
 
   .min-h-\[calc\(100vh-96px\)\] {
@@ -1235,7 +1215,7 @@
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
 
-  .\[transform\:rotateY\(180deg\)\], .transform-\[rotateY\(180deg\)\] {
+  .transform-\[rotateY\(180deg\)\] {
     transform: rotateY(180deg);
   }
 
@@ -1751,11 +1731,6 @@
 
   .bg-gradient-to-br {
     --tw-gradient-position: to bottom right in oklab;
-    background-image: linear-gradient(var(--tw-gradient-stops));
-  }
-
-  .bg-gradient-to-r {
-    --tw-gradient-position: to right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
 
@@ -2561,19 +2536,6 @@
     outline-style: none;
   }
 
-  .\[backface-visibility\:hidden\] {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-
-  .\[perspective\:1000px\] {
-    perspective: 1000px;
-  }
-
-  .\[transform-style\:preserve-3d\] {
-    transform-style: preserve-3d;
-  }
-
   .backface-hidden {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -2640,12 +2602,6 @@
   @media (hover: hover) {
     .group-hover\:rotate-180:is(:where(.group):hover *) {
       rotate: 180deg;
-    }
-  }
-
-  @media (hover: hover) {
-    .group-hover\:\[transform\:rotateY\(180deg\)\]:is(:where(.group):hover *) {
-      transform: rotateY(180deg);
     }
   }
 
