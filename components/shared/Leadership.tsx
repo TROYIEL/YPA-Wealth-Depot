@@ -542,7 +542,7 @@ transition
 
 
 <a
-href={selectedPerson.FaXTwitter}
+href={selectedPerson.x}
 className="
 rounded-full
 bg-blue-700
@@ -557,7 +557,7 @@ transition
 
 
 <a
-href={selectedPerson.facebook}
+href={selectedPerson.}
 className="
 rounded-full
 bg-blue-600
@@ -567,7 +567,7 @@ hover:scale-110
 transition
 ">
 
-<FaFacebook />
+<Facebook size={20}/>
 
 </a>
 
