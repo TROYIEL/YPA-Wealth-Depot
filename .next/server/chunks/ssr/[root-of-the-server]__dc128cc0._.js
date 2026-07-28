@@ -54,31 +54,38 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$no
 ;
 ;
 ;
-function Shares({ subtitle = "", title = "", description = "", currentPage = "Savings", backgroundImage = "/saving hero.webp" }) {
+const pageData = {
+    subtitle: "Ownership & Investment",
+    title: "Invest In Shares",
+    description: "Become a shareholder and grow your wealth through ownership, dividends, and long-term value appreciation.",
+    currentPage: "Shares",
+    backgroundImage: "/shares.webp"
+};
+function Shares() {
+    const { subtitle, title, description, currentPage, backgroundImage } = pageData;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             " ",
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 className: "relative h-[550px] overflow-hidden",
                 children: [
-                    " ",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                        src: "/shares.webp",
-                        alt: "YPA Shares",
+                        src: backgroundImage,
+                        alt: currentPage,
                         fill: true,
                         priority: true,
                         className: "object-cover"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                        lineNumber: 22,
-                        columnNumber: 79
+                        lineNumber: 41,
+                        columnNumber: 1
                     }, this),
                     "```",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-gradient-to-r from-blue-950/95 via-blue-900/85 to-sky-700/60"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                        lineNumber: 31,
+                        lineNumber: 50,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$components$2f$ui$2f$Container$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -91,7 +98,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                     children: "Ownership & Investment"
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 35,
+                                    lineNumber: 54,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -99,7 +106,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                     children: "Invest In Shares"
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 39,
+                                    lineNumber: 58,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -107,24 +114,24 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                     children: "Become a shareholder and grow your wealth through ownership, dividends, and long-term value appreciation."
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 43,
+                                    lineNumber: 62,
                                     columnNumber: 9
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                            lineNumber: 34,
+                            lineNumber: 53,
                             columnNumber: 7
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                        lineNumber: 33,
+                        lineNumber: 52,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                lineNumber: 22,
+                lineNumber: 40,
                 columnNumber: 22
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -139,14 +146,14 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                     children: "Own A Piece Of The Future"
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 55,
+                                    lineNumber: 74,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "mx-auto mt-5 h-1 w-24 rounded-full bg-red-700"
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 78,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -154,13 +161,13 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                     children: "Share ownership allows members to participate in the growth and success of YPA Wealth Depot. Every share purchased strengthens your financial position while contributing to the growth of the organisation."
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 80,
                                     columnNumber: 9
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                            lineNumber: 54,
+                            lineNumber: 73,
                             columnNumber: 7
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -171,7 +178,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                     children: "Current Share Value"
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 71,
+                                    lineNumber: 90,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -179,7 +186,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                     children: "UGX 100,000"
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 75,
+                                    lineNumber: 94,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -187,13 +194,13 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                     children: "Per Share"
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 79,
+                                    lineNumber: 98,
                                     columnNumber: 9
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                            lineNumber: 70,
+                            lineNumber: 89,
                             columnNumber: 7
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -207,7 +214,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                             size: 45
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 87,
+                                            lineNumber: 106,
                                             columnNumber: 11
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -215,21 +222,21 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                             children: "Ownership Rights"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 88,
+                                            lineNumber: 107,
                                             columnNumber: 11
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "mt-3 text-slate-600",
-                                            children: "Become part owner and participate in the organisation's growth."
+                                            children: "Become part owner and participate in the organisation growth."
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 91,
+                                            lineNumber: 110,
                                             columnNumber: 11
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 86,
+                                    lineNumber: 105,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -240,7 +247,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                             size: 45
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 97,
+                                            lineNumber: 116,
                                             columnNumber: 11
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -248,7 +255,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                             children: "Wealth Creation"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 98,
+                                            lineNumber: 117,
                                             columnNumber: 11
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -256,13 +263,13 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                             children: "Build long-term financial value through share ownership."
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 101,
+                                            lineNumber: 120,
                                             columnNumber: 11
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 96,
+                                    lineNumber: 115,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -273,7 +280,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                             size: 45
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 107,
+                                            lineNumber: 126,
                                             columnNumber: 11
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -281,7 +288,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                             children: "Secure Investment"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 108,
+                                            lineNumber: 127,
                                             columnNumber: 11
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -289,13 +296,13 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                             children: "Invest confidently in a structured and member-focused system."
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 111,
+                                            lineNumber: 130,
                                             columnNumber: 11
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 106,
+                                    lineNumber: 125,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -306,7 +313,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                             size: 45
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 117,
+                                            lineNumber: 136,
                                             columnNumber: 11
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -314,7 +321,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                             children: "Dividends"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 118,
+                                            lineNumber: 137,
                                             columnNumber: 11
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -322,13 +329,13 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                             children: "Eligible members may benefit from dividend distributions."
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 121,
+                                            lineNumber: 140,
                                             columnNumber: 11
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 116,
+                                    lineNumber: 135,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -339,7 +346,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                             size: 45
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 127,
+                                            lineNumber: 146,
                                             columnNumber: 11
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -347,7 +354,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                             children: "Community Growth"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 128,
+                                            lineNumber: 147,
                                             columnNumber: 11
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -355,13 +362,13 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                             children: "Support collective wealth creation and community development."
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 131,
+                                            lineNumber: 150,
                                             columnNumber: 11
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 126,
+                                    lineNumber: 145,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -372,7 +379,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                             size: 45
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 137,
+                                            lineNumber: 156,
                                             columnNumber: 11
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -380,7 +387,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                             children: "Flexible Purchase"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 138,
+                                            lineNumber: 157,
                                             columnNumber: 11
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -388,30 +395,30 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                             children: "Purchase shares gradually and build your portfolio over time."
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                            lineNumber: 141,
+                                            lineNumber: 160,
                                             columnNumber: 11
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 136,
+                                    lineNumber: 155,
                                     columnNumber: 9
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                            lineNumber: 85,
+                            lineNumber: 104,
                             columnNumber: 7
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                    lineNumber: 53,
+                    lineNumber: 72,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                lineNumber: 52,
+                lineNumber: 71,
                 columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -422,7 +429,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                         children: "Share Investment Calculator"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                        lineNumber: 153,
+                        lineNumber: 172,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -436,7 +443,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                         children: "10 Shares"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                        lineNumber: 159,
+                                        lineNumber: 178,
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -444,13 +451,13 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                         children: "UGX 1,000,000"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                        lineNumber: 160,
+                                        lineNumber: 179,
                                         columnNumber: 7
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                lineNumber: 158,
+                                lineNumber: 177,
                                 columnNumber: 5
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -461,7 +468,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                         children: "25 Shares"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                        lineNumber: 166,
+                                        lineNumber: 185,
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -469,13 +476,13 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                         children: "UGX 2,500,000"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                        lineNumber: 167,
+                                        lineNumber: 186,
                                         columnNumber: 7
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                lineNumber: 165,
+                                lineNumber: 184,
                                 columnNumber: 5
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -486,7 +493,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                         children: "50 Shares"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                        lineNumber: 173,
+                                        lineNumber: 192,
                                         columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -494,25 +501,25 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                         children: "UGX 5,000,000"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                        lineNumber: 174,
+                                        lineNumber: 193,
                                         columnNumber: 7
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                lineNumber: 172,
+                                lineNumber: 191,
                                 columnNumber: 5
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                        lineNumber: 157,
+                        lineNumber: 176,
                         columnNumber: 3
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                lineNumber: 152,
+                lineNumber: 171,
                 columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -525,14 +532,14 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                         className: "object-cover"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                        lineNumber: 183,
+                        lineNumber: 202,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-blue-950/85"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                        lineNumber: 190,
+                        lineNumber: 209,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$components$2f$ui$2f$Container$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -544,7 +551,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                     children: "Start Investing Today"
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 194,
+                                    lineNumber: 213,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -552,7 +559,7 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                     children: "Purchase shares today and become part of a growing community of investors building a stronger financial future."
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 198,
+                                    lineNumber: 217,
                                     columnNumber: 9
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -560,24 +567,24 @@ function Shares({ subtitle = "", title = "", description = "", currentPage = "Sa
                                     children: "Buy Shares Now"
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                                    lineNumber: 203,
+                                    lineNumber: 222,
                                     columnNumber: 9
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                            lineNumber: 193,
+                            lineNumber: 212,
                             columnNumber: 7
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                        lineNumber: 192,
+                        lineNumber: 211,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/YPA-Wealth-Depot/app/shares/page.tsx",
-                lineNumber: 182,
+                lineNumber: 201,
                 columnNumber: 3
             }, this)
         ]

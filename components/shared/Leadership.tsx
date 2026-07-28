@@ -3,14 +3,16 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Mail } from "lucide-react";
 import {
-  Mail,
-  X,
-} from "lucide-react";
+  FaFacebook,
+  FaXTwitter,
+} from "react-icons/fa6";
 
 
 
 type Person = {
+  [x: string]: string | undefined;
   name: string;
   role: string;
   image: string;
@@ -160,7 +162,7 @@ shadow-xl
 
 <div className="
 relative
-h-[350px]
+h-87.5
 ">
 
 
@@ -422,7 +424,7 @@ p-2
 shadow
 ">
 
-<X/>
+<FaXTwitter/>
 
 </button>
 
@@ -540,7 +542,7 @@ transition
 
 
 <a
-href={selectedPerson.x}
+href={selectedPerson.FaXTwitter}
 className="
 rounded-full
 bg-blue-700
@@ -565,7 +567,7 @@ hover:scale-110
 transition
 ">
 
-<Facebook size={20}/>
+<FaFacebook />
 
 </a>
 
@@ -583,7 +585,7 @@ hover:scale-110
 transition
 ">
 
-<Twitter size={20}/>
+<FaXTwitter />
 
 </a>
 
