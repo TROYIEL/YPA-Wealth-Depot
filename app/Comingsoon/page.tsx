@@ -4,7 +4,7 @@ import Container from "@/components/ui/Container";
 
 export default function ComingSoon() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-sky-700">
+    <section className="relative min-h-screen overflow-hidden bg-linear-to-br from-blue-950 via-blue-900 to-sky-700">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-10" />
 

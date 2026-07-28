@@ -37,7 +37,7 @@ export default function Shares() {
 
   return (
     <>
-{/* Hero Section */} <section className="relative h-[550px] overflow-hidden"> 
+{/* Hero Section */} <section className="relative h-137.5 overflow-hidden"> 
 <Image
   src={backgroundImage}
   alt={currentPage}
@@ -47,7 +47,7 @@ export default function Shares() {
 />
 
 ```
-    <div className="absolute inset-0 bg-gradient-to-r from-blue-950/95 via-blue-900/85 to-sky-700/60" />
+    <div className="absolute inset-0 bg-linear-to-r from-blue-950/95 via-blue-900/85 to-sky-700/60" />
 
     <Container className="relative z-10 flex h-full items-center justify-center">
       <div className="max-w-4xl text-center text-white">
@@ -86,7 +86,7 @@ export default function Shares() {
       </div>
 
       {/* Share Value Card */}
-      <div className="mx-auto mt-16 max-w-4xl rounded-3xl bg-gradient-to-r from-sky-500 to-blue-700 p-12 text-center text-white shadow-2xl">
+      <div className="mx-auto mt-16 max-w-4xl rounded-3xl bg-linear-to-r from-sky-500 to-blue-700 p-12 text-center text-white shadow-2xl">
         <h3 className="text-xl font-semibold uppercase tracking-wider">
           Current Share Value
         </h3>
