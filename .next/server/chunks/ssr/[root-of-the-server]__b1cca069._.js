@@ -53,7 +53,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$no
 ;
 ;
 ;
-function Savings({ subtitle = "", title = "", description = "", currentPage = "Savings", backgroundImage = "/saving hero.webp" }) {
+function Savings() {
+    const subtitle = "Savings Products";
+    const title = "Savings";
+    const description = "Secure and flexible savings solutions designed to help members achieve their financial goals.";
+    const currentPage = "Savings";
+    const backgroundImage = "/saving hero.webp";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -67,14 +72,14 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                         className: "object-cover"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                        lineNumber: 31,
+                        lineNumber: 22,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-linear-to-r from-blue-950/95 via-blue-900/85 to-sky-700/60"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                        lineNumber: 39,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$components$2f$ui$2f$Container$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -87,7 +92,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                     children: subtitle
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                    lineNumber: 43,
+                                    lineNumber: 34,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -95,7 +100,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                     children: title
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                    lineNumber: 47,
+                                    lineNumber: 38,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -103,7 +108,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                     children: description
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                    lineNumber: 51,
+                                    lineNumber: 42,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -113,28 +118,28 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                             children: "Home"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                            lineNumber: 56,
+                                            lineNumber: 47,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: "/"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                            lineNumber: 57,
+                                            lineNumber: 48,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: "Products"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                            lineNumber: 58,
+                                            lineNumber: 49,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: "/"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                            lineNumber: 59,
+                                            lineNumber: 50,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -142,30 +147,30 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                             children: currentPage
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 51,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                    lineNumber: 55,
+                                    lineNumber: 46,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                            lineNumber: 42,
+                            lineNumber: 33,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                        lineNumber: 41,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                lineNumber: 30,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -182,14 +187,14 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                         children: "Save Today. Prosper Tomorrow."
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                        lineNumber: 73,
+                                        lineNumber: 64,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "mx-auto mt-5 h-1 w-24 rounded-full bg-red-700"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                        lineNumber: 77,
+                                        lineNumber: 68,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -197,25 +202,25 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                         children: "At YPA Wealth Depot, we provide savings solutions that help individuals, families, and businesses grow their wealth securely. Whether you are saving for future investments, emergencies, education, or retirement, we have an account that fits your goals."
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                        lineNumber: 79,
+                                        lineNumber: 70,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                lineNumber: 72,
+                                lineNumber: 63,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "mt-16 grid gap-10 lg:grid-cols-3",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "group h-[520px] [perspective:1000px]",
+                                        className: "group h-130 perspective-[1000px]",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]",
+                                            className: "relative h-full w-full transition-transform duration-700 transform-3d group-hover:transform-[rotateY(180deg)]",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute inset-0 rounded-3xl border border-blue-100 bg-white p-10 shadow-xl [backface-visibility:hidden]",
+                                                    className: "absolute inset-0 rounded-3xl border border-blue-100 bg-white p-10 shadow-xl backface-hidden",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-100",
@@ -224,12 +229,12 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                                 size: 35
                                                             }, void 0, false, {
                                                                 fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                lineNumber: 96,
+                                                                lineNumber: 87,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 95,
+                                                            lineNumber: 86,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -237,7 +242,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                             children: "Fixed Deposit"
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 102,
+                                                            lineNumber: 93,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -245,7 +250,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                             children: "Invest your money for a fixed period and enjoy higher returns with guaranteed growth and financial security."
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 106,
+                                                            lineNumber: 97,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -263,38 +268,38 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                                             size: 20
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                            lineNumber: 122,
+                                                                            lineNumber: 113,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         item
                                                                     ]
                                                                 }, item, true, {
                                                                     fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                    lineNumber: 118,
+                                                                    lineNumber: 109,
                                                                     columnNumber: 25
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 111,
+                                                            lineNumber: 102,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                    lineNumber: 94,
+                                                    lineNumber: 85,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute inset-0 overflow-hidden rounded-3xl [transform:rotateY(180deg)] [backface-visibility:hidden]",
+                                                    className: "absolute inset-0 overflow-hidden rounded-3xl transform-[rotateY(180deg)] backface-hidden",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                            src: "/fixed-deposit.webp",
+                                                            src: "/",
                                                             alt: "Fixed Deposit",
                                                             fill: true,
                                                             className: "object-cover"
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 134,
+                                                            lineNumber: 125,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -306,7 +311,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                                         children: "Grow Your Wealth"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                        lineNumber: 143,
+                                                                        lineNumber: 134,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -314,44 +319,44 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                                         children: "Earn attractive returns while keeping your money secure."
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                        lineNumber: 147,
+                                                                        lineNumber: 138,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                lineNumber: 142,
+                                                                lineNumber: 133,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 141,
+                                                            lineNumber: 132,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                    lineNumber: 133,
+                                                    lineNumber: 124,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                            lineNumber: 92,
+                                            lineNumber: 83,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                        lineNumber: 91,
+                                        lineNumber: 82,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "group h-[520px] [perspective:1000px]",
+                                        className: "group h-130 perspective-[1000px]",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]",
+                                            className: "relative h-full w-full transition-transform duration-700 transform-3d group-hover:transform-[rotateY(180deg)]",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute inset-0 rounded-3xl bg-gradient-to-br from-slate-400 to-slate-700 p-10 text-white shadow-xl [backface-visibility:hidden]",
+                                                    className: "absolute inset-0 rounded-3xl bg-linear-to-br from-slate-400 to-slate-700 p-10 text-white shadow-xl backface-hidden",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "flex h-16 w-16 items-center justify-center rounded-2xl bg-white/20",
@@ -359,12 +364,12 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                                 size: 35
                                                             }, void 0, false, {
                                                                 fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                lineNumber: 163,
+                                                                lineNumber: 154,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 162,
+                                                            lineNumber: 153,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -372,7 +377,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                             children: "Silver Savings"
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 166,
+                                                            lineNumber: 157,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -380,7 +385,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                             children: "A smart savings account designed for consistent savers who want flexibility and rewarding growth opportunities."
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 170,
+                                                            lineNumber: 161,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -397,38 +402,38 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                                             size: 20
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                            lineNumber: 186,
+                                                                            lineNumber: 177,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         item
                                                                     ]
                                                                 }, item, true, {
                                                                     fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                    lineNumber: 182,
+                                                                    lineNumber: 173,
                                                                     columnNumber: 25
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 175,
+                                                            lineNumber: 166,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                    lineNumber: 161,
+                                                    lineNumber: 152,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute inset-0 overflow-hidden rounded-3xl [transform:rotateY(180deg)] [backface-visibility:hidden]",
+                                                    className: "absolute inset-0 overflow-hidden rounded-3xl transform-[rotateY(180deg)] backface-hidden",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                            src: "/silver-savings.webp",
+                                                            src: "/",
                                                             alt: "Silver Savings",
                                                             fill: true,
                                                             className: "object-cover"
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 195,
+                                                            lineNumber: 186,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -440,7 +445,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                                         children: "Save With Confidence"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                        lineNumber: 204,
+                                                                        lineNumber: 195,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -448,44 +453,44 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                                         children: "Flexible savings designed for your everyday financial goals."
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                        lineNumber: 208,
+                                                                        lineNumber: 199,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                lineNumber: 203,
+                                                                lineNumber: 194,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 202,
+                                                            lineNumber: 193,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                    lineNumber: 194,
+                                                    lineNumber: 185,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                            lineNumber: 159,
+                                            lineNumber: 150,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                        lineNumber: 158,
+                                        lineNumber: 149,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "group h-[520px] [perspective:1000px]",
+                                        className: "group h-130 perspective-[1000px]",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]",
+                                            className: "relative h-full w-full transition-transform duration-700 transform-3d group-hover:transform-[rotateY(180deg)]",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute inset-0 rounded-3xl bg-gradient-to-br from-sky-500 to-blue-700 p-10 text-white shadow-xl [backface-visibility:hidden]",
+                                                    className: "absolute inset-0 rounded-3xl bg-linear-to-br from-sky-500 to-blue-700 p-10 text-white shadow-xl backface-hidden",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "flex h-16 w-16 items-center justify-center rounded-2xl bg-white/20",
@@ -493,12 +498,12 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                                 size: 35
                                                             }, void 0, false, {
                                                                 fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                lineNumber: 224,
+                                                                lineNumber: 215,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 223,
+                                                            lineNumber: 214,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -506,7 +511,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                             children: "General Savings"
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 227,
+                                                            lineNumber: 218,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -514,7 +519,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                             children: "Build healthy saving habits and secure your future with an account suitable for everyday saving needs."
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 231,
+                                                            lineNumber: 222,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -531,38 +536,38 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                                             size: 20
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                            lineNumber: 247,
+                                                                            lineNumber: 238,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         item
                                                                     ]
                                                                 }, item, true, {
                                                                     fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                    lineNumber: 243,
+                                                                    lineNumber: 234,
                                                                     columnNumber: 25
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 236,
+                                                            lineNumber: 227,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                    lineNumber: 222,
+                                                    lineNumber: 213,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute inset-0 overflow-hidden rounded-3xl [transform:rotateY(180deg)] [backface-visibility:hidden]",
+                                                    className: "absolute inset-0 overflow-hidden rounded-3xl transform-[rotateY(180deg)] backface-hidden",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                            src: "/general-savings.webp",
+                                                            src: "/",
                                                             alt: "General Savings",
                                                             fill: true,
                                                             className: "object-cover"
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 256,
+                                                            lineNumber: 247,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -574,7 +579,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                                         children: "Build A Better Future"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                        lineNumber: 265,
+                                                                        lineNumber: 256,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -582,41 +587,41 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                                         children: "Start small today and watch your savings grow over time."
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                        lineNumber: 269,
+                                                                        lineNumber: 260,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                                lineNumber: 264,
+                                                                lineNumber: 255,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                            lineNumber: 263,
+                                                            lineNumber: 254,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                    lineNumber: 255,
+                                                    lineNumber: 246,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                            lineNumber: 220,
+                                            lineNumber: 211,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                        lineNumber: 219,
+                                        lineNumber: 210,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                lineNumber: 89,
+                                lineNumber: 80,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -629,12 +634,12 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                             children: "Why Save With YPA?"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                            lineNumber: 283,
+                                            lineNumber: 274,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                        lineNumber: 282,
+                                        lineNumber: 273,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -648,7 +653,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                         size: 40
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                        lineNumber: 290,
+                                                        lineNumber: 281,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -656,7 +661,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                         children: "Safe & Secure"
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                        lineNumber: 294,
+                                                        lineNumber: 285,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -664,13 +669,13 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                         children: "Your savings are protected and professionally managed."
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                        lineNumber: 295,
+                                                        lineNumber: 286,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                lineNumber: 289,
+                                                lineNumber: 280,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -681,7 +686,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                         size: 40
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                        lineNumber: 301,
+                                                        lineNumber: 292,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -689,7 +694,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                         children: "Competitive Returns"
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                        lineNumber: 305,
+                                                        lineNumber: 296,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -697,13 +702,13 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                         children: "Earn attractive returns on your savings."
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                        lineNumber: 308,
+                                                        lineNumber: 299,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                lineNumber: 300,
+                                                lineNumber: 291,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -714,7 +719,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                         size: 40
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                        lineNumber: 314,
+                                                        lineNumber: 305,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -722,7 +727,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                         children: "Flexible Deposits"
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                        lineNumber: 318,
+                                                        lineNumber: 309,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -730,13 +735,13 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                         children: "Save at your own pace and convenience."
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                        lineNumber: 321,
+                                                        lineNumber: 312,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                lineNumber: 313,
+                                                lineNumber: 304,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -747,7 +752,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                         size: 40
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                        lineNumber: 327,
+                                                        lineNumber: 318,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -755,7 +760,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                         children: "Financial Growth"
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                        lineNumber: 331,
+                                                        lineNumber: 322,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -763,41 +768,41 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                                         children: "Achieve your financial goals through disciplined saving."
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                        lineNumber: 334,
+                                                        lineNumber: 325,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                                lineNumber: 326,
+                                                lineNumber: 317,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                        lineNumber: 288,
+                                        lineNumber: 279,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                lineNumber: 281,
+                                lineNumber: 272,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                        lineNumber: 71,
+                        lineNumber: 62,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                    lineNumber: 70,
+                    lineNumber: 61,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                lineNumber: 69,
+                lineNumber: 60,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -810,14 +815,14 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                         className: "object-cover"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                        lineNumber: 346,
+                        lineNumber: 337,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-blue-950/85"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                        lineNumber: 353,
+                        lineNumber: 344,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$components$2f$ui$2f$Container$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -829,7 +834,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                     children: "Start Building Wealth Today"
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                    lineNumber: 357,
+                                    lineNumber: 348,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -837,7 +842,7 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                     children: "Open a savings account and take the first step toward financial freedom, stability, and long-term prosperity."
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                    lineNumber: 361,
+                                    lineNumber: 352,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -845,24 +850,24 @@ function Savings({ subtitle = "", title = "", description = "", currentPage = "S
                                     children: "Open A Savings Account"
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                                    lineNumber: 366,
+                                    lineNumber: 357,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                            lineNumber: 356,
+                            lineNumber: 347,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                        lineNumber: 355,
+                        lineNumber: 346,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/YPA-Wealth-Depot/app/savings/page.tsx",
-                lineNumber: 345,
+                lineNumber: 336,
                 columnNumber: 7
             }, this)
         ]

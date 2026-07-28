@@ -14,19 +14,19 @@ export default function News() {
     {
       title: "YPA Launches New Fixed Deposit Product",
       date: "15 July 2026",
-      image: "/news1.webp",
+      image: "/",
       category: "Products",
     },
     {
       title: "Annual General Meeting Successfully Held",
       date: "08 July 2026",
-      image: "/news2.webp",
+      image: "/",
       category: "Events",
     },
     {
       title: "Membership Growth Reaches New Milestone",
       date: "01 July 2026",
-      image: "/news3.webp",
+      image: "/",
       category: "Membership",
     },
   ];
@@ -34,16 +34,16 @@ export default function News() {
   return (
     <>
       {/* Hero */}
-      <section className="relative h-[550px] overflow-hidden">
+      <section className="relative h-137.5 overflow-hidden">
         <Image
-          src="/news-hero.webp"
+          src="/"
           alt="News & Updates"
           fill
           priority
           className="object-cover"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/95 via-blue-900/85 to-sky-700/60" />
+        <div className="absolute inset-0 bg-linear-to-r from-blue-950/95 via-blue-900/85 to-sky-700/60" />
 
         <Container className="relative z-10 flex h-full items-center justify-center">
           <div className="max-w-4xl text-center text-white">
@@ -67,9 +67,9 @@ export default function News() {
       <section className="bg-white py-20">
         <Container>
           <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div className="relative h-[450px] overflow-hidden rounded-3xl">
+            <div className="relative h-112.5 overflow-hidden rounded-3xl">
               <Image
-                src="/featured-news.webp"
+                src="/"
                 alt="Featured News"
                 fill
                 className="object-cover"
@@ -177,7 +177,7 @@ export default function News() {
 
     <div className="mt-16 grid gap-8 lg:grid-cols-3">
       {/* Announcement 1 */}
-      <div className="group rounded-3xl border border-sky-100 bg-gradient-to-br from-sky-50 to-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+      <div className="group rounded-3xl border border-sky-100 bg-linear-to-br from-sky-50 to-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
         <div className="flex items-center justify-between">
           <span className="rounded-full bg-green-100 px-4 py-1 text-sm font-semibold text-green-700">
             Active
@@ -201,7 +201,7 @@ export default function News() {
       </div>
 
       {/* Announcement 2 */}
-      <div className="group rounded-3xl border border-amber-100 bg-gradient-to-br from-amber-50 to-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+      <div className="group rounded-3xl border border-amber-100 bg-linear-to-br from-amber-50 to-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
         <div className="flex items-center justify-between">
           <span className="rounded-full bg-amber-100 px-4 py-1 text-sm font-semibold text-amber-700">
             Opportunity
@@ -228,7 +228,7 @@ export default function News() {
       </div>
 
       {/* Announcement 3 */}
-      <div className="group rounded-3xl border border-blue-100 bg-gradient-to-br from-blue-50 to-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+      <div className="group rounded-3xl border border-blue-100 bg-linear-to-br from-blue-50 to-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
         <div className="flex items-center justify-between">
           <span className="rounded-full bg-blue-100 px-4 py-1 text-sm font-semibold text-blue-700">
             New Release
@@ -256,7 +256,7 @@ export default function News() {
     </div>
 
     {/* Announcement Banner */}
-    <div className="mt-16 overflow-hidden rounded-3xl bg-gradient-to-r from-sky-500 via-blue-600 to-blue-800 p-10 text-white shadow-2xl">
+    <div className="mt-16 overflow-hidden rounded-3xl bg-linear-to-r from-sky-500 via-blue-600 to-blue-800 p-10 text-white shadow-2xl">
       <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
         <div>
           <h3 className="text-3xl font-bold">
@@ -346,7 +346,7 @@ export default function News() {
       <article className="overflow-hidden rounded-3xl bg-white shadow-xl transition duration-300 hover:-translate-y-2">
         <div className="relative h-64">
           <Image
-            src="/news-membership.webp"
+            src="/"
             alt="Membership Registration"
             fill
             className="object-cover"
@@ -387,7 +387,7 @@ export default function News() {
       <article className="overflow-hidden rounded-3xl bg-white shadow-xl transition duration-300 hover:-translate-y-2">
         <div className="relative h-64">
           <Image
-            src="/news-shares.webp"
+            src="/"
             alt="Share Campaign"
             fill
             className="object-cover"
@@ -428,7 +428,7 @@ export default function News() {
       <article className="overflow-hidden rounded-3xl bg-white shadow-xl transition duration-300 hover:-translate-y-2">
         <div className="relative h-64">
           <Image
-            src="/news-event.webp"
+            src="/"
             alt="Financial Literacy Event"
             fill
             className="object-cover"
@@ -471,7 +471,7 @@ export default function News() {
       {/* CTA */}
       <section className="relative overflow-hidden py-24">
         <Image
-          src="/news-cta.webp"
+          src="/n"
           alt="Stay Updated"
           fill
           className="object-cover"
