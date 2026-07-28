@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Container from "@/components/ui/Container";
-import { Clock3, Sparkles } from "lucide-react";
+
 
 export default function ComingSoon() {
   return (
@@ -24,7 +24,7 @@ export default function ComingSoon() {
             </span>
 
             <h1 className="mt-8 text-5xl font-black md:text-7xl">
-              We're Working On Something Amazing
+            We&apos;re Working On Something Amazing
             </h1>
 
             <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-white/80">

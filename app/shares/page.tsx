@@ -1,31 +1,50 @@
 import Image from "next/image";
 import Container from "@/components/ui/Container";
 import {
-PieChart,
-TrendingUp,
-ShieldCheck,
-CheckCircle,
-Landmark,
-Users,
+  PieChart,
+  TrendingUp,
+  ShieldCheck,
+  CheckCircle,
+  Landmark,
+  Users,
 } from "lucide-react";
 
-export default function Shares({
-    subtitle = "",
-    title = "",
-    description =
-      "",
-    currentPage = "Savings",
-    backgroundImage = "/saving hero.webp",
-  }: PageIntroProps) {
-return (
-<>
-{/* Hero Section */} <section className="relative h-[550px] overflow-hidden"> <Image
-       src="/shares.webp"
-       alt="YPA Shares"
-       fill
-       priority
-       className="object-cover"
-     />
+interface PageIntroProps {
+  subtitle: string;
+  title: string;
+  description: string;
+  currentPage: string;
+  backgroundImage: string;
+}
+
+const pageData: PageIntroProps = {
+  subtitle: "Ownership & Investment",
+  title: "Invest In Shares",
+  description:
+    "Become a shareholder and grow your wealth through ownership, dividends, and long-term value appreciation.",
+  currentPage: "Shares",
+  backgroundImage: "/shares.webp",
+};
+
+export default function Shares() {
+  const {
+    subtitle,
+    title,
+    description,
+    currentPage,
+    backgroundImage,
+  } = pageData;
+
+  return (
+    <>
+{/* Hero Section */} <section className="relative h-[550px] overflow-hidden"> 
+<Image
+  src={backgroundImage}
+  alt={currentPage}
+  fill
+  priority
+  className="object-cover"
+/>
 
 ```
     <div className="absolute inset-0 bg-gradient-to-r from-blue-950/95 via-blue-900/85 to-sky-700/60" />
@@ -89,7 +108,7 @@ return (
             Ownership Rights
           </h3>
           <p className="mt-3 text-slate-600">
-            Become part owner and participate in the organisation's growth.
+            Become part owner and participate in the organisation growth.
           </p>
         </div>
 

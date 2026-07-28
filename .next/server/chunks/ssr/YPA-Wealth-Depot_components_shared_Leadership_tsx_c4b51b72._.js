@@ -12,8 +12,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$no
 var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/lucide-react/dist/esm/icons/mail.mjs [app-ssr] (ecmascript) <export default as Mail>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/lucide-react/dist/esm/icons/x.mjs [app-ssr] (ecmascript) <export default as X>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$react$2d$icons$2f$fa6$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/react-icons/fa6/index.mjs [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -98,7 +99,7 @@ function Leadership() {
             onClick: ()=>setSelectedPerson(person),
             className: " group cursor-pointer overflow-hidden rounded-3xl bg-white shadow-xl ",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: " relative h-[350px] ",
+                className: " relative h-87.5 ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         src: person.image,
@@ -107,14 +108,14 @@ function Leadership() {
                         className: " object-cover transition duration-500 group-hover:scale-110 "
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                        lineNumber: 167,
+                        lineNumber: 169,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: " absolute inset-0 bg-linear-to-t from-black/70 to-transparent "
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                        lineNumber: 186,
+                        lineNumber: 188,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -125,7 +126,7 @@ function Leadership() {
                                 children: person.name
                             }, void 0, false, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                lineNumber: 203,
+                                lineNumber: 205,
                                 columnNumber: 1
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -133,24 +134,24 @@ function Leadership() {
                                 children: person.role
                             }, void 0, false, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                lineNumber: 213,
+                                lineNumber: 215,
                                 columnNumber: 1
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                        lineNumber: 195,
+                        lineNumber: 197,
                         columnNumber: 1
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                lineNumber: 161,
+                lineNumber: 163,
                 columnNumber: 1
             }, this)
         }, void 0, false, {
             fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-            lineNumber: 131,
+            lineNumber: 133,
             columnNumber: 1
         }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -167,7 +168,7 @@ function Leadership() {
                                 children: "Leadership"
                             }, void 0, false, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                lineNumber: 248,
+                                lineNumber: 250,
                                 columnNumber: 1
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -175,13 +176,13 @@ function Leadership() {
                                 children: "Meet Our Leadership Team"
                             }, void 0, false, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                lineNumber: 261,
+                                lineNumber: 263,
                                 columnNumber: 1
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                        lineNumber: 245,
+                        lineNumber: 247,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -191,12 +192,12 @@ function Leadership() {
                                 index: index
                             }, person.name, false, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                lineNumber: 287,
+                                lineNumber: 289,
                                 columnNumber: 1
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                        lineNumber: 278,
+                        lineNumber: 280,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -204,7 +205,7 @@ function Leadership() {
                         children: "Staff Members"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                        lineNumber: 302,
+                        lineNumber: 304,
                         columnNumber: 1
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -214,18 +215,18 @@ function Leadership() {
                                 index: index
                             }, person.name, false, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                lineNumber: 327,
+                                lineNumber: 329,
                                 columnNumber: 1
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                        lineNumber: 318,
+                        lineNumber: 320,
                         columnNumber: 1
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                lineNumber: 238,
+                lineNumber: 240,
                 columnNumber: 1
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -257,14 +258,14 @@ function Leadership() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setSelectedPerson(null),
                                 className: " absolute right-5 top-5 z-10 rounded-full bg-white p-2 shadow ",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {}, void 0, false, {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$react$2d$icons$2f$fa6$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaXTwitter"], {}, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                    lineNumber: 425,
+                                    lineNumber: 427,
                                     columnNumber: 1
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                lineNumber: 410,
+                                lineNumber: 412,
                                 columnNumber: 1
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -279,12 +280,12 @@ function Leadership() {
                                             className: "object-cover"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                            lineNumber: 442,
+                                            lineNumber: 444,
                                             columnNumber: 1
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                        lineNumber: 437,
+                                        lineNumber: 439,
                                         columnNumber: 1
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -295,7 +296,7 @@ function Leadership() {
                                                 children: selectedPerson.name
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                                lineNumber: 462,
+                                                lineNumber: 464,
                                                 columnNumber: 1
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -303,7 +304,7 @@ function Leadership() {
                                                 children: selectedPerson.role
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                                lineNumber: 472,
+                                                lineNumber: 474,
                                                 columnNumber: 1
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -311,7 +312,7 @@ function Leadership() {
                                                 children: selectedPerson.bio
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                                lineNumber: 483,
+                                                lineNumber: 485,
                                                 columnNumber: 1
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -321,7 +322,7 @@ function Leadership() {
                                                         children: "Experience"
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                                        lineNumber: 502,
+                                                        lineNumber: 504,
                                                         columnNumber: 1
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -329,13 +330,13 @@ function Leadership() {
                                                         children: selectedPerson.experience
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                                        lineNumber: 506,
+                                                        lineNumber: 508,
                                                         columnNumber: 1
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                                lineNumber: 495,
+                                                lineNumber: 497,
                                                 columnNumber: 1
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -348,90 +349,86 @@ function Leadership() {
                                                             size: 20
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                                            lineNumber: 536,
+                                                            lineNumber: 538,
                                                             columnNumber: 1
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                                        lineNumber: 525,
+                                                        lineNumber: 527,
                                                         columnNumber: 1
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                        href: selectedPerson.x,
+                                                        href: selectedPerson.FaXTwitter,
                                                         className: " rounded-full bg-blue-700 p-3 text-white hover:scale-110 transition "
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                                        lineNumber: 542,
+                                                        lineNumber: 544,
                                                         columnNumber: 1
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                         href: selectedPerson.facebook,
                                                         className: " rounded-full bg-blue-600 p-3 text-white hover:scale-110 transition ",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Facebook, {
-                                                            size: 20
-                                                        }, void 0, false, {
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$react$2d$icons$2f$fa6$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaFacebook"], {}, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                                            lineNumber: 568,
+                                                            lineNumber: 570,
                                                             columnNumber: 1
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                                        lineNumber: 557,
+                                                        lineNumber: 559,
                                                         columnNumber: 1
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                         href: selectedPerson.twitter,
                                                         className: " rounded-full bg-black p-3 text-white hover:scale-110 transition ",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Twitter, {
-                                                            size: 20
-                                                        }, void 0, false, {
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$react$2d$icons$2f$fa6$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaXTwitter"], {}, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                                            lineNumber: 586,
+                                                            lineNumber: 588,
                                                             columnNumber: 1
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                                        lineNumber: 575,
+                                                        lineNumber: 577,
                                                         columnNumber: 1
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                                lineNumber: 518,
+                                                lineNumber: 520,
                                                 columnNumber: 1
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                        lineNumber: 459,
+                                        lineNumber: 461,
                                         columnNumber: 1
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                                lineNumber: 431,
+                                lineNumber: 433,
                                 columnNumber: 1
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                        lineNumber: 383,
+                        lineNumber: 385,
                         columnNumber: 1
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                    lineNumber: 353,
+                    lineNumber: 355,
                     columnNumber: 1
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-                lineNumber: 348,
+                lineNumber: 350,
                 columnNumber: 1
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/YPA-Wealth-Depot/components/shared/Leadership.tsx",
-        lineNumber: 235,
+        lineNumber: 237,
         columnNumber: 1
     }, this);
 }

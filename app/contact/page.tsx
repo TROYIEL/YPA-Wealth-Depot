@@ -156,7 +156,7 @@ export default function Contact() {
               </span>
 
               <h2 className="mt-6 text-5xl font-bold text-slate-900">
-                We'd Love To Hear From You
+                We do Love To Hear From You
               </h2>
 
               <p className="mt-6 text-lg leading-8 text-slate-600">
