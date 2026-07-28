@@ -186,7 +186,7 @@ group-hover:scale-110
 <div className="
 absolute
 inset-0
-bg-gradient-to-t
+bg-linear-to-t
 from-black/70
 to-transparent
 "/>
@@ -436,7 +436,7 @@ md:grid-cols-2
 
 <div className="
 relative
-h-[450px]
+h-112.5
 ">
 
 <Image
