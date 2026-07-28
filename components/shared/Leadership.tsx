@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail } from "lucide-react";
+import { FaEnvelope } from "react-icons/fa";
 import {
   FaFacebook,
   FaXTwitter,
@@ -36,7 +36,6 @@ const leaders: Person[] = [
     experience:
       "18+ years in leadership, agribusiness and financial management.",
     email: "obed@ypawealthdepot.com",
-    
     twitter: "#",
   },
 
@@ -49,7 +48,6 @@ const leaders: Person[] = [
     experience:
       "12+ years in management and organizational development.",
     email: "jb@ypawealthdepot.com",
-    
     twitter: "#",
   },
 
@@ -62,7 +60,6 @@ const leaders: Person[] = [
     experience:
       "10+ years in financial operations and administration.",
     email: "mable@ypawealthdepot.com",
-    
     twitter: "#",
   },
 ];
@@ -535,7 +532,7 @@ hover:scale-110
 transition
 ">
 
-<Mail size={20}/>
+<FaEnvelope size={18} />
 
 </a>
 

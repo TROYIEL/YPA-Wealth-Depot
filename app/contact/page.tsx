@@ -32,7 +32,7 @@ export default function Contact() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[550px] overflow-hidden">
+      <section className="relative h-137.5 overflow-hidden">
         <Image
           src="/contact-hero.webp"
           alt="Contact YPA Wealth Depot"
@@ -41,7 +41,7 @@ export default function Contact() {
           className="object-cover"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/95 via-blue-900/85 to-sky-700/60" />
+        <div className="absolute inset-0 bg-linear-to-r from-blue-950/95 via-blue-900/85 to-sky-700/60" />
 
         <Container className="relative z-10 flex h-full items-center justify-center">
           <div className="max-w-4xl text-center text-white">
