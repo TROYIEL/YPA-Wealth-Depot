@@ -34,7 +34,7 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="relative h-137.5 overflow-hidden">
         <Image
-          src="/contact-hero.webp"
+          src="/"
           alt="Contact YPA Wealth Depot"
           fill
           priority
@@ -290,7 +290,7 @@ export default function Contact() {
       {/* CTA */}
       <section className="relative overflow-hidden py-24">
         <Image
-          src="/news-cta.webp"
+          src="/"
           alt="Stay Updated"
           fill
           className="object-cover"

@@ -12,38 +12,38 @@ export default function Branches() {
     {
       name: "Masaka Branch",
       location: "Masaka City",
-      image: "/masaka.webp",
+      image: "",
     },
     {
       name: "Mbarara Branch",
       location: "Mbarara City",
-      image: "/mbarara.webp",
+      image: "",
     },
     {
       name: "Nansana Branch",
       location: "Nansana Municipality",
-      image: "/nansana.webp",
+      image: "",
     },
     {
       name: "Gomba Branch",
       location: "Gomba District",
-      image: "/gomba.webp",
+      image: "/",
     },
   ];
 
   return (
     <>
       {/* Hero */}
-      <section className="relative h-[550px] overflow-hidden">
+      <section className="relative h-137.5 overflow-hidden">
         <Image
-          src="/branches-hero.webp"
+          src="/"
           alt="Our Branches"
           fill
           priority
           className="object-cover"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/95 via-blue-900/85 to-sky-700/60" />
+        <div className="absolute inset-0 bg-linear-to-r from-blue-950/95 via-blue-900/85 to-sky-700/60" />
 
         <Container className="relative z-10 flex h-full items-center justify-center">
           <div className="max-w-4xl text-center text-white">
@@ -179,7 +179,7 @@ export default function Branches() {
       {/* CTA */}
       <section className="relative overflow-hidden py-24">
         <Image
-          src="/branches-cta.webp"
+          src="/"
           alt="Visit a Branch"
           fill
           className="object-cover"

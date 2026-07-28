@@ -132,7 +132,7 @@ export default function Loans() {
 
 
 {/* YPA Project Loans */}
-<div className="group h-[520px] [perspective:1000px]">
+<div className="group h-130 perspective-[1000px]">
 
   <div
     className="
@@ -141,8 +141,8 @@ export default function Loans() {
       w-full
       transition-transform
       duration-700
-      [transform-style:preserve-3d]
-      group-hover:[transform:rotateY(180deg)]
+      transform-3d
+      group-hover:transform-[rotateY(180deg)]
     "
   >
 
@@ -158,7 +158,7 @@ export default function Loans() {
         border-blue-100
         p-10
         shadow-xl
-        [backface-visibility:hidden]
+        backface-hidden
       "
     >
 
@@ -323,7 +323,7 @@ export default function Loans() {
         absolute
         inset-0
         rounded-3xl
-        bg-gradient-to-br
+        bg-linear-to-br
         from-sky-500
         to-blue-700
         p-10

@@ -8,22 +8,13 @@ import {
   CheckCircle,
 } from "lucide-react";
 
-interface PageIntroProps {
-  subtitle?: string;
-  title?: string;
-  description?: string;
-  currentPage?: string;
-  backgroundImage?: string;
-}
-
-export default function Savings({
-  subtitle = "",
-  title = "",
-  description =
-    "",
-  currentPage = "Savings",
-  backgroundImage = "/saving hero.webp",
-}: PageIntroProps) {
+export default function Savings() {
+  const subtitle = "Savings Products";
+  const title = "Savings";
+  const description =
+    "Secure and flexible savings solutions designed to help members achieve their financial goals.";
+  const currentPage = "Savings";
+  const backgroundImage = "/saving hero.webp";
   return (
     <>
       {/* Hero Section */}
@@ -88,10 +79,10 @@ export default function Savings({
             {/* Savings Cards */}
             <div className="mt-16 grid gap-10 lg:grid-cols-3">
               {/* Fixed Deposit */}
-              <div className="group h-[520px] [perspective:1000px]">
-                <div className="relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className="group h-130 perspective-[1000px]">
+                <div className="relative h-full w-full transition-transform duration-700 transform-3d group-hover:transform-[rotateY(180deg)]">
                   {/* Front */}
-                  <div className="absolute inset-0 rounded-3xl border border-blue-100 bg-white p-10 shadow-xl [backface-visibility:hidden]">
+                  <div className="absolute inset-0 rounded-3xl border border-blue-100 bg-white p-10 shadow-xl backface-hidden">
                     <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-100">
                       <ShieldCheck
                         className="text-sky-500"
@@ -130,9 +121,9 @@ export default function Savings({
                   </div>
 
                   {/* Back */}
-                  <div className="absolute inset-0 overflow-hidden rounded-3xl [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                  <div className="absolute inset-0 overflow-hidden rounded-3xl transform-[rotateY(180deg)] backface-hidden">
                     <Image
-                      src="/fixed-deposit.webp"
+                      src="/"
                       alt="Fixed Deposit"
                       fill
                       className="object-cover"
@@ -155,10 +146,10 @@ export default function Savings({
               </div>
 
               {/* Silver Savings */}
-              <div className="group h-[520px] [perspective:1000px]">
-                <div className="relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className="group h-130 perspective-[1000px]">
+                <div className="relative h-full w-full transition-transform duration-700 transform-3d group-hover:transform-[rotateY(180deg)]">
                   {/* Front */}
-                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-slate-400 to-slate-700 p-10 text-white shadow-xl [backface-visibility:hidden]">
+                  <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-slate-400 to-slate-700 p-10 text-white shadow-xl backface-hidden">
                     <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/20">
                       <TrendingUp size={35} />
                     </div>
@@ -191,9 +182,9 @@ export default function Savings({
                   </div>
 
                   {/* Back */}
-                  <div className="absolute inset-0 overflow-hidden rounded-3xl [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                  <div className="absolute inset-0 overflow-hidden rounded-3xl transform-[rotateY(180deg)] backface-hidden">
                     <Image
-                      src="/silver-savings.webp"
+                      src="/"
                       alt="Silver Savings"
                       fill
                       className="object-cover"
@@ -216,10 +207,10 @@ export default function Savings({
               </div>
 
               {/* General Savings */}
-              <div className="group h-[520px] [perspective:1000px]">
-                <div className="relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className="group h-130 perspective-[1000px]">
+                <div className="relative h-full w-full transition-transform duration-700 transform-3d group-hover:transform-[rotateY(180deg)]">
                   {/* Front */}
-                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-sky-500 to-blue-700 p-10 text-white shadow-xl [backface-visibility:hidden]">
+                  <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-sky-500 to-blue-700 p-10 text-white shadow-xl backface-hidden">
                     <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/20">
                       <PiggyBank size={35} />
                     </div>
@@ -252,9 +243,9 @@ export default function Savings({
                   </div>
 
                   {/* Back */}
-                  <div className="absolute inset-0 overflow-hidden rounded-3xl [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                  <div className="absolute inset-0 overflow-hidden rounded-3xl transform-[rotateY(180deg)] backface-hidden">
                     <Image
-                      src="/general-savings.webp"
+                      src="/"
                       alt="General Savings"
                       fill
                       className="object-cover"
