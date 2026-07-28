@@ -75,7 +75,7 @@ __turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$W
 
 __turbopack_context__.s([
     "default",
-    ()=>PageIntro
+    ()=>AboutContent
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/next/image.js [app-rsc] (ecmascript)");
@@ -88,11 +88,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$co
 ;
 ;
 ;
-function PageIntro({ subtitle, title, description, currentPage = "About", backgroundImage = "/mission.webp" }) {
+function AboutContent({ subtitle, title, description, currentPage = "About", backgroundImage = "/mission.webp" }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "relative h-105 overflow-hidden",
+                className: "relative min-h-125 overflow-hidden",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                         src: backgroundImage,
@@ -102,18 +102,18 @@ function PageIntro({ subtitle, title, description, currentPage = "About", backgr
                         className: "object-cover"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                        lineNumber: 25,
-                        columnNumber: 7
+                        lineNumber: 24,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-linear-to-r from-blue-950/90 via-blue-900/80 to-blue-800/60"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                        lineNumber: 34,
-                        columnNumber: 7
+                        lineNumber: 32,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$components$2f$ui$2f$Container$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                        className: "relative z-10 flex h-full items-center justify-center",
+                        className: "relative z-10 flex min-h-125 items-center justify-center",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "max-w-4xl text-center text-white",
                             children: [
@@ -122,72 +122,72 @@ function PageIntro({ subtitle, title, description, currentPage = "About", backgr
                                     children: subtitle
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                    lineNumber: 39,
-                                    columnNumber: 11
+                                    lineNumber: 36,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                     className: "mt-6 text-5xl font-bold md:text-6xl",
                                     children: title
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                    lineNumber: 43,
-                                    columnNumber: 11
+                                    lineNumber: 40,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "mx-auto mt-6 max-w-3xl text-lg leading-8 text-white/90",
                                     children: description
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                    lineNumber: 47,
-                                    columnNumber: 11
+                                    lineNumber: 44,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "mt-8 flex justify-center gap-2 text- text-white/80",
+                                    className: "mt-8 flex justify-center gap-2 text-sm text-white/80",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: "Home"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                            lineNumber: 52,
-                                            columnNumber: 13
+                                            lineNumber: 49,
+                                            columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: "/"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                            lineNumber: 53,
-                                            columnNumber: 13
+                                            lineNumber: 50,
+                                            columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "font-semibold text-yellow-400",
                                             children: currentPage
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                            lineNumber: 55,
-                                            columnNumber: 13
+                                            lineNumber: 52,
+                                            columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                    lineNumber: 51,
-                                    columnNumber: 11
+                                    lineNumber: 48,
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                            lineNumber: 38,
-                            columnNumber: 9
+                            lineNumber: 35,
+                            columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                        lineNumber: 37,
-                        columnNumber: 7
+                        lineNumber: 34,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
                 lineNumber: 23,
-                columnNumber: 5
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 className: "bg-white py-20",
@@ -203,15 +203,15 @@ function PageIntro({ subtitle, title, description, currentPage = "About", backgr
                                         children: "Our Mandate"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                        lineNumber: 69,
-                                        columnNumber: 9
+                                        lineNumber: 64,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "mt-5 h-1 w-24 rounded-full bg-red-700"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                        lineNumber: 73,
-                                        columnNumber: 9
+                                        lineNumber: 68,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "mt-10 space-y-7 text-lg leading-9 text-slate-600",
@@ -220,40 +220,40 @@ function PageIntro({ subtitle, title, description, currentPage = "About", backgr
                                                 children: "YPA Wealth Depot is a member-owned Savings and Credit Cooperative dedicated to promoting financial inclusion through reliable savings, affordable loans, and innovative financial services that improve the economic wellbeing of our members."
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                                lineNumber: 77,
-                                                columnNumber: 11
+                                                lineNumber: 71,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: "We mobilize savings, provide accessible credit, and encourage financial discipline while maintaining the highest standards of integrity, transparency, and accountability."
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                                lineNumber: 84,
-                                                columnNumber: 11
+                                                lineNumber: 78,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: "Through sustainable financial solutions, strategic partnerships, and member education, we empower individuals, families, and businesses to build lasting wealth and achieve financial security."
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                                lineNumber: 90,
-                                                columnNumber: 11
+                                                lineNumber: 84,
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                        lineNumber: 75,
-                                        columnNumber: 9
+                                        lineNumber: 70,
+                                        columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                lineNumber: 67,
-                                columnNumber: 7
+                                lineNumber: 63,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grid gap-8 md:grid-cols-2",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "rounded-3xl bg-blue-50 p-10 border border-blue-100",
+                                        className: "rounded-3xl border border-blue-100 bg-blue-50 p-10",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex items-center gap-3",
@@ -262,36 +262,36 @@ function PageIntro({ subtitle, title, description, currentPage = "About", backgr
                                                         className: "h-8 w-8 text-sky-400"
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                                        lineNumber: 103,
-                                                        columnNumber: 13
+                                                        lineNumber: 96,
+                                                        columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                         className: "text-3xl font-bold text-slate-900",
                                                         children: "Vision"
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                                        lineNumber: 105,
-                                                        columnNumber: 13
+                                                        lineNumber: 98,
+                                                        columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                                lineNumber: 102,
-                                                columnNumber: 11
+                                                lineNumber: 95,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "mt-6 text-lg leading-8 text-slate-700",
-                                                children: "To create sustainable Wealth and financial freedom for all members."
+                                                children: "To create sustainable wealth and financial freedom for all members."
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                                lineNumber: 110,
-                                                columnNumber: 11
+                                                lineNumber: 103,
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                        lineNumber: 101,
-                                        columnNumber: 9
+                                        lineNumber: 94,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "rounded-3xl bg-sky-400 p-10 text-white",
@@ -303,63 +303,63 @@ function PageIntro({ subtitle, title, description, currentPage = "About", backgr
                                                         className: "h-8 w-8"
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                                        lineNumber: 117,
-                                                        columnNumber: 13
+                                                        lineNumber: 111,
+                                                        columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                         className: "text-3xl font-bold",
                                                         children: "Mission"
                                                     }, void 0, false, {
                                                         fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                                        lineNumber: 119,
-                                                        columnNumber: 13
+                                                        lineNumber: 113,
+                                                        columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                                lineNumber: 116,
-                                                columnNumber: 11
+                                                lineNumber: 110,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "mt-6 text-lg leading-8 text-blue-100",
-                                                children: "To empower members to achieve financial stability through innovation, client-focused Savings and credit solutions while promoting a culture of financial discipline and investment."
+                                                children: "To empower members to achieve financial stability through innovation, client-focused savings and credit solutions while promoting a culture of financial discipline and investment."
                                             }, void 0, false, {
                                                 fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                                lineNumber: 124,
-                                                columnNumber: 11
+                                                lineNumber: 118,
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                        lineNumber: 115,
-                                        columnNumber: 9
+                                        lineNumber: 109,
+                                        columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                                lineNumber: 99,
-                                columnNumber: 7
+                                lineNumber: 93,
+                                columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                        lineNumber: 65,
-                        columnNumber: 5
+                        lineNumber: 62,
+                        columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                    lineNumber: 64,
-                    columnNumber: 3
+                    lineNumber: 61,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                lineNumber: 63,
-                columnNumber: 1
+                lineNumber: 60,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$components$2f$shared$2f$Leadership$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/YPA-Wealth-Depot/app/about/page.tsx",
-                lineNumber: 136,
-                columnNumber: 1
+                lineNumber: 129,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true);
