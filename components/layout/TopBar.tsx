@@ -20,7 +20,7 @@ export default function TopBar() {
 
           <div className="flex items-center gap-2 text-slate-200">
             <Phone size={14} className="text-sky-400" />
-            <span>+256 700 000 000</span>
+            <span>+256 774 350 727</span>
           </div>
 
           <div className="flex items-center gap-2 text-slate-200">

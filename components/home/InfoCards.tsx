@@ -41,7 +41,7 @@ export default function InfoCards() {
               </p>
 
               <Link
-                href="#"
+                href="/about"
                 className="inline-flex items-center gap-2 mt-6 font-semibold hover:gap-4 transition-all"
               >
                 Learn More

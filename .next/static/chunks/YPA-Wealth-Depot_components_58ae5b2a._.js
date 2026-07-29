@@ -1,33 +1,4 @@
 (globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
-"[project]/YPA-Wealth-Depot/components/ui/Button.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
-
-__turbopack_context__.s([
-    "default",
-    ()=>Button
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$utils$2f$cn$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/utils/cn.ts [app-client] (ecmascript)");
-;
-;
-function Button(param) {
-    let { variant = "primary", className, ...props } = param;
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$utils$2f$cn$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("rounded-full px-6 py-3 transition-all duration-300 font-semibold", variant === "primary" && "bg-red-500 text-white hover:scale-105 hover:bg-sky-600", variant === "secondary" && "bg-red-600 text-white hover:bg-red-700", variant === "outline" && "border border-slate-300 hover:bg-slate-100", className),
-        ...props
-    }, void 0, false, {
-        fileName: "[project]/YPA-Wealth-Depot/components/ui/Button.tsx",
-        lineNumber: 14,
-        columnNumber: 5
-    }, this);
-}
-_c = Button;
-var _c;
-__turbopack_context__.k.register(_c, "Button");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
-}
-}),
 "[project]/YPA-Wealth-Depot/components/hero/Hero.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -40,11 +11,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$no
 var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/gsap/index.js [app-client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/gsap/ScrollTrigger.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$components$2f$ui$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/components/ui/Button.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
-;
 ;
 ;
 ;
@@ -53,21 +22,21 @@ __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_m
 const slides = [
     {
         image: "/hero1.webp",
-        tag: "Build. Grow. Prosper.",
-        title: "Your Wealth, Our Priority.",
-        desc: "Secure savings, smart loans, and investment tools designed to grow your financial future."
+        tag: "",
+        title: "EASY LOAN ACCESS",
+        desc: "Get the financial support you need, when you need it."
     },
     {
         image: "/1.jpg",
-        tag: "Secure Today",
-        title: "Save for a Better Tomorrow",
-        desc: "Reliable savings solutions that protect and grow your money."
+        tag: "",
+        title: "GROW YOUR SAVINGS",
+        desc: "Start saving today for a brighter and more secure tomorrow."
     },
     {
         image: "/2.jpg",
-        tag: "Invest for Growth",
-        title: "Build Wealth That Lasts",
-        desc: "Smart investment options for long-term financial success."
+        tag: "",
+        title: "INVEST. EARN . GROW ",
+        desc: "Buy shares and become part of the SACCO ownership"
     }
 ];
 function Hero() {
@@ -149,7 +118,7 @@ function Hero() {
                 className: "relative z-20 flex min-h-[calc(100vh-96px)] items-center justify-center px-6 pt-24 text-center",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     ref: textRef,
-                    className: "max-w-5xl pt-10 md:pt-0",
+                    className: "max-w-5xl pt-2 md:pt-0",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-sky-400 font-semibold text-xl md:text-2xl tracking-widest uppercase",
@@ -168,7 +137,7 @@ function Hero() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "mt-6 text-white/85 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed",
+                            className: "mt- text-sky-400 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl  leading-relaxed",
                             children: slides[index].desc
                         }, void 0, false, {
                             fileName: "[project]/YPA-Wealth-Depot/components/hero/Hero.tsx",
@@ -176,14 +145,7 @@ function Hero() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex flex-col sm:flex-row justify-center gap-4 mt-10",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$components$2f$ui$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                children: "Become a Member"
-                            }, void 0, false, {
-                                fileName: "[project]/YPA-Wealth-Depot/components/hero/Hero.tsx",
-                                lineNumber: 106,
-                                columnNumber: 13
-                            }, this)
+                            className: "flex flex-col sm:flex-row justify-center gap-4 mt-10"
                         }, void 0, false, {
                             fileName: "[project]/YPA-Wealth-Depot/components/hero/Hero.tsx",
                             lineNumber: 105,
@@ -311,7 +273,7 @@ function InfoCards() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "#",
+                                        href: "/about",
                                         className: "inline-flex items-center gap-2 mt-6 font-semibold hover:gap-4 transition-all",
                                         children: [
                                             "Learn More",
@@ -554,6 +516,7 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/gsap/index.js [app-client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/gsap/ScrollTrigger.js [app-client] (ecmascript)");
@@ -561,6 +524,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$no
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -656,68 +620,68 @@ function TransferCard() {
                         className: "object-cover"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/components/shared/MembershipJourney.tsx",
-                        lineNumber: 97,
+                        lineNumber: 98,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-black/60"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/components/shared/MembershipJourney.tsx",
-                        lineNumber: 105,
+                        lineNumber: 106,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/YPA-Wealth-Depot/components/shared/MembershipJourney.tsx",
-                lineNumber: 93,
+                lineNumber: 94,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 ref: content,
-                className: "absolute inset-x-0 bottom-24 z-30 flex flex-col items-center text-center text-white px-6",
+                className: "absolute inset-x-0 bottom-50 z-30 flex flex-col items-center text-center text-white px-6",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "text-sky-300 tracking-[0.35em] uppercase",
-                        children: "Join Today"
-                    }, void 0, false, {
-                        fileName: "[project]/YPA-Wealth-Depot/components/shared/MembershipJourney.tsx",
-                        lineNumber: 114,
-                        columnNumber: 9
-                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "mt-4 text-5xl font-bold md:text-6xl",
                         children: "Become a Member"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/components/shared/MembershipJourney.tsx",
-                        lineNumber: 118,
+                        lineNumber: 117,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "mt-6 max-w-2xl text-lg leading-8 text-gray-200",
+                        className: "mt-2 max-w-2xl text-lg leading-8 text-gray-200",
                         children: "Start your financial journey with YPA Wealth Depot. Save confidently, access affordable loans, and invest in your future with a trusted SACCO."
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/components/shared/MembershipJourney.tsx",
-                        lineNumber: 122,
+                        lineNumber: 121,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: "mt-10 rounded-full bg-sky-500 px-8 py-4 font-semibold transition hover:scale-105 hover:bg-sky-600",
-                        children: "Join Us"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "hidden lg:flex items-center",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: "/Comingsoon",
+                            className: "rounded-full bg-red-600 hover:bg-sky-600 px-7 py-3 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1",
+                            children: "JOIN US"
+                        }, void 0, false, {
+                            fileName: "[project]/YPA-Wealth-Depot/components/shared/MembershipJourney.tsx",
+                            lineNumber: 128,
+                            columnNumber: 3
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/components/shared/MembershipJourney.tsx",
-                        lineNumber: 128,
+                        lineNumber: 127,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/YPA-Wealth-Depot/components/shared/MembershipJourney.tsx",
-                lineNumber: 110,
+                lineNumber: 111,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/YPA-Wealth-Depot/components/shared/MembershipJourney.tsx",
-        lineNumber: 88,
+        lineNumber: 89,
         columnNumber: 5
     }, this);
 }
@@ -1065,4 +1029,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 ]);
 
-//# sourceMappingURL=YPA-Wealth-Depot_components_1d2c6cbf._.js.map
+//# sourceMappingURL=YPA-Wealth-Depot_components_58ae5b2a._.js.map

@@ -129,7 +129,7 @@ export default function Navbar({ scrolled }: NavbarProps) {
         <div className="hidden lg:flex items-center">
   <Link
     href="/Comingsoon"
-    className="rounded-full bg-sky-500 hover:bg-sky-600 px-7 py-3 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1"
+    className="rounded-full bg-red-600 hover:bg-sky-600 px-7 py-3 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1"
   >
     LOGIN
   </Link>

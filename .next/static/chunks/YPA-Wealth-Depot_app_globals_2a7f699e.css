@@ -143,6 +143,8 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --color-red-50: #fef2f2;
     --color-red-200: #ffcaca;
+    --color-red-400: #ff6568;
+    --color-red-500: #fb2c36;
     --color-red-600: #e40014;
     --color-red-700: #bf000f;
     --color-amber-50: #fffbeb;
@@ -245,6 +247,8 @@
     :root, :host {
       --color-red-50: color(display-p3 .988669 .951204 .950419);
       --color-red-200: color(display-p3 .969562 .798149 .794299);
+      --color-red-400: color(display-p3 .933534 .431676 .423491);
+      --color-red-500: color(display-p3 .903738 .262579 .253307);
       --color-red-600: color(display-p3 .830323 .140383 .133196);
       --color-red-700: color(display-p3 .692737 .116232 .104679);
       --color-amber-50: color(display-p3 .997804 .985047 .926312);
@@ -292,6 +296,8 @@
     :root, :host {
       --color-red-50: lab(96.5005% 4.18508 1.52328);
       --color-red-200: lab(86.017% 19.8815 7.75869);
+      --color-red-400: lab(63.7053% 60.745 31.3109);
+      --color-red-500: lab(55.4814% 75.0732 48.8528);
       --color-red-600: lab(48.4493% 77.4328 61.5452);
       --color-red-700: lab(40.4273% 67.2623 53.7441);
       --color-amber-50: lab(98.6252% -.635922 8.42309);
@@ -788,6 +794,18 @@
 
   .bottom-24 {
     bottom: calc(var(--spacing) * 24);
+  }
+
+  .bottom-30 {
+    bottom: calc(var(--spacing) * 30);
+  }
+
+  .bottom-35 {
+    bottom: calc(var(--spacing) * 35);
+  }
+
+  .bottom-50 {
+    bottom: calc(var(--spacing) * 50);
   }
 
   .-left-5 {
@@ -1575,6 +1593,10 @@
     background-color: var(--color-red-50);
   }
 
+  .bg-red-500 {
+    background-color: var(--color-red-500);
+  }
+
   .bg-red-600 {
     background-color: var(--color-red-600);
   }
@@ -2097,12 +2119,28 @@
     padding-block: calc(var(--spacing) * 28);
   }
 
+  .pt-1 {
+    padding-top: var(--spacing);
+  }
+
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
   }
 
+  .pt-5 {
+    padding-top: calc(var(--spacing) * 5);
+  }
+
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
+  }
+
+  .pt-9 {
+    padding-top: calc(var(--spacing) * 9);
   }
 
   .pt-10 {
@@ -2313,6 +2351,10 @@
 
   .text-green-700 {
     color: var(--color-green-700);
+  }
+
+  .text-red-400 {
+    color: var(--color-red-400);
   }
 
   .text-red-600 {
@@ -2738,6 +2780,12 @@
       .hover\:bg-white\/20:hover {
         background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
       }
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:text-red-600:hover {
+      color: var(--color-red-600);
     }
   }
 
