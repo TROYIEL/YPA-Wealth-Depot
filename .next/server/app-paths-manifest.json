@@ -1,6 +1,10 @@
 {
-  "/Comingsoon/page": "app/Comingsoon/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/about/page": "app/about/page.js",
-  "/page": "app/page.js"
+  "/loan/page": "app/loan/page.js",
+  "/membership/page": "app/membership/page.js",
+  "/news/[slug]/page": "app/news/[slug]/page.js",
+  "/news/page": "app/news/page.js",
+  "/page": "app/page.js",
+  "/shares/page": "app/shares/page.js"
 }

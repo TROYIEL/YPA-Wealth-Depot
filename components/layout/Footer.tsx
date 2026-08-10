@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-slate-900 text-white mt-20">
@@ -5,26 +7,56 @@ export default function Footer() {
         <div>
           <h2 className="font-bold text-xl">YPA Wealth Depot</h2>
           <p className="mt-4 text-slate-400">
-            Building sustainable financial growth for members across Uganda.
+            FANIANCE . GROWTH . IMPACT
           </p>
         </div>
 
         <div>
           <h3 className="font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-slate-400">
-            <li>About</li>
-            <li>Products</li>
-            <li>Membership</li>
-            <li>Contact</li>
+            <li> 
+            <Link href="/about">
+           About
+          </Link>
+            </li>
+            <li>
+            <Link href="/membership">
+           Membership
+           </Link>
+           </li>
+            <li>
+            <Link href="/branches">
+          Branches
+          </Link>
+          </li>
+          <li>
+          <Link href="/news">
+          News
+          </Link>
+          </li>
           </ul>
         </div>
 
         <div>
           <h3 className="font-semibold mb-4">Services</h3>
           <ul className="space-y-2 text-slate-400">
-            <li>Savings</li>
-            <li>Loans</li>
-            <li>Investments</li>
+            <li>
+              <Link href="/Savings">
+              Savings
+              </Link>
+            </li>
+
+            <li>
+              <Link href="/loan">
+              Loans
+              </Link>
+            </li>
+
+            <li>
+              <Link href="/shares">
+              Shares
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -32,7 +64,7 @@ export default function Footer() {
           <h3 className="font-semibold mb-4">Contact</h3>
           <p className="text-slate-400">
             Kampala, Uganda <br />
-            +256 700 000 000
+            +256 774 350727 | +256 758 041899
           </p>
         </div>
       </div>

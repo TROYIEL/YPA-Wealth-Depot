@@ -2,137 +2,90 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useLayoutEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-
-gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
 export default function TransferCard() {
-  const section = useRef<HTMLElement>(null);
-  const bg = useRef<HTMLDivElement>(null);
-  const card = useRef<HTMLDivElement>(null);
-  const content = useRef<HTMLDivElement>(null);
-
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      // Idle floating animation
-      gsap.to(card.current, {
-        y: 8,
-        duration: 2,
-        repeat: -1,
-        yoyo: true,
-        ease: "sine.inOut",
-      });
-
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: section.current,
-          start: "top top",
-          end: "+=2200",
-          scrub: 1,
-          pin: true,
-          invalidateOnRefresh: true,
-        },
-      });
-
-      tl.to(
-        bg.current,
-        {
-          scale: 1.1,
-          ease: "none",
-          duration: 1,
-        },
-        0
-      )
-
-        .to(
-          card.current,
-          {
-            motionPath: {
-              path: [
-                { x: 0, y: 0 },
-                { x: 180, y: -110 },
-                { x: 430, y: -50 },
-                { x: 650, y: 15 },
-              ],
-              curviness: 1.8,
-            },
-            rotation: 18,
-            scale: 0.96,
-            ease: "none",
-            duration: 1,
-          },
-          0
-        )
-
-        .fromTo(
-          content.current,
-          {
-            autoAlpha: 0,
-            y: 60,
-          },
-          {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.35,
-          },
-          0.75
-        );
-    }, section);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
-    <section
-      ref={section}
-      className="relative h-screen overflow-hidden bg-black"
-    >
+    <section className="relative h-[55vh] min-h-[420px] overflow-hidden">
       {/* Background */}
-      <div
-        ref={bg}
-        className="absolute inset-0"
-      >
+      <div className="absolute inset-0">
         <Image
           src="/members-bg.webp"
-          alt=""
+          alt="YPA Wealth Depot"
           fill
           priority
           className="object-cover"
         />
 
+        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
-      
-      {/* Text */}
-      <div
-        ref={content}
-        className="absolute inset-x-0 bottom-50 z-30 flex flex-col items-center text-center text-white px-6"
-      >
-      
+      {/* Animated Border Frame */}
+      <div className="pointer-events-none absolute inset-3 z-20 rounded-3xl p-0.5 overflow-hidden">
+        
+        {/* Sky Blue - Left to Right */}
+        <div
+          className="absolute inset-0 animate-[blueMove_4s_linear_infinite]"
+          style={{
+            background:
+              "linear-gradient(90deg, transparent 0%, #0ea5e9 25%, #38bdf8 50%, transparent 75%)",
+          }}
+        />
 
-        <h2 className="mt-4 text-5xl font-bold md:text-6xl">
+        {/* Red - Right to Left */}
+        <div
+          className="absolute inset-0 animate-[redMove_4s_linear_infinite]"
+          style={{
+            background:
+              "linear-gradient(270deg, transparent 0%, #dc2626 25%, #ef4444 50%, transparent 75%)",
+          }}
+        />
+
+        {/* Inner Frame */}
+        <div className="relative h-full w-full rounded-[22px] border border-white/10 bg-transparent" />
+      </div>
+
+      {/* Centered Text */}
+      <div className="absolute inset-0 z-30 flex flex-col items-center justify-center px-6 text-center text-white">
+        <h2 className="text-4xl font-bold md:text-5xl">
           Become a Member
         </h2>
 
-        <p className="mt-2 max-w-2xl text-lg leading-8 text-gray-200">
+        <p className="mt-4 max-w-2xl text-base leading-7 text-gray-200 md:text-lg">
           Start your financial journey with YPA Wealth Depot. Save
           confidently, access affordable loans, and invest in your future
           with a trusted SACCO.
         </p>
 
-        <div className="hidden lg:flex items-center">
-  <Link
-    href="/Comingsoon"
-    className="rounded-full bg-red-600 hover:bg-sky-600 px-7 py-3 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1"
-  >
-    JOIN US 
-  </Link>
-</div>
+        {/* Button */}
+        <Link
+          href="/membership"
+          className="mt-6 inline-flex items-center justify-center rounded-full bg-red-600 px-8 py-3 font-semibold text-white shadow-[0_0_18px_rgba(220,38,38,0.6)]"
+        >
+          Become a Member
+        </Link>
       </div>
+
+      {/* Animation */}
+      <style jsx>{`
+        @keyframes blueMove {
+          0% {
+            transform: translateX(-100%);
+          }
+          100% {
+            transform: translateX(100%);
+          }
+        }
+
+        @keyframes redMove {
+          0% {
+            transform: translateX(100%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+      `}</style>
     </section>
   );
 }

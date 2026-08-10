@@ -69,7 +69,7 @@ export default function InfoCards() {
 
               <div className="absolute bottom-8 left-8 max-w-sm text-white">
 
-                <div className="w-1 h-24 bg-lime-400 absolute -left-5 top-0 rounded-full"></div>
+                <div className="w-1 h-24 bg-red-600 absolute -left-5 top-0 rounded-full"></div>
 
                 <h3 className="text-4xl font-bold mb-3">
                   Our Mission

@@ -20,7 +20,7 @@ export default function Home() {
       <MembershipJourney />
       <Newscard  />
       <LandingPattern />
-      <AdvertSlider/>
+      <AdvertSlider />
     </>
   );
 }
