@@ -52,7 +52,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$no
 ;
 ;
 ;
-function Loans({ subtitle = "", title = "", description = "", currentPage = "Loans", backgroundImage = "/loans 1.webp" }) {
+function Loans() {
+    const subtitle = "Loan Products";
+    const title = "Loans";
+    const description = "Flexible financing solutions designed to help members achieve their personal and business goals.";
+    const currentPage = "Loans";
+    const backgroundImage = "/loans 1.webp";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -66,14 +71,14 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                         className: "object-cover"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                        lineNumber: 27,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-linear-to-r from-blue-950/95 via-blue-900/80 to-blue-800/60"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                        lineNumber: 35,
+                        lineNumber: 26,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$components$2f$ui$2f$Container$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -86,7 +91,7 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                     children: subtitle
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                    lineNumber: 42,
+                                    lineNumber: 33,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -94,7 +99,7 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                     children: title
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                    lineNumber: 53,
+                                    lineNumber: 44,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -102,7 +107,7 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                     children: description
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                    lineNumber: 63,
+                                    lineNumber: 54,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -112,28 +117,28 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                             children: "Home"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                            lineNumber: 76,
+                                            lineNumber: 67,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: "/"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                            lineNumber: 77,
+                                            lineNumber: 68,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: "Products"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                            lineNumber: 78,
+                                            lineNumber: 69,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             children: "/"
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                            lineNumber: 79,
+                                            lineNumber: 70,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -141,30 +146,30 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                             children: currentPage
                                         }, void 0, false, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                            lineNumber: 81,
+                                            lineNumber: 72,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 65,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                            lineNumber: 40,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                        lineNumber: 38,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                lineNumber: 25,
+                lineNumber: 16,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -181,14 +186,14 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                         children: "Financing That Moves You Forward"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                        lineNumber: 105,
+                                        lineNumber: 96,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: " mx-auto mt-5 h-1 w-24 rounded-full bg-red-700 "
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                        lineNumber: 114,
+                                        lineNumber: 105,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -196,25 +201,25 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                         children: "At YPA Wealth Depot, we provide reliable and affordable loan solutions designed to support personal growth, business expansion, asset acquisition, and long-term financial success."
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                        lineNumber: 122,
+                                        lineNumber: 113,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                lineNumber: 103,
+                                lineNumber: 94,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "mt-16 grid gap-10 md:grid-cols-2",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "group h-[520px] [perspective:1000px]",
+                                        className: "group h-130 perspective-[1000px]",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: " relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] ",
+                                            className: " relative h-full w-full transition-transform duration-700 transform-3d group-hover:transform-[rotateY(180deg)] ",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: " absolute inset-0 rounded-3xl bg-white border border-blue-100 p-10 shadow-xl [backface-visibility:hidden] ",
+                                                    className: " absolute inset-0 rounded-3xl bg-white border border-blue-100 p-10 shadow-xl backface-hidden ",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: " flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-100 ",
@@ -223,12 +228,12 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                                                 size: 35
                                                             }, void 0, false, {
                                                                 fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                                lineNumber: 183,
+                                                                lineNumber: 174,
                                                                 columnNumber: 9
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                            lineNumber: 174,
+                                                            lineNumber: 165,
                                                             columnNumber: 7
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -236,7 +241,7 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                                             children: "YPA Project Loans"
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                            lineNumber: 190,
+                                                            lineNumber: 181,
                                                             columnNumber: 7
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -244,7 +249,7 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                                             children: "Empowering YPA members with affordable financing for projects like goat rearing, beekeeping, and maize farming to build sustainable wealth and improve livelihoods."
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                            lineNumber: 200,
+                                                            lineNumber: 191,
                                                             columnNumber: 7
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -262,32 +267,32 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                                                             size: 20
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                                            lineNumber: 224,
+                                                                            lineNumber: 215,
                                                                             columnNumber: 13
                                                                         }, this),
                                                                         item
                                                                     ]
                                                                 }, item, true, {
                                                                     fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                                    lineNumber: 220,
+                                                                    lineNumber: 211,
                                                                     columnNumber: 11
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                            lineNumber: 212,
+                                                            lineNumber: 203,
                                                             columnNumber: 7
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: " mt-8 text-sm font-semibold text-sky-500 "
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                            lineNumber: 237,
+                                                            lineNumber: 228,
                                                             columnNumber: 7
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                    lineNumber: 160,
+                                                    lineNumber: 151,
                                                     columnNumber: 5
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -300,7 +305,7 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                                             className: "object-cover"
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                            lineNumber: 263,
+                                                            lineNumber: 254,
                                                             columnNumber: 7
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -312,7 +317,7 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                                                         children: "Grow Your Project"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                                        lineNumber: 283,
+                                                                        lineNumber: 274,
                                                                         columnNumber: 11
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -320,35 +325,35 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                                                         children: "Finance agriculture, businesses, and income-generating projects."
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                                        lineNumber: 291,
+                                                                        lineNumber: 282,
                                                                         columnNumber: 11
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                                lineNumber: 281,
+                                                                lineNumber: 272,
                                                                 columnNumber: 9
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                            lineNumber: 271,
+                                                            lineNumber: 262,
                                                             columnNumber: 7
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                    lineNumber: 252,
+                                                    lineNumber: 243,
                                                     columnNumber: 5
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                            lineNumber: 146,
+                                            lineNumber: 137,
                                             columnNumber: 3
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                        lineNumber: 144,
+                                        lineNumber: 135,
                                         columnNumber: 1
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -357,7 +362,7 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                             className: " relative h-full w-full transition-transform duration-700 transform-3d group-hover:transform-[rotateY(180deg)] ",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: " absolute inset-0 rounded-3xl bg-gradient-to-br from-sky-500 to-blue-700 p-10 text-white shadow-xl backface-hidden ",
+                                                    className: " absolute inset-0 rounded-3xl bg-linear-to-br from-sky-500 to-blue-700 p-10 text-white shadow-xl backface-hidden ",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: " flex h-16 w-16 items-center justify-center rounded-2xl bg-white/20 ",
@@ -365,12 +370,12 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                                                 size: 35
                                                             }, void 0, false, {
                                                                 fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                                lineNumber: 354,
+                                                                lineNumber: 345,
                                                                 columnNumber: 9
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                            lineNumber: 345,
+                                                            lineNumber: 336,
                                                             columnNumber: 7
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -378,7 +383,7 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                                             children: "Car Logbook Loans"
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                            lineNumber: 359,
+                                                            lineNumber: 350,
                                                             columnNumber: 7
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -386,7 +391,7 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                                             children: "Unlock the value of your vehicle and access quick financing while continuing to use your car."
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                            lineNumber: 368,
+                                                            lineNumber: 359,
                                                             columnNumber: 7
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -403,32 +408,32 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                                                             size: 20
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                                            lineNumber: 393,
+                                                                            lineNumber: 384,
                                                                             columnNumber: 13
                                                                         }, this),
                                                                         item
                                                                     ]
                                                                 }, item, true, {
                                                                     fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                                    lineNumber: 388,
+                                                                    lineNumber: 379,
                                                                     columnNumber: 11
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                            lineNumber: 380,
+                                                            lineNumber: 371,
                                                             columnNumber: 7
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: " mt-8 text-sm font-semibold text-white "
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                            lineNumber: 403,
+                                                            lineNumber: 394,
                                                             columnNumber: 7
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                    lineNumber: 330,
+                                                    lineNumber: 321,
                                                     columnNumber: 5
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -441,7 +446,7 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                                             className: "object-cover"
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                            lineNumber: 429,
+                                                            lineNumber: 420,
                                                             columnNumber: 7
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -453,7 +458,7 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                                                         children: "Drive Your Dreams"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                                        lineNumber: 449,
+                                                                        lineNumber: 440,
                                                                         columnNumber: 11
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -461,57 +466,57 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                                                         children: "Get financing while keeping your vehicle on the road."
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                                        lineNumber: 457,
+                                                                        lineNumber: 448,
                                                                         columnNumber: 11
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                                lineNumber: 447,
+                                                                lineNumber: 438,
                                                                 columnNumber: 9
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                            lineNumber: 437,
+                                                            lineNumber: 428,
                                                             columnNumber: 7
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                                    lineNumber: 418,
+                                                    lineNumber: 409,
                                                     columnNumber: 5
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                            lineNumber: 316,
+                                            lineNumber: 307,
                                             columnNumber: 3
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                        lineNumber: 314,
+                                        lineNumber: 305,
                                         columnNumber: 1
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                lineNumber: 140,
+                                lineNumber: 131,
                                 columnNumber: 1
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                        lineNumber: 100,
+                        lineNumber: 91,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                    lineNumber: 98,
+                    lineNumber: 89,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                lineNumber: 96,
+                lineNumber: 87,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -524,14 +529,14 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                         className: "object-cover"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                        lineNumber: 498,
+                        lineNumber: 489,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: " absolute inset-0 bg-blue-950/80 "
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                        lineNumber: 507,
+                        lineNumber: 498,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$components$2f$ui$2f$Container$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -543,14 +548,14 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                     children: "Ready To Grow Your Future?"
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                    lineNumber: 527,
+                                    lineNumber: 518,
                                     columnNumber: 7
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: " mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/85 "
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                    lineNumber: 536,
+                                    lineNumber: 527,
                                     columnNumber: 7
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -558,24 +563,24 @@ function Loans({ subtitle = "", title = "", description = "", currentPage = "Loa
                                     children: "Apply For A Loan"
                                 }, void 0, false, {
                                     fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                                    lineNumber: 549,
+                                    lineNumber: 540,
                                     columnNumber: 7
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                            lineNumber: 517,
+                            lineNumber: 508,
                             columnNumber: 5
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                        lineNumber: 515,
+                        lineNumber: 506,
                         columnNumber: 3
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/YPA-Wealth-Depot/app/loan/page.tsx",
-                lineNumber: 491,
+                lineNumber: 482,
                 columnNumber: 1
             }, this)
         ]

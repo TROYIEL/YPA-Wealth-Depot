@@ -63,7 +63,7 @@ function Footer() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "mt-4 text-slate-400",
-                                children: "Building sustainable financial growth for members across Uganda."
+                                children: "FANIANCE . GROWTH . IMPACT"
                             }, void 0, false, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
                                 lineNumber: 7,
@@ -89,31 +89,45 @@ function Footer() {
                                 className: "space-y-2 text-slate-400",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        children: "About"
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(Link, {
+                                            href: "/about",
+                                            children: "About"
+                                        }, void 0, false, {
+                                            fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
+                                            lineNumber: 16,
+                                            columnNumber: 13
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
                                         lineNumber: 15,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        children: "Products"
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(Link, {
+                                            href: "/about",
+                                            children: "Products"
+                                        }, void 0, false, {
+                                            fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
+                                            lineNumber: 21,
+                                            columnNumber: 13
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
-                                        lineNumber: 16,
+                                        lineNumber: 20,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: "Membership"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
-                                        lineNumber: 17,
+                                        lineNumber: 25,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: "Contact"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
-                                        lineNumber: 18,
+                                        lineNumber: 26,
                                         columnNumber: 13
                                     }, this)
                                 ]
@@ -135,7 +149,7 @@ function Footer() {
                                 children: "Services"
                             }, void 0, false, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
-                                lineNumber: 23,
+                                lineNumber: 31,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -145,33 +159,33 @@ function Footer() {
                                         children: "Savings"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
-                                        lineNumber: 25,
+                                        lineNumber: 33,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: "Loans"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
-                                        lineNumber: 26,
+                                        lineNumber: 34,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: "Investments"
                                     }, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
-                                        lineNumber: 27,
+                                        lineNumber: 35,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
-                                lineNumber: 24,
+                                lineNumber: 32,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
-                        lineNumber: 22,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -181,7 +195,7 @@ function Footer() {
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
-                                lineNumber: 32,
+                                lineNumber: 40,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -190,20 +204,20 @@ function Footer() {
                                     "Kampala, Uganda ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
-                                        lineNumber: 34,
+                                        lineNumber: 42,
                                         columnNumber: 29
                                     }, this),
                                     "+256 700 000 000"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
-                                lineNumber: 33,
+                                lineNumber: 41,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
-                        lineNumber: 31,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, this)
                 ]
@@ -221,7 +235,7 @@ function Footer() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/YPA-Wealth-Depot/components/layout/Footer.tsx",
-                lineNumber: 40,
+                lineNumber: 48,
                 columnNumber: 7
             }, this)
         ]

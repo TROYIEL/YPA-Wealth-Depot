@@ -15,7 +15,7 @@ export default function Button({
       className={cn(
         "rounded-full px-6 py-3 transition-all duration-300 font-semibold",
         variant === "primary" &&
-          "bg-sky-500 text-white hover:scale-105 hover:bg-sky-600",
+          "bg-red-500 text-white hover:scale-105 hover:bg-sky-600",
         variant === "secondary" &&
           "bg-red-600 text-white hover:bg-red-700",
         variant === "outline" &&

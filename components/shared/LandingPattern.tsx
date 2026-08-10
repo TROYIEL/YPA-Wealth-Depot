@@ -9,56 +9,54 @@ export default function LandingPattern() {
   ];
 
   return (
-    <section className="bg-[#e9e9e9] py-10 sm:py-16">
-
+    <section>
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-
-        <div className="
-          grid 
-          grid-cols-2 
-          items-center 
-          gap-x-14 
-          gap-y-12 
-          sm:grid-cols-4
-        ">
-
+        <div
+          className="
+            grid
+            grid-cols-2
+            items-center
+            justify-items-center
+            gap-x-8
+            gap-y-10
+            sm:grid-cols-4
+            lg:gap-x-12
+          "
+        >
           {logos.map((logo) => (
-
             <div
               key={logo.alt}
-              className="flex items-center justify-center"
+              className="flex h-36 w-full items-center justify-center sm:h-40 lg:h-44"
             >
-
               <Image
                 src={logo.src}
                 alt={logo.alt}
-                width={240}
-                height={160}
+                width={300}
+                height={220}
                 loading="lazy"
                 className="
-                  h-40
-                  sm:h-24
+                  h-32
                   w-auto
+                  max-w-55
                   object-contain
                   grayscale
-                  opacity-80
+                  opacity-90
                   transition
                   duration-300
                   ease-out
                   hover:grayscale-0
                   hover:opacity-100
-                  hover:scale-110
+                  hover:scale-105
+                  sm:h-36
+                  sm:max-w-62.5
+                  lg:h-40
+                  lg:max-w-70
                 "
               />
-
             </div>
-
           ))}
-
         </div>
-
       </div>
-
     </section>
   );
 }

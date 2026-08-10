@@ -4,29 +4,29 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Button from "@/components/ui/Button";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
 const slides = [
   {
-    image: "/4.jpg",
-    tag: "Build. Grow. Prosper.",
-    title: "Your Wealth, Our Priority.",
+    image: "/hero1.webp",
+    tag: "",
+    title: "EASY LOAN ACCESS",
     desc:
-      "Secure savings, smart loans, and investment tools designed to grow your financial future.",
+      "Get the financial support you need, when you need it.",
   },
   {
     image: "/1.jpg",
-    tag: "Secure Today",
-    title: "Save for a Better Tomorrow",
-    desc: "Reliable savings solutions that protect and grow your money.",
+    tag: "",
+    title: "GROW YOUR SAVINGS",
+    desc: "Start saving today for a brighter and more secure tomorrow.",
   },
   {
     image: "/2.jpg",
-    tag: "Invest for Growth",
-    title: "Build Wealth That Lasts",
-    desc: "Smart investment options for long-term financial success.",
+    tag: "",
+    title: "INVEST. EARN . GROW ",
+    desc: "Buy shares and become part of the SACCO ownership",
   },
 ];
 
@@ -87,7 +87,7 @@ export default function Hero() {
 
       <div 
   ref={textRef} 
-  className="max-w-5xl pt-10 md:pt-0"
+  className="max-w-5xl pt-2 md:pt-0"
 >
 
           <p className="text-sky-400 font-semibold text-xl md:text-2xl tracking-widest uppercase">
@@ -98,12 +98,12 @@ export default function Hero() {
             {slides[index].title}
           </h1>
 
-          <p className="mt-6 text-white/85 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed">
+          <p className="mt- text-sky-400 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl  leading-relaxed">
             {slides[index].desc}
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
-            <Button>Become a Member</Button>
+            
             
           </div>
 

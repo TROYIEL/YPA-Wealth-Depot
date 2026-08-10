@@ -80,7 +80,7 @@ function NewsCard({ article }: { article: Article }) {
   return (
     <article className="group relative overflow-hidden rounded-[30px] border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,.08)] transition-all duration-700 hover:-translate-y-3 hover:shadow-[0_35px_90px_rgba(15,23,42,.18)]">
 
-      <div className="absolute inset-0 rounded-[30px] bg-gradient-to-br from-sky-500/10 via-transparent to-blue-500/10 opacity-0 blur-2xl transition duration-700 group-hover:opacity-100" />
+      <div className="absolute inset-0 rounded-[30px] bg-linear-to-br from-sky-500/10 via-transparent to-blue-500/10 opacity-0 blur-2xl transition duration-700 group-hover:opacity-100" />
 
       <div className="relative h-72 overflow-hidden">
 
@@ -91,7 +91,7 @@ function NewsCard({ article }: { article: Article }) {
           className="object-cover transition duration-700 group-hover:scale-110"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-black via-black/10 to-transparent" />
 
         <div className="absolute left-6 top-6 rounded-full border border-white/30 bg-white/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-white backdrop-blur-xl">
           {article.category}

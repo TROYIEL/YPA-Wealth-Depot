@@ -189,23 +189,22 @@ function LandingPattern() {
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "bg-[#e9e9e9] py-10 sm:py-16",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "mx-auto max-w-7xl px-6 lg:px-10",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: " grid  grid-cols-2  items-center  gap-x-14  gap-y-12  sm:grid-cols-4 ",
+                className: " grid grid-cols-2 items-center justify-items-center gap-x-8 gap-y-10 sm:grid-cols-4 lg:gap-x-12 ",
                 children: logos.map((logo)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center justify-center",
+                        className: "flex h-36 w-full items-center justify-center sm:h-40 lg:h-44",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                             src: logo.src,
                             alt: logo.alt,
-                            width: 240,
-                            height: 160,
+                            width: 300,
+                            height: 220,
                             loading: "lazy",
-                            className: " h-40 sm:h-24 w-auto object-contain grayscale opacity-80 transition duration-300 ease-out hover:grayscale-0 hover:opacity-100 hover:scale-110 "
+                            className: " h-32 w-auto max-w-55 object-contain grayscale opacity-90 transition duration-300 ease-out hover:grayscale-0 hover:opacity-100 hover:scale-105 sm:h-36 sm:max-w-62.5 lg:h-40 lg:max-w-70 "
                         }, void 0, false, {
                             fileName: "[project]/YPA-Wealth-Depot/components/shared/LandingPattern.tsx",
-                            lineNumber: 32,
+                            lineNumber: 31,
                             columnNumber: 15
                         }, this)
                     }, logo.alt, false, {
@@ -215,12 +214,12 @@ function LandingPattern() {
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/YPA-Wealth-Depot/components/shared/LandingPattern.tsx",
-                lineNumber: 16,
+                lineNumber: 14,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/YPA-Wealth-Depot/components/shared/LandingPattern.tsx",
-            lineNumber: 14,
+            lineNumber: 13,
             columnNumber: 7
         }, this)
     }, void 0, false, {
@@ -235,94 +234,64 @@ function LandingPattern() {
 
 __turbopack_context__.s([
     "default",
-    ()=>AdvertSlider
+    ()=>NewsletterCTA
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/YPA-Wealth-Depot/node_modules/next/image.js [app-rsc] (ecmascript)");
 ;
 ;
-const adverts = [
-    "/ad1.webp",
-    "/ad2.webp",
-    "/ad3.webp",
-    "/ad4.webp"
-];
-function AdvertSlider() {
+function NewsletterCTA() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "bg-slate-50 py-10 md:py-16",
+        className: "relative overflow-hidden py-24",
         children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                src: "/membership hero.webp",
+                alt: "YPA Wealth Depot",
+                fill: true,
+                priority: true,
+                className: "object-cover"
+            }, void 0, false, {
+                fileName: "[project]/YPA-Wealth-Depot/components/shared/AdvertSlider.tsx",
+                lineNumber: 7,
+                columnNumber: 7
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mb-8 px-4 text-center md:mb-10",
+                className: "absolute inset-0 bg-black/65"
+            }, void 0, false, {
+                fileName: "[project]/YPA-Wealth-Depot/components/shared/AdvertSlider.tsx",
+                lineNumber: 16,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative z-10 mx-auto max-w-4xl px-6 text-center",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "text-xs font-semibold uppercase tracking-[0.3em] text-sky-500 md:text-sm",
-                        children: "Latest Promotions"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "mx-auto max-w-2xl text-lg leading-8 text-white/90 md:text-xl",
+                        children: "Stay connected with YPA Wealth Depot and receive the latest news, announcements, events, and opportunities."
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/components/shared/AdvertSlider.tsx",
-                        lineNumber: 15,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "mt-3 text-3xl font-bold text-slate-900 md:text-4xl",
-                        children: "Featured Adverts"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        className: "mt-10 rounded-full bg-sky-500 px-10 py-4 font-semibold text-white shadow-lg transition hover:bg-sky-600",
+                        children: "Subscribe For Updates"
                     }, void 0, false, {
                         fileName: "[project]/YPA-Wealth-Depot/components/shared/AdvertSlider.tsx",
-                        lineNumber: 19,
+                        lineNumber: 26,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/YPA-Wealth-Depot/components/shared/AdvertSlider.tsx",
-                lineNumber: 14,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "overflow-hidden bg-slate-100 py-8 md:py-10",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "slider",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "slide-track",
-                        children: [
-                            ...adverts,
-                            ...adverts
-                        ].map((image, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: " mx-3 h-[280px] w-[280px] shrink-0 overflow-hidden rounded-xl bg-white shadow-xl  sm:h-[350px] sm:w-[350px]  md:mx-5 md:h-[450px] md:w-[450px]  lg:h-[500px] lg:w-[500px] ",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$YPA$2d$Wealth$2d$Depot$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                    src: image,
-                                    alt: `Advert ${index + 1}`,
-                                    width: 2000,
-                                    height: 2000,
-                                    sizes: " (max-width:640px) 280px, (max-width:768px) 350px, (max-width:1024px) 450px, 500px ",
-                                    className: " h-full w-full object-cover transition-transform duration-500 hover:scale-105 "
-                                }, void 0, false, {
-                                    fileName: "[project]/YPA-Wealth-Depot/components/shared/AdvertSlider.tsx",
-                                    lineNumber: 56,
-                                    columnNumber: 17
-                                }, this)
-                            }, index, false, {
-                                fileName: "[project]/YPA-Wealth-Depot/components/shared/AdvertSlider.tsx",
-                                lineNumber: 32,
-                                columnNumber: 15
-                            }, this))
-                    }, void 0, false, {
-                        fileName: "[project]/YPA-Wealth-Depot/components/shared/AdvertSlider.tsx",
-                        lineNumber: 28,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/YPA-Wealth-Depot/components/shared/AdvertSlider.tsx",
-                    lineNumber: 27,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/YPA-Wealth-Depot/components/shared/AdvertSlider.tsx",
-                lineNumber: 25,
+                lineNumber: 19,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/YPA-Wealth-Depot/components/shared/AdvertSlider.tsx",
-        lineNumber: 12,
+        lineNumber: 5,
         columnNumber: 5
     }, this);
 }
