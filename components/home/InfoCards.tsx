@@ -7,6 +7,7 @@ import {
   Download,
   Users,
 } from "lucide-react";
+import TikTokCard from "../shared/TikTokCard";
 
 export default function InfoCards() {
   return (
@@ -113,41 +114,7 @@ export default function InfoCards() {
 
           </div>
 
-         {/* Right Card */}
-
-          <div className="rounded-2xl bg-sky-600 text-white p-10 shadow-lg">
-
-            <h4 className="text-xl font-semibold text-white/80">
-              Quick Links
-            </h4>
-
-            <h2 className="text-5xl font-bold mt-2 mb-8">
-              Resources
-            </h2>
-
-            <div className="space-y-5">
-
-              {[
-                "Annual Reports",
-                "Financial Statements",
-                "Membership Guide",
-                "Loan Application Forms",
-                "Savings Products",
-                "Resource Centre",
-              ].map((item) => (
-                <Link
-                  href="#"
-                  key={item}
-                  className="flex items-center justify-between border-b border-white/20 pb-3 hover:translate-x-2 transition"
-                >
-                  <span>{item}</span>
-                  <Download size={18} />
-                </Link>
-              ))}
-
-            </div>
-
-          </div>
+         <TikTokCard/>
 
         </div>
 
