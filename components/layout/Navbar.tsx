@@ -128,7 +128,7 @@ export default function Navbar({ scrolled }: NavbarProps) {
         {/* Right Side */}
         <div className="hidden lg:flex items-center">
   <Link
-    href="/Comingsoon"
+    href="https://b.loandisk.com/"
     className="rounded-full bg-red-600 hover:bg-sky-600 px-7 py-3 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1"
   >
     LOGIN
