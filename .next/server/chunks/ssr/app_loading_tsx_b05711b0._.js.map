@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Volumes/YPA%20WEALTH/SACCO%20SYSTEMS%20PROJECTS/YPA-Wealth-Depot/app/loading.tsx"],"sourcesContent":["export default function Loading() {\n  return (\n    <section className=\"bg-slate-50 py-16 animate-pulse\">\n      <div className=\"max-w-7xl mx-auto px-6 space-y-6\">\n        <div className=\"h-6 w-32 rounded bg-slate-200\" />\n        <div className=\"h-10 w-2/3 rounded bg-slate-200\" />\n        <div className=\"h-4 w-full rounded bg-slate-200\" />\n        <div className=\"h-4 w-5/6 rounded bg-slate-200\" />\n        <div className=\"grid gap-4 md:grid-cols-3 mt-8\">\n          <div className=\"h-40 rounded-xl bg-slate-200\" />\n          <div className=\"h-40 rounded-xl bg-slate-200\" />\n          <div className=\"h-40 rounded-xl bg-slate-200\" />\n        </div>\n      </div>\n    </section>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;QAAQ,WAAU;kBACjB,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAI,WAAU;;;;;;8BACf,8OAAC;oBAAI,WAAU;;;;;;8BACf,8OAAC;oBAAI,WAAU;;;;;;8BACf,8OAAC;oBAAI,WAAU;;;;;;8BACf,8OAAC;oBAAI,WAAU;;sCACb,8OAAC;4BAAI,WAAU;;;;;;sCACf,8OAAC;4BAAI,WAAU;;;;;;sCACf,8OAAC;4BAAI,WAAU;;;;;;;;;;;;;;;;;;;;;;;AAKzB","debugId":null}}]
+}
