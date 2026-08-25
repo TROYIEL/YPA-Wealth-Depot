@@ -9,7 +9,7 @@
   "static/chunks/node_modules_react-icons_fa6_index_mjs_79da82bd._.js",
   "static/chunks/node_modules_react-icons_lib_844c6c50._.js",
   "static/chunks/node_modules_tailwind-merge_dist_bundle-mjs_mjs_56b6fd65._.js",
-  "static/chunks/node_modules_7c86cc9e._.js",
+  "static/chunks/node_modules_c0d747fa._.js",
   "static/chunks/_92b01c0c._.js"
 ],
     source: "dynamic"
