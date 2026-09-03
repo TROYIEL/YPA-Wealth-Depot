@@ -3,6 +3,7 @@ import InfoCards from "@/components/home/InfoCards";
 import MembershipJourney from "@/components/shared/MembershipJourney";
 import Newscard from "@/components/shared/Newscard";
 import LandingPattern from "@/components/shared/LandingPattern";
+import FloatingWithdrawalButton from "@/components/FloatingWithdrawalButton"
 
 
 import Head from "next/head";
@@ -21,6 +22,7 @@ export default function Home() {
       <Newscard  />
       <LandingPattern />
       <AdvertSlider />
+      <FloatingWithdrawalButton />
     </>
   );
 }

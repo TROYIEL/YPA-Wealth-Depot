@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     "wealth management Uganda",
     "YPA SACCO",
     "car log book loans",
-     "loans",
+     "loans"
   ],
 
   authors: [
