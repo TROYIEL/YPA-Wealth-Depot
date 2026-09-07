@@ -8,6 +8,7 @@ import FloatingWithdrawalButton from "@/components/FloatingWithdrawalButton"
 
 import Head from "next/head";
 import AdvertSlider from "@/components/shared/AdvertSlider";
+import FloatingStaffPaymentButton from "@/components/FloatingStaffPaymentButton";
 
 <Head>
   <link rel="icon" href="/logo.ico" />
@@ -22,7 +23,8 @@ export default function Home() {
       <Newscard  />
       <LandingPattern />
       <AdvertSlider />
-      <FloatingWithdrawalButton />
+      <FloatingStaffPaymentButton />
+     {/* <FloatingWithdrawalButton /> */}
     </>
   );
 }
