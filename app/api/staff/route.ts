@@ -1567,7 +1567,18 @@ const staff: Staff[] = [
     mobileNumber: "0794240377",
     mobileName: "TAKATAMOE MATAYA"
   },
-
+{
+    id: "BREC-120",
+    name: "MITEGO RACHEAL",
+    position: "BREC- STAFF",
+    phone: "0774636183",
+    email: "",
+    subscriptionFee: 20000,
+    paymentMethod: "bank",
+    bankName: "CENTENARY",
+    accountNumber: "3203115013",
+    accountName: "MITEGO RACHEAL"
+  },
 ];
 
 export async function GET() {
