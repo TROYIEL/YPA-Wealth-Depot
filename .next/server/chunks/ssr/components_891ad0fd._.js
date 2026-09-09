@@ -979,6 +979,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/loader-circle.mjs [app-ssr] (ecmascript) <export default as Loader2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check.mjs [app-ssr] (ecmascript) <export default as CheckCircle2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.mjs [app-ssr] (ecmascript) <export default as ChevronDown>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$alert$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-alert.mjs [app-ssr] (ecmascript) <export default as AlertCircle>");
 "use client";
 ;
 ;
@@ -1010,11 +1011,14 @@ function FloatingStaffPaymentButton() {
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [success, setSuccess] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [requestId, setRequestId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+    /*
+   * LOAD STAFF
+   */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         if (!open) return;
         const loadStaff = async ()=>{
             try {
                 setLoadingStaff(true);
+                setError("");
                 const response = await fetch("/api/staff", {
                     cache: "no-store"
                 });
@@ -1022,7 +1026,7 @@ function FloatingStaffPaymentButton() {
                 if (!response.ok) {
                     throw new Error(data.message || "Unable to load staff.");
                 }
-                setStaff(data.staff || []);
+                setStaff(Array.isArray(data.staff) ? data.staff : []);
             } catch (err) {
                 setError(err instanceof Error ? err.message : "Unable to load staff.");
             } finally{
@@ -1033,15 +1037,21 @@ function FloatingStaffPaymentButton() {
     }, [
         open
     ]);
-    const filteredStaff = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
+    /*
+   * FILTER STAFF
+   */ const filteredStaff = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
         const search = staffSearch.toLowerCase().trim();
-        if (!search) return staff.slice(0, 8);
+        if (!search) {
+            return staff.slice(0, 8);
+        }
         return staff.filter((person)=>person.name.toLowerCase().includes(search) || person.position.toLowerCase().includes(search) || person.phone.includes(search)).slice(0, 8);
     }, [
         staff,
         staffSearch
     ]);
-    const selectStaff = (person)=>{
+    /*
+   * SELECT STAFF
+   */ const selectStaff = (person)=>{
         setForm({
             staffId: person.id,
             staffName: person.name,
@@ -1062,8 +1072,11 @@ function FloatingStaffPaymentButton() {
         setShowStaff(false);
         setError("");
         setSuccess("");
+        setRequestId("");
     };
-    const handleChange = (event)=>{
+    /*
+   * HANDLE INPUT
+   */ const handleChange = (event)=>{
         const target = event.target;
         const { name, value, type } = target;
         const checked = type === "checkbox" && target instanceof HTMLInputElement ? target.checked : false;
@@ -1073,7 +1086,9 @@ function FloatingStaffPaymentButton() {
             }));
         setError("");
     };
-    const handleAmount = (event)=>{
+    /*
+   * HANDLE AMOUNT
+   */ const handleAmount = (event)=>{
         const raw = event.target.value.replace(/\D/g, "");
         setForm((prev)=>({
                 ...prev,
@@ -1081,14 +1096,18 @@ function FloatingStaffPaymentButton() {
             }));
         setError("");
     };
-    const changePaymentMethod = (method)=>{
+    /*
+   * CHANGE PAYMENT METHOD
+   */ const changePaymentMethod = (method)=>{
         setForm((prev)=>({
                 ...prev,
                 paymentMethod: method
             }));
         setError("");
     };
-    const validate = ()=>{
+    /*
+   * VALIDATION
+   */ const validate = ()=>{
         if (!form.staffId) {
             return "Please select a staff member.";
         }
@@ -1111,9 +1130,13 @@ function FloatingStaffPaymentButton() {
         }
         return "";
     };
-    const submit = async (event)=>{
+    /*
+   * SUBMIT PAYMENT REQUEST
+   */ const submit = async (event)=>{
         event.preventDefault();
-        const validationError = validate();
+        /*
+     * VALIDATE
+     */ const validationError = validate();
         if (validationError) {
             setError(validationError);
             return;
@@ -1122,7 +1145,10 @@ function FloatingStaffPaymentButton() {
             setSubmitting(true);
             setError("");
             setSuccess("");
-            const response = await fetch("/api/staff-payment", {
+            setRequestId("");
+            /*
+       * SEND TO NEXT.JS API
+       */ const response = await fetch("/api/staff-payment", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -1144,13 +1170,36 @@ function FloatingStaffPaymentButton() {
                     confirmation: form.confirmation
                 })
             });
-            const data = await response.json();
-            if (!response.ok || !data.success) {
+            /*
+       * READ RESPONSE
+       */ const data = await response.json();
+            /*
+       * =====================================
+       * ALREADY SUBMITTED
+       * =====================================
+       */ if (data.alreadySubmitted) {
+                setError(data.message || "You already submitted a payment request that is still pending approval.");
+                /*
+         * IMPORTANT:
+         * Do NOT clear the form.
+         */ return;
+            }
+            /*
+       * =====================================
+       * OTHER ERRORS
+       * =====================================
+       */ if (!response.ok || !data.success) {
                 throw new Error(data.message || "Unable to submit payment request.");
             }
-            setSuccess("Payment request submitted successfully.");
+            /*
+       * =====================================
+       * SUCCESS
+       * =====================================
+       */ setSuccess("Payment request submitted successfully.");
             setRequestId(data.requestId || "");
-            setForm(emptyForm);
+            /*
+       * CLEAR FORM ONLY AFTER SUCCESS
+       */ setForm(emptyForm);
             setStaffSearch("");
         } catch (err) {
             setError(err instanceof Error ? err.message : "Unable to submit payment request.");
@@ -1158,8 +1207,12 @@ function FloatingStaffPaymentButton() {
             setSubmitting(false);
         }
     };
-    const closeForm = ()=>{
-        if (submitting) return;
+    /*
+   * CLOSE FORM
+   */ const closeForm = ()=>{
+        if (submitting) {
+            return;
+        }
         setOpen(false);
         setError("");
         setSuccess("");
@@ -1176,14 +1229,14 @@ function FloatingStaffPaymentButton() {
                         size: 17
                     }, void 0, false, {
                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                        lineNumber: 308,
+                        lineNumber: 676,
                         columnNumber: 11
                     }, this),
                     "Staff Payment"
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                lineNumber: 303,
+                lineNumber: 668,
                 columnNumber: 9
             }, this),
             open && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1203,7 +1256,7 @@ function FloatingStaffPaymentButton() {
                                                 children: "Staff Payment Request"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                lineNumber: 322,
+                                                lineNumber: 706,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1211,13 +1264,13 @@ function FloatingStaffPaymentButton() {
                                                 children: "Select staff, confirm details and enter amount"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                lineNumber: 325,
+                                                lineNumber: 712,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                        lineNumber: 321,
+                                        lineNumber: 704,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1228,21 +1281,21 @@ function FloatingStaffPaymentButton() {
                                             size: 19
                                         }, void 0, false, {
                                             fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                            lineNumber: 335,
+                                            lineNumber: 729,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                        lineNumber: 330,
+                                        lineNumber: 721,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                lineNumber: 320,
+                                lineNumber: 702,
                                 columnNumber: 15
                             }, this),
-                            success ? /* Success */ /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            success ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "px-5 py-10 text-center",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
@@ -1250,7 +1303,7 @@ function FloatingStaffPaymentButton() {
                                         className: "mx-auto mb-3 text-green-500"
                                     }, void 0, false, {
                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                        lineNumber: 342,
+                                        lineNumber: 744,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1258,7 +1311,7 @@ function FloatingStaffPaymentButton() {
                                         children: "Request Submitted"
                                     }, void 0, false, {
                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                        lineNumber: 347,
+                                        lineNumber: 750,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1266,7 +1319,7 @@ function FloatingStaffPaymentButton() {
                                         children: "The staff payment request has been sent successfully."
                                     }, void 0, false, {
                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                        lineNumber: 351,
+                                        lineNumber: 757,
                                         columnNumber: 19
                                     }, this),
                                     requestId && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1274,7 +1327,7 @@ function FloatingStaffPaymentButton() {
                                         children: requestId
                                     }, void 0, false, {
                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                        lineNumber: 356,
+                                        lineNumber: 766,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1284,24 +1337,40 @@ function FloatingStaffPaymentButton() {
                                         children: "Close"
                                     }, void 0, false, {
                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                        lineNumber: 361,
+                                        lineNumber: 775,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                lineNumber: 341,
+                                lineNumber: 742,
                                 columnNumber: 17
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                                 onSubmit: submit,
                                 className: "px-5 py-4",
                                 children: [
                                     error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "mb-3 rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-xs font-medium text-red-700",
-                                        children: error
-                                    }, void 0, false, {
+                                        className: "mb-3 flex items-start gap-2 rounded-lg border border-red-200 bg-red-50 px-3 py-2.5 text-xs font-medium text-red-700",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$alert$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertCircle$3e$__["AlertCircle"], {
+                                                size: 16,
+                                                className: "mt-0.5 shrink-0"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
+                                                lineNumber: 807,
+                                                columnNumber: 23
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                children: error
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
+                                                lineNumber: 812,
+                                                columnNumber: 23
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                        lineNumber: 374,
+                                        lineNumber: 805,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1312,7 +1381,7 @@ function FloatingStaffPaymentButton() {
                                                 children: "Staff Member"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                lineNumber: 381,
+                                                lineNumber: 827,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1326,7 +1395,7 @@ function FloatingStaffPaymentButton() {
                                                                 className: "ml-3 text-gray-400"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                                lineNumber: 387,
+                                                                lineNumber: 838,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1342,7 +1411,7 @@ function FloatingStaffPaymentButton() {
                                                                 className: "w-full bg-transparent px-2.5 py-2 text-sm outline-none"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                                lineNumber: 392,
+                                                                lineNumber: 844,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
@@ -1350,13 +1419,13 @@ function FloatingStaffPaymentButton() {
                                                                 className: "mr-3 text-gray-400"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                                lineNumber: 409,
+                                                                lineNumber: 880,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                        lineNumber: 386,
+                                                        lineNumber: 836,
                                                         columnNumber: 23
                                                     }, this),
                                                     showStaff && !loadingStaff && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1372,13 +1441,13 @@ function FloatingStaffPaymentButton() {
                                                                             size: 15
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                                            lineNumber: 426,
-                                                                            columnNumber: 35
+                                                                            lineNumber: 916,
+                                                                            columnNumber: 39
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                                        lineNumber: 425,
-                                                                        columnNumber: 33
+                                                                        lineNumber: 914,
+                                                                        columnNumber: 37
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "min-w-0",
@@ -1388,51 +1457,51 @@ function FloatingStaffPaymentButton() {
                                                                                 children: person.name
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                                                lineNumber: 430,
-                                                                                columnNumber: 35
+                                                                                lineNumber: 927,
+                                                                                columnNumber: 39
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                                 className: "truncate text-[11px] text-gray-500",
                                                                                 children: person.position
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                                                lineNumber: 433,
-                                                                                columnNumber: 35
+                                                                                lineNumber: 936,
+                                                                                columnNumber: 39
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                                        lineNumber: 429,
-                                                                        columnNumber: 33
+                                                                        lineNumber: 925,
+                                                                        columnNumber: 37
                                                                     }, this)
                                                                 ]
                                                             }, person.id, true, {
                                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                                lineNumber: 419,
-                                                                columnNumber: 31
+                                                                lineNumber: 901,
+                                                                columnNumber: 35
                                                             }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "px-3 py-4 text-center text-xs text-gray-500",
                                                             children: "No staff found"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                            lineNumber: 440,
-                                                            columnNumber: 29
+                                                            lineNumber: 953,
+                                                            columnNumber: 31
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                        lineNumber: 416,
-                                                        columnNumber: 25
+                                                        lineNumber: 891,
+                                                        columnNumber: 27
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                lineNumber: 385,
+                                                lineNumber: 834,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                        lineNumber: 380,
+                                        lineNumber: 825,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1446,7 +1515,7 @@ function FloatingStaffPaymentButton() {
                                                         className: "text-blue-600"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                        lineNumber: 452,
+                                                        lineNumber: 978,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1454,13 +1523,13 @@ function FloatingStaffPaymentButton() {
                                                         children: "Staff Details"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                        lineNumber: 453,
+                                                        lineNumber: 983,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                lineNumber: 451,
+                                                lineNumber: 976,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1474,7 +1543,7 @@ function FloatingStaffPaymentButton() {
                                                         placeholder: "Staff name"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                        lineNumber: 459,
+                                                        lineNumber: 994,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Input, {
@@ -1485,7 +1554,7 @@ function FloatingStaffPaymentButton() {
                                                         placeholder: "Position"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                        lineNumber: 467,
+                                                        lineNumber: 1007,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Input, {
@@ -1496,7 +1565,7 @@ function FloatingStaffPaymentButton() {
                                                         placeholder: "Phone"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                        lineNumber: 475,
+                                                        lineNumber: 1020,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Input, {
@@ -1507,19 +1576,19 @@ function FloatingStaffPaymentButton() {
                                                         placeholder: "Email"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                        lineNumber: 483,
+                                                        lineNumber: 1033,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                lineNumber: 458,
+                                                lineNumber: 992,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                        lineNumber: 450,
+                                        lineNumber: 974,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1530,7 +1599,7 @@ function FloatingStaffPaymentButton() {
                                                 children: "Payment Amount"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                lineNumber: 495,
+                                                lineNumber: 1056,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1541,7 +1610,7 @@ function FloatingStaffPaymentButton() {
                                                         children: "UGX"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                        lineNumber: 500,
+                                                        lineNumber: 1065,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1553,19 +1622,19 @@ function FloatingStaffPaymentButton() {
                                                         className: "w-full bg-transparent px-3 py-2 text-lg font-bold text-blue-700 outline-none placeholder:text-blue-200"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                        lineNumber: 504,
+                                                        lineNumber: 1072,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                lineNumber: 499,
+                                                lineNumber: 1063,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                        lineNumber: 494,
+                                        lineNumber: 1054,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1576,7 +1645,7 @@ function FloatingStaffPaymentButton() {
                                                 children: "Payment Method"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                lineNumber: 517,
+                                                lineNumber: 1096,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1591,14 +1660,14 @@ function FloatingStaffPaymentButton() {
                                                                 size: 15
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                                lineNumber: 534,
+                                                                lineNumber: 1123,
                                                                 columnNumber: 25
                                                             }, this),
                                                             "Mobile Money"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                        lineNumber: 522,
+                                                        lineNumber: 1105,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1610,26 +1679,26 @@ function FloatingStaffPaymentButton() {
                                                                 size: 15
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                                lineNumber: 550,
+                                                                lineNumber: 1150,
                                                                 columnNumber: 25
                                                             }, this),
                                                             "Bank"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                        lineNumber: 538,
+                                                        lineNumber: 1132,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                lineNumber: 521,
+                                                lineNumber: 1103,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                        lineNumber: 516,
+                                        lineNumber: 1094,
                                         columnNumber: 19
                                     }, this),
                                     form.paymentMethod === "mobile" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1658,7 +1727,7 @@ function FloatingStaffPaymentButton() {
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                    lineNumber: 560,
+                                                    lineNumber: 1174,
                                                     columnNumber: 25
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Input, {
@@ -1669,7 +1738,7 @@ function FloatingStaffPaymentButton() {
                                                     placeholder: "0700000000"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                    lineNumber: 572,
+                                                    lineNumber: 1206,
                                                     columnNumber: 25
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1682,23 +1751,23 @@ function FloatingStaffPaymentButton() {
                                                         placeholder: "Account holder name"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                        lineNumber: 581,
+                                                        lineNumber: 1221,
                                                         columnNumber: 27
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                    lineNumber: 580,
+                                                    lineNumber: 1219,
                                                     columnNumber: 25
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                            lineNumber: 559,
+                                            lineNumber: 1172,
                                             columnNumber: 23
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                        lineNumber: 558,
+                                        lineNumber: 1170,
                                         columnNumber: 21
                                     }, this),
                                     form.paymentMethod === "bank" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1714,7 +1783,7 @@ function FloatingStaffPaymentButton() {
                                                     placeholder: "Bank name"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                    lineNumber: 597,
+                                                    lineNumber: 1253,
                                                     columnNumber: 25
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Input, {
@@ -1725,7 +1794,7 @@ function FloatingStaffPaymentButton() {
                                                     placeholder: "Account number"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                    lineNumber: 605,
+                                                    lineNumber: 1266,
                                                     columnNumber: 25
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1738,23 +1807,23 @@ function FloatingStaffPaymentButton() {
                                                         placeholder: "Account holder name"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                        lineNumber: 614,
+                                                        lineNumber: 1281,
                                                         columnNumber: 27
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                    lineNumber: 613,
+                                                    lineNumber: 1279,
                                                     columnNumber: 25
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                            lineNumber: 596,
+                                            lineNumber: 1251,
                                             columnNumber: 23
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                        lineNumber: 595,
+                                        lineNumber: 1249,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -1768,7 +1837,7 @@ function FloatingStaffPaymentButton() {
                                                 className: "mt-0.5 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                lineNumber: 628,
+                                                lineNumber: 1308,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1776,13 +1845,13 @@ function FloatingStaffPaymentButton() {
                                                 children: "I confirm that the staff and payment information entered above is correct."
                                             }, void 0, false, {
                                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                lineNumber: 636,
+                                                lineNumber: 1321,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                        lineNumber: 627,
+                                        lineNumber: 1306,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1796,7 +1865,7 @@ function FloatingStaffPaymentButton() {
                                                     className: "animate-spin"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                    lineNumber: 650,
+                                                    lineNumber: 1346,
                                                     columnNumber: 25
                                                 }, this),
                                                 "Submitting..."
@@ -1807,7 +1876,7 @@ function FloatingStaffPaymentButton() {
                                                     size: 17
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                                    lineNumber: 655,
+                                                    lineNumber: 1359,
                                                     columnNumber: 25
                                                 }, this),
                                                 "Submit Payment Request"
@@ -1815,35 +1884,39 @@ function FloatingStaffPaymentButton() {
                                         }, void 0, true)
                                     }, void 0, false, {
                                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                        lineNumber: 643,
+                                        lineNumber: 1334,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                                lineNumber: 370,
+                                lineNumber: 791,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                        lineNumber: 317,
+                        lineNumber: 695,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                    lineNumber: 316,
+                    lineNumber: 693,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                lineNumber: 315,
+                lineNumber: 691,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true);
 }
-/* Compact Input */ function Input({ label, name, value, onChange, placeholder }) {
+/*
+ * =========================================
+ * COMPACT INPUT
+ * =========================================
+ */ function Input({ label, name, value, onChange, placeholder }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -1851,7 +1924,7 @@ function FloatingStaffPaymentButton() {
                 children: label
             }, void 0, false, {
                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                lineNumber: 688,
+                lineNumber: 1417,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1863,17 +1936,21 @@ function FloatingStaffPaymentButton() {
                 className: "w-full rounded-md border border-gray-200 bg-white px-2.5 py-1.5 text-xs text-gray-800 outline-none transition placeholder:text-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-100"
             }, void 0, false, {
                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                lineNumber: 692,
+                lineNumber: 1424,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-        lineNumber: 687,
+        lineNumber: 1415,
         columnNumber: 5
     }, this);
 }
-/* Compact Select */ function SelectInput({ label, name, value, onChange, options }) {
+/*
+ * =========================================
+ * COMPACT SELECT
+ * =========================================
+ */ function SelectInput({ label, name, value, onChange, options }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -1881,7 +1958,7 @@ function FloatingStaffPaymentButton() {
                 children: label
             }, void 0, false, {
                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                lineNumber: 725,
+                lineNumber: 1475,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -1894,18 +1971,18 @@ function FloatingStaffPaymentButton() {
                         children: option.label
                     }, option.value, false, {
                         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                        lineNumber: 736,
-                        columnNumber: 11
+                        lineNumber: 1496,
+                        columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-                lineNumber: 729,
+                lineNumber: 1482,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/FloatingStaffPaymentButton.tsx",
-        lineNumber: 724,
+        lineNumber: 1473,
         columnNumber: 5
     }, this);
 }

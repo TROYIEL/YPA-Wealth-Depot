@@ -61,10 +61,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$serv
 ;
 async function POST(request) {
     try {
-        const body = await request.json();
         const googleSheetsUrl = process.env.GOOGLE_SHEETS_WEBHOOK_URL;
         if (!googleSheetsUrl) {
-            console.error("GOOGLE_SHEETS_WEBHOOK_URL is missing.");
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
                 success: false,
                 message: "Google Sheets connection is not configured."
@@ -72,11 +70,14 @@ async function POST(request) {
                 status: 500
             });
         }
-        // Staff validation
+        const body = await request.json();
+        // -----------------------------------------
+        // BASIC VALIDATION
+        // -----------------------------------------
         if (!body.staffId) {
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
                 success: false,
-                message: "Please select a staff member."
+                message: "Staff ID is required."
             }, {
                 status: 400
             });
@@ -89,114 +90,89 @@ async function POST(request) {
                 status: 400
             });
         }
-        // Amount validation
-        const amount = Number(String(body.amount || "").replace(/,/g, ""));
+        const amount = Number(body.amount);
         if (!Number.isFinite(amount) || amount <= 0) {
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
                 success: false,
-                message: "Please enter a valid payment amount."
+                message: "A valid payment amount is required."
             }, {
                 status: 400
             });
         }
-        // Payment method validation
-        if (body.paymentMethod !== "mobile" && body.paymentMethod !== "bank") {
+        if (!body.paymentMethod) {
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
                 success: false,
-                message: "Invalid payment method."
+                message: "Payment method is required."
             }, {
                 status: 400
             });
         }
-        // Mobile Money validation
-        if (body.paymentMethod === "mobile") {
-            if (!body.mobileNetwork || !body.mobileNumber || !body.mobileName) {
-                return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-                    success: false,
-                    message: "Complete the Mobile Money details."
-                }, {
-                    status: 400
-                });
-            }
-        }
-        // Bank validation
-        if (body.paymentMethod === "bank") {
-            if (!body.bankName || !body.accountNumber || !body.accountName) {
-                return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-                    success: false,
-                    message: "Complete the bank details."
-                }, {
-                    status: 400
-                });
-            }
-        }
-        // Confirmation validation
-        if (!body.confirmation) {
-            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-                success: false,
-                message: "Please confirm that the information is correct."
-            }, {
-                status: 400
-            });
-        }
-        // Data sent to Google Sheets
-        const googleData = {
-            staffId: body.staffId,
-            staffName: body.staffName,
-            position: body.position || "",
-            phone: body.phone || "",
-            email: body.email || "",
-            amount: amount,
-            paymentMethod: body.paymentMethod,
-            mobileNetwork: body.mobileNetwork || "",
-            mobileNumber: body.mobileNumber || "",
-            mobileName: body.mobileName || "",
-            bankName: body.bankName || "",
-            accountNumber: body.accountNumber || "",
-            accountName: body.accountName || ""
-        };
+        // -----------------------------------------
+        // SEND TO GOOGLE APPS SCRIPT
+        // -----------------------------------------
         const googleResponse = await fetch(googleSheetsUrl, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(googleData),
-            cache: "no-store"
+            body: JSON.stringify(body),
+            cache: "no-store",
+            redirect: "follow"
         });
         const responseText = await googleResponse.text();
+        // -----------------------------------------
+        // PARSE GOOGLE RESPONSE
+        // -----------------------------------------
         let googleResult;
         try {
             googleResult = JSON.parse(responseText);
         } catch  {
-            console.error("Invalid Google response:", responseText);
+            console.error("Google Sheets returned:", responseText);
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
                 success: false,
                 message: "Google Sheets returned an invalid response."
             }, {
-                status: 500
+                status: 502
             });
         }
-        if (!googleResponse.ok || !googleResult.success) {
-            console.error("Google Sheets error:", googleResult);
+        // -----------------------------------------
+        // ALREADY SUBMITTED
+        // -----------------------------------------
+        if (googleResult.alreadySubmitted) {
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
                 success: false,
-                message: googleResult.message || "Unable to save the payment request."
+                alreadySubmitted: true,
+                message: googleResult.message || "You already submitted a payment request that is still pending approval."
             }, {
-                status: 500
+                status: 409
             });
         }
+        // -----------------------------------------
+        // GOOGLE ERROR
+        // -----------------------------------------
+        if (!googleResponse.ok || !googleResult.success) {
+            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+                success: false,
+                message: googleResult.message || "Unable to submit payment request."
+            }, {
+                status: googleResponse.status >= 400 ? googleResponse.status : 500
+            });
+        }
+        // -----------------------------------------
+        // SUCCESS
+        // -----------------------------------------
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
             success: true,
-            message: "Payment request submitted successfully.",
-            requestId: googleResult.requestId
+            message: googleResult.message || "Payment request submitted successfully.",
+            requestId: googleResult.requestId || ""
         }, {
             status: 200
         });
     } catch (error) {
-        console.error("Staff payment error:", error);
+        console.error("STAFF PAYMENT ERROR:", error);
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
             success: false,
-            message: error instanceof Error ? error.message : "Something went wrong."
+            message: error instanceof Error ? error.message : "Unable to submit payment request."
         }, {
             status: 500
         });
