@@ -1591,6 +1591,30 @@ const staff: Staff[] = [
     mobileNumber: "0788330668",
     mobileName: "RUKYAMA WILLIAM"
   },
+   {
+    id: "BREC-122",
+    name: "NABUUFA SUZAN",
+    position: "BREC Staff",
+    phone: "0789080705",
+    email: "",
+    subscriptionFee: 20000,
+    paymentMethod: "mobile",
+    mobileNetwork: "MTN",
+    mobileNumber: "0789080705",
+    mobileName: "NABUUFA SUZAN"
+  },
+  {
+    id: "BREC-123",
+    name: "ASIIMWE WILFRED",
+    position: "BREC Staff",
+    phone: "0702355637",
+    email: "",
+    subscriptionFee: 20000,
+    paymentMethod: "mobile",
+    mobileNetwork: "MTN",
+    mobileNumber: "0702355637",
+    mobileName: "ASIIMWE WILFRED"
+  },
 ];
 
 export async function GET() {
