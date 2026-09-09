@@ -1,158 +1,141 @@
 
 import { NextResponse } from "next/server";
 
-export async function POST(request: Request) {
+export async function POST(
+  request: Request
+) {
   try {
-    const body = await request.json();
 
-    const googleSheetsUrl = process.env.GOOGLE_SHEETS_WEBHOOK_URL;
+    const googleSheetsUrl =
+      process.env.GOOGLE_SHEETS_WEBHOOK_URL;
 
     if (!googleSheetsUrl) {
-      console.error("GOOGLE_SHEETS_WEBHOOK_URL is missing.");
-
       return NextResponse.json(
         {
           success: false,
-          message: "Google Sheets connection is not configured.",
+          message:
+            "Google Sheets connection is not configured.",
         },
         { status: 500 }
       );
     }
 
-    // Staff validation
+
+    const body =
+      await request.json();
+
+
+    // -----------------------------------------
+    // BASIC VALIDATION
+    // -----------------------------------------
+
     if (!body.staffId) {
       return NextResponse.json(
         {
           success: false,
-          message: "Please select a staff member.",
+          message:
+            "Staff ID is required.",
         },
         { status: 400 }
       );
     }
+
 
     if (!body.staffName) {
       return NextResponse.json(
         {
           success: false,
-          message: "Staff name is required.",
+          message:
+            "Staff name is required.",
         },
         { status: 400 }
       );
     }
 
-    // Amount validation
-    const amount = Number(
-      String(body.amount || "").replace(/,/g, "")
-    );
 
-    if (!Number.isFinite(amount) || amount <= 0) {
-      return NextResponse.json(
-        {
-          success: false,
-          message: "Please enter a valid payment amount.",
-        },
-        { status: 400 }
-      );
-    }
+    const amount =
+      Number(body.amount);
 
-    // Payment method validation
+
     if (
-      body.paymentMethod !== "mobile" &&
-      body.paymentMethod !== "bank"
+      !Number.isFinite(amount) ||
+      amount <= 0
     ) {
       return NextResponse.json(
         {
           success: false,
-          message: "Invalid payment method.",
+          message:
+            "A valid payment amount is required.",
         },
         { status: 400 }
       );
     }
 
-    // Mobile Money validation
-    if (body.paymentMethod === "mobile") {
-      if (
-        !body.mobileNetwork ||
-        !body.mobileNumber ||
-        !body.mobileName
-      ) {
-        return NextResponse.json(
-          {
-            success: false,
-            message: "Complete the Mobile Money details.",
-          },
-          { status: 400 }
-        );
-      }
-    }
 
-    // Bank validation
-    if (body.paymentMethod === "bank") {
-      if (
-        !body.bankName ||
-        !body.accountNumber ||
-        !body.accountName
-      ) {
-        return NextResponse.json(
-          {
-            success: false,
-            message: "Complete the bank details.",
-          },
-          { status: 400 }
-        );
-      }
-    }
-
-    // Confirmation validation
-    if (!body.confirmation) {
+    if (!body.paymentMethod) {
       return NextResponse.json(
         {
           success: false,
           message:
-            "Please confirm that the information is correct.",
+            "Payment method is required.",
         },
         { status: 400 }
       );
     }
 
-    // Data sent to Google Sheets
-    const googleData = {
-      staffId: body.staffId,
-      staffName: body.staffName,
-      position: body.position || "",
-      phone: body.phone || "",
-      email: body.email || "",
-      amount: amount,
 
-      paymentMethod: body.paymentMethod,
+    // -----------------------------------------
+    // SEND TO GOOGLE APPS SCRIPT
+    // -----------------------------------------
 
-      mobileNetwork: body.mobileNetwork || "",
-      mobileNumber: body.mobileNumber || "",
-      mobileName: body.mobileName || "",
+    const googleResponse =
+      await fetch(
+        googleSheetsUrl,
+        {
+          method: "POST",
 
-      bankName: body.bankName || "",
-      accountNumber: body.accountNumber || "",
-      accountName: body.accountName || "",
+          headers: {
+            "Content-Type":
+              "application/json",
+          },
+
+          body:
+            JSON.stringify(body),
+
+          cache: "no-store",
+
+          redirect: "follow",
+        }
+      );
+
+
+    const responseText =
+      await googleResponse.text();
+
+
+    // -----------------------------------------
+    // PARSE GOOGLE RESPONSE
+    // -----------------------------------------
+
+    let googleResult: {
+      success?: boolean;
+      alreadySubmitted?: boolean;
+      message?: string;
+      requestId?: string;
     };
 
-    const googleResponse = await fetch(googleSheetsUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(googleData),
-      cache: "no-store",
-    });
-
-    const responseText = await googleResponse.text();
-
-    let googleResult;
 
     try {
-      googleResult = JSON.parse(responseText);
+
+      googleResult =
+        JSON.parse(
+          responseText
+        );
+
     } catch {
+
       console.error(
-        "Invalid Google response:",
+        "Google Sheets returned:",
         responseText
       );
 
@@ -162,51 +145,107 @@ export async function POST(request: Request) {
           message:
             "Google Sheets returned an invalid response.",
         },
-        { status: 500 }
+        { status: 502 }
       );
+
     }
 
-    if (!googleResponse.ok || !googleResult.success) {
-      console.error(
-        "Google Sheets error:",
-        googleResult
-      );
+
+    // -----------------------------------------
+    // ALREADY SUBMITTED
+    // -----------------------------------------
+
+    if (
+      googleResult.alreadySubmitted
+    ) {
 
       return NextResponse.json(
         {
           success: false,
+
+          alreadySubmitted:
+            true,
+
           message:
             googleResult.message ||
-            "Unable to save the payment request.",
+            "You already submitted a payment request that is still pending approval.",
+
         },
-        { status: 500 }
+        { status: 409 }
       );
+
     }
+
+
+    // -----------------------------------------
+    // GOOGLE ERROR
+    // -----------------------------------------
+
+    if (
+      !googleResponse.ok ||
+      !googleResult.success
+    ) {
+
+      return NextResponse.json(
+        {
+          success: false,
+
+          message:
+            googleResult.message ||
+            "Unable to submit payment request.",
+
+        },
+        {
+          status:
+            googleResponse.status >= 400
+              ? googleResponse.status
+              : 500,
+        }
+      );
+
+    }
+
+
+    // -----------------------------------------
+    // SUCCESS
+    // -----------------------------------------
 
     return NextResponse.json(
       {
         success: true,
+
         message:
+          googleResult.message ||
           "Payment request submitted successfully.",
-        requestId: googleResult.requestId,
+
+        requestId:
+          googleResult.requestId ||
+          "",
+
       },
       { status: 200 }
     );
+
+
   } catch (error) {
+
     console.error(
-      "Staff payment error:",
+      "STAFF PAYMENT ERROR:",
       error
     );
 
     return NextResponse.json(
       {
         success: false,
+
         message:
           error instanceof Error
             ? error.message
-            : "Something went wrong.",
+            : "Unable to submit payment request.",
+
       },
       { status: 500 }
     );
+
   }
 }
