@@ -1639,6 +1639,31 @@ const staff: Staff[] = [
     mobileNumber: "0761766559",
     mobileName: "AGABA JOHNSON"
   },
+  {
+    id: "BREC-126",
+    name: "nansereko Ruth kansiime",
+    position: "BREC Staff",
+    phone: "0767421978",
+    email: "",
+    subscriptionFee: 20000,
+    paymentMethod: "mobile",
+    mobileNetwork: "MTN",
+    mobileNumber: "0767421978",
+    mobileName: "nansereko Ruth kansiime"
+  },
+  {
+    id: "BREC-127",
+    name: "Kyozira William Wilberforce",
+    position: "BREC Staff",
+    phone: "0785227738",
+    email: "",
+    subscriptionFee: 20000,
+    paymentMethod: "mobile",
+    mobileNetwork: "MTN",
+    mobileNumber: "0785227738",
+    mobileName: "Kyozira William Wilberforce"
+  },
+
 ];
 
 export async function GET() {
