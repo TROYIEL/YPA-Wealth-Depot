@@ -1651,6 +1651,7 @@ const staff: Staff[] = [
     mobileNumber: "0767421978",
     mobileName: "nansereko Ruth kansiime"
   },
+  
 ];
 
 export async function GET() {
