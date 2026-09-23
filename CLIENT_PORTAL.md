@@ -4,6 +4,8 @@ The public navigation button opens `/client-portal/login`. An admin verifies a p
 
 ## Configure
 
+The portal targets Appwrite project `6ab3d2a9002acf1414c2` at `https://fra.cloud.appwrite.io/v1`. These are defaults in the server and setup scripts; environment values can override them.
+
 1. Rotate the exposed Appwrite API key that was committed previously in `createDatabase.js`. Removing the file from the current tree does not remove it from Git history. Do not reuse that key.
 2. Create a new Appwrite API key with least privileges for Users, Sessions and Database read/write/schema operations. Set server variables from `.env.example` in local development and Vercel. Do not use `NEXT_PUBLIC_` for secrets. Add your deployed domain and localhost as Appwrite web platforms for recovery redirects. Configure Appwrite SMTP so activation emails are delivered. Create a database with the configured ID.
 3. Run `node scripts/setup-client-portal.mjs`. Check both collections' attributes have reached `available` in Appwrite. Keep collection permissions empty and document security enabled. This prevents members from editing status, profile mapping or withdrawal requests. The server uses an API key to write requests; the staff portal can later use a separate role controlled server API to review them.

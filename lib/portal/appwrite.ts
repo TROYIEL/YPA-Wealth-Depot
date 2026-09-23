@@ -2,8 +2,8 @@ import 'server-only';
 import { cookies } from 'next/headers';
 import { Account, Client, Databases, Users } from 'node-appwrite';
 
-const endpoint = () => process.env.APPWRITE_ENDPOINT || process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT || '';
-const project = () => process.env.APPWRITE_PROJECT_ID || process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID || '';
+const endpoint = () => process.env.APPWRITE_ENDPOINT || process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT || 'https://fra.cloud.appwrite.io/v1';
+const project = () => process.env.APPWRITE_PROJECT_ID || process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID || '6ab3d2a9002acf1414c2';
 export const databaseId = () => process.env.APPWRITE_DATABASE_ID || '';
 export const profilesId = () => process.env.APPWRITE_PROFILES_ID || 'client_profiles';
 export const withdrawalsId = () => process.env.APPWRITE_WITHDRAWALS_ID || 'client_withdrawals';
