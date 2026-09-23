@@ -1,9 +1,9 @@
 import Hero from "@/components/hero/Hero";
 import InfoCards from "@/components/home/InfoCards";
 import MembershipJourney from "@/components/shared/MembershipJourney";
-import Newscard from "@/components/shared/Newscard";
+import LatestUpdates from "@/components/home/LatestUpdates";
 import LandingPattern from "@/components/shared/LandingPattern";
-import FloatingWithdrawalButton from "@/components/FloatingWithdrawalButton"
+import Link from "next/link";
 
 
 import Head from "next/head";
@@ -20,11 +20,11 @@ export default function Home() {
       <Hero />
       <InfoCards />
       <MembershipJourney />
-      <Newscard  />
+      <LatestUpdates />
       <LandingPattern />
       <AdvertSlider />
      {/* <FloatingStaffPaymentButton /> */}
-      <FloatingWithdrawalButton /> 
+      <Link href="/portal" className="fixed bottom-6 right-6 z-50 rounded-full bg-blue-800 px-6 py-3 font-semibold text-white shadow-xl">Member portal</Link>
     </>
   );
 }

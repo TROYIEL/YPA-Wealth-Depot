@@ -1,0 +1,10 @@
+import { Client, Users } from "node-appwrite";
+const [userId, role] = process.argv.slice(2);
+if (!userId || !["admin", "editor", "finance"].includes(role)) throw new Error("Usage: node --env-file=.env.local scripts/assign-staff.mjs USER_ID admin|editor|finance");
+const { APPWRITE_ENDPOINT, APPWRITE_PROJECT_ID, APPWRITE_API_KEY } = process.env;
+if (!APPWRITE_ENDPOINT || !APPWRITE_PROJECT_ID || !APPWRITE_API_KEY) throw new Error("Appwrite configuration is missing");
+const users = new Users(new Client().setEndpoint(APPWRITE_ENDPOINT).setProject(APPWRITE_PROJECT_ID).setKey(APPWRITE_API_KEY));
+const account = await users.get({ userId });
+const labels = [...new Set([...account.labels.filter(label => !["admin", "editor", "finance"].includes(label)), role])];
+await users.updateLabels({ userId, labels });
+console.log(`Assigned ${role} to ${userId}. Other unrelated labels were preserved.`);

@@ -1,0 +1,6 @@
+import Link from "next/link";
+import { requireStaff, allowed } from "@/lib/staff";
+export default async function StaffHome() {
+  const { user, labels } = await requireStaff();
+  return <><h1 className="text-3xl font-bold">Welcome, {user.name || "colleague"}</h1><p className="mt-2 text-slate-600">You can access the areas assigned to your role.</p><div className="mt-8 grid gap-5 sm:grid-cols-2">{allowed(labels,"withdrawals") && <Link className="rounded-2xl bg-white p-6 shadow-sm hover:ring-2 hover:ring-blue-500" href="/staff/withdrawals"><h2 className="text-xl font-bold">Withdrawal requests</h2><p className="mt-2 text-slate-600">Review requests, record decisions and update the client status.</p></Link>}{allowed(labels,"content") && <Link className="rounded-2xl bg-white p-6 shadow-sm hover:ring-2 hover:ring-blue-500" href="/staff/content"><h2 className="text-xl font-bold">Website content</h2><p className="mt-2 text-slate-600">Publish news, blogs, events and images.</p></Link>}{allowed(labels,"logs") && <Link className="rounded-2xl bg-white p-6 shadow-sm hover:ring-2 hover:ring-blue-500" href="/staff/logs"><h2 className="text-xl font-bold">Activity logs</h2><p className="mt-2 text-slate-600">See recorded staff decisions and changes.</p></Link>}</div></>;
+}
