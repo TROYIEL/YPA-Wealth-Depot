@@ -131,7 +131,7 @@ export default function Navbar({ scrolled }: NavbarProps) {
         {/* Desktop Login */}
         <div className="hidden lg:flex items-center">
           <Link
-            href="https://b.loandisk.com/"
+            href="/portal"
             className="rounded-full bg-red-600 hover:bg-sky-600 px-7 py-3 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1"
           >
             LOGIN
@@ -325,7 +325,7 @@ export default function Navbar({ scrolled }: NavbarProps) {
               <div className="px-5 pb-6 pt-2">
                 <div className="rounded-2xl bg-slate-50 border border-slate-200 p-3">
                   <Link
-                    href="https://b.loandisk.com/"
+                    href="/portal"
                     onClick={closeMobileMenu}
                     className="
                       flex

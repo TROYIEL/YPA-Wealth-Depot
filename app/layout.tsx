@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import ScrollToTopButton from "@/components/layout/ScrollToTopButton";
+import SiteChrome from "@/components/layout/SiteChrome";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const siteUrl = "https://www.ypawealthdepot.com/";
@@ -106,13 +104,7 @@ export default function RootLayout({
       <body className="overflow-x-hidden">
         <SpeedInsights />
 
-        <Header />
-
-        <main>{children}</main>
-
-        <ScrollToTopButton />
-
-        <Footer />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );
