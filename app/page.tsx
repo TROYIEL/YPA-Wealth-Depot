@@ -24,7 +24,7 @@ export default function Home() {
       <LandingPattern />
       <AdvertSlider />
      {/* <FloatingStaffPaymentButton /> */}
-      <FloatingWithdrawalButton /> 
+      {/*<FloatingWithdrawalButton /> */}
     </>
   );
 }
